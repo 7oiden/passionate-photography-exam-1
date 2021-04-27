@@ -1,0 +1,14 @@
+:root {
+  --navy: #3A4352;
+  --gold: #FEB41C;
+  --teal: #4B5F6D;
+  --highlight: #5E7C88;
+  --light-grey: #f3f3f3;
+  --beige: #FFF8F0
+  --white: #ffffff;
+  --century-gothic: "century gothic";
+  --open-sans: "open sans";
+  --adobe-caslon: "adobe caslon pro";
+  --proxima-nova: "proxima nova";
+  --center-align: 0 auto 0 auto;
+}
