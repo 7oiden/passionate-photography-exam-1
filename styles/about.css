@@ -1,15 +1,77 @@
-@import "variables.css";
-
-@import "global_styles.css";
-
-/* header
---------------------*/
+@import "imports/common_styles.css";
 
 /* main
 --------------------*/
+.breadcrumb {
+  width: 85%;
+  margin: 1rem auto;
+  font-size: 0.875rem;
+}
+.arrow {
+  color: black;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.line-wrapper {
+  display: flex;
+  align-items: center;
+}
+.line-wrapper div:nth-child(1) {
+  /* background-color: blue; */
+  margin-right: 10px;
+  flex: 1;
+}
+.line-wrapper div:nth-child(3) {
+  /* background-color: blue; */
+  flex: 7;
+  margin-left: 10px;
+}
+section {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+section a {
+  margin-top: 2rem;
+}
+h1 {
+  font-family: var(--century-gothic);
+  color: var(--black);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
 
-/* footer
---------------------*/
-
-/* styles that change
---------------------*/
+h2 {
+  font-family: var(--adobe-caslon);
+  color: var(--black);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.post-text {
+}
+.post-container {
+  width: 100%;
+  color: var(--black);
+}
+.post-image {
+  width: 306px;
+  height: 188px;
+  margin: 0;
+}
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  width: 100%;
+}
+em {
+  font-family: var(--century-gothic);
+  font-weight: 500;
+}
+figcaption {
+  display: block;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,249 @@
+:root {
+  --navy: #3a4352;
+  --gold: #feb41c;
+  --teal: #4b5f6d;
+  --highlight: #5e7c88;
+  --light-grey: #f3f3f3;
+  --light-blue: #d2d6d9;
+  --beige: #fff8f0;
+  --white: #fff;
+  --black: #000;
+  --century-gothic: "century gothic";
+  --open-sans: "open sans";
+  --adobe-caslon: "adobe caslon pro regular";
+  --proxima-nova: "proxima nova";
+  --center: 0 auto 0 auto;
+}
+
+/* global styles
+--------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--white);
+  color: var(--white);
+  font-family: var(--open-sans);
+  font-size: 1rem;
+  width: 100%;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+i {
+  font-size: 2.25rem;
+  color: white;
+}
+/* header
+--------------------*/
+header {
+  position: sticky;
+  top: 0;
+}
+.header-wrapper {
+  width: 100%;
+  background-color: var(--navy);
+  position: sticky;
+  top: 0;
+}
+.header-container {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.logo {
+  width: 220px;
+  margin: 0;
+}
+.logo img {
+  width: 220px;
+}
+.mobile-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--navy);
+}
+.mobile-menu {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+}
+.mobile-menu ul {
+  margin-top: 0.5rem;
+  padding: 0;
+}
+.mobile-menu ul li {
+  padding-top: 0.5rem;
+  font-size: 1.125rem;
+}
+.mobile-menu ul li a {
+  color: white;
+}
+.menu,
+.media {
+  display: none;
+}
+.social-media {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+/* .menu {
+  font-size: 1.5rem;
+}
+.menu li {
+  margin-left: 3rem;
+}
+.menu li a {
+  color: var(--white);
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+.menu li a:hover {
+  color: var(--gold);
+}
+.media i {
+  margin-left: 2.25rem;
+} */
+
+/* aside */
+aside {
+  color: var(--navy);
+  background-color: var(--light-grey);
+  margin-top: 2rem;
+}
+.aside-container {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.aside-container p {
+  text-align: left;
+}
+h5 {
+  font-family: var(--century-gothic);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--light-blue);
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+}
+.about {
+  width: 200px;
+  margin-left: 0;
+}
+.about img {
+  width: 200px;
+  border-radius: 10px;
+}
+#read-more {
+  font-family: var(--adobe-caslon);
+  text-decoration: underline;
+  font-size: 1.125rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+.aside-input {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  padding: 0.5rem;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+input[placeholder] {
+  font-size: 1rem;
+  color: grey;
+}
+label {
+  font-size: 1rem;
+  text-align: left;
+}
+button {
+  font-family: var(--adobe-caslon);
+  font-size: 1.25rem;
+  background-color: var(--gold);
+  text-decoration: underline;
+  border: none;
+  padding: 0.5rem 2rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px #00000029;
+  transition-property: opacity, box-shadow;
+  transition-duration: 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.75;
+  box-shadow: none;
+}
+.dropdown {
+  width: 100%;
+}
+#categories,
+#archive {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: var(--white);
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+.post-list {
+  font-family: var(--adobe-caslon);
+  text-align: left;
+  font-size: 1.25rem;
+  margin-left: 0;
+  padding-left: 0;
+  text-decoration: underline;
+}
+.post-list li {
+  padding-bottom: 10px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+.error-message {
+  text-align: left;
+  color: red;
+}
+.error-message:before {
+  content: "\002A";
+}
+/* footer
+--------------------*/
+footer {
+  background-color: #4b5f6d;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+footer div {
+  padding: 1rem;
+}
+footer p {
+  margin: 0;
+}
+.far {
+  font-size: 2rem;
+}

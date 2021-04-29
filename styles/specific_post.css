@@ -1,6 +1,5 @@
 @import "imports/common_styles.css";
 
-
 /* main
 --------------------*/
 .breadcrumb {
@@ -23,48 +22,18 @@ section {
 section a {
   margin-top: 2rem;
 }
-#first-post {
-  margin-top: 0;
-}
 h1 {
-  font-family: var(--century-gothic);
-  color: var(--black);
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-h4 {
   font-family: var(--adobe-caslon);
-  font-size: 1.25rem;
-  text-decoration: underline;
-  margin-top: 1rem;
+  color: var(--black);
+  font-size: 1.375rem;
+  font-weight: 400;
   margin-bottom: 1rem;
-  /* background-color: aqua; */
-}
-.line-wrapper {
-  display: flex;
-  align-items: center;
-}
-.line-wrapper div:nth-child(1) {
-  /* background-color: blue; */
-  margin-right: 10px;
-  flex: 1;
-}
-.line-wrapper div:nth-child(3) {
-  /* background-color: blue; */
-  flex: 7;
-  margin-left: 10px;
-}
-hr {
-  height: 1px;
-  background-color: #ccc;
-  border: none;
-  width: 100%;
 }
 .post-text {
-  margin-top: 0;
 }
 .post-container {
   width: 100%;
+  color: var(--black);
 }
 .post-image {
   width: 306px;
@@ -86,4 +55,18 @@ hr {
   margin-right: 5px;
   margin-bottom: 5px;
   text-transform: uppercase;
+}
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  width: 100%;
+}
+em {
+  font-family: var(--century-gothic);
+  font-weight: 500;
+}
+figcaption {
+  display: block;
+  margin-bottom: 1rem;
 }
