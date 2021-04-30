@@ -1,15 +1,66 @@
-@import "variables.css";
+@import "imports/common_styles.css";
 
-@import "global_styles.css";
-
-/* header
---------------------*/
 
 /* main
 --------------------*/
+.breadcrumb {
+  width: 85%;
+  margin: 1rem auto;
+  font-size: 0.875rem;
+}
+.arrow {
+  color: black;
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+section {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-family: var(--century-gothic);
+  color: var(--black);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.line-wrapper {
+  display: flex;
+  align-items: center;
+}
+.line-wrapper div:nth-child(1) {
+  /* background-color: blue; */
+  margin-right: 10px;
+  flex: 1;
+}
+.line-wrapper div:nth-child(3) {
+  /* background-color: blue; */
+  flex: 7;
+  margin-left: 10px;
+}
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+  width: 100%;
+}
+fieldset {
+    background-color: var(--light-blue);
+    border: none;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.contact-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
 
-/* footer
---------------------*/
+}
+textarea {
+    height: 200px;
+}
 
 /* styles that change
 --------------------*/

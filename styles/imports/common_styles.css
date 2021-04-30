@@ -44,8 +44,6 @@ i {
   font-size: 2.25rem;
   color: white;
 }
-/* header
---------------------*/
 header {
   position: sticky;
   top: 0;
@@ -72,6 +70,9 @@ header {
 .logo img {
   width: 220px;
 }
+.menu {
+  display: none;
+}
 .mobile-container {
   display: flex;
   flex-direction: column;
@@ -93,10 +94,6 @@ header {
 }
 .mobile-menu ul li a {
   color: white;
-}
-.menu,
-.media {
-  display: none;
 }
 .social-media {
   font-size: 2rem;
@@ -120,16 +117,19 @@ header {
   margin-left: 2.25rem;
 } */
 
+/* main
+--------------------*/
 /* aside */
 aside {
   color: var(--navy);
   background-color: var(--light-grey);
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 .aside-container {
   width: 85%;
   margin: 0 auto;
   text-align: center;
+  padding-top: 1rem;
   padding-bottom: 3rem;
 }
 .aside-container p {
@@ -142,14 +142,13 @@ h5 {
   text-transform: uppercase;
   background-color: var(--light-blue);
   text-align: center;
-  margin-top: 50px;
   padding: 10px;
 }
-.about {
+.about-image {
   width: 200px;
   margin-left: 0;
 }
-.about img {
+.about-image img {
   width: 200px;
   border-radius: 10px;
 }
@@ -176,6 +175,15 @@ input[placeholder] {
 label {
   font-size: 1rem;
   text-align: left;
+  color: black;
+}
+.error-message {
+  font-size: 0.875rem;
+  text-align: left;
+  color: red;
+}
+.error-message:before {
+  content: "\002A";
 }
 button {
   font-family: var(--adobe-caslon);
@@ -196,18 +204,6 @@ button:hover {
   opacity: 0.75;
   box-shadow: none;
 }
-.dropdown {
-  width: 100%;
-}
-#categories,
-#archive {
-  width: 100%;
-  font-size: 1rem;
-  padding: 0.5rem;
-  background-color: var(--white);
-  border: 2px solid grey;
-  border-radius: 5px;
-}
 .post-list {
   font-family: var(--adobe-caslon);
   text-align: left;
@@ -221,13 +217,19 @@ button:hover {
   list-style-type: disc;
   margin-left: 20px;
 }
-.error-message {
-  text-align: left;
-  color: red;
+.dropdown {
+  width: 100%;
 }
-.error-message:before {
-  content: "\002A";
+#categories,
+#archive {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: var(--white);
+  border: 2px solid grey;
+  border-radius: 5px;
 }
+
 /* footer
 --------------------*/
 footer {
