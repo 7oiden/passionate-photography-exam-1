@@ -1,6 +1,5 @@
 @import "imports/common_styles.css";
 
-
 /* main
 --------------------*/
 .line-wrapper {
@@ -100,6 +99,8 @@ section {
 }
 .post-text {
   margin-top: 0;
+  display: block;
+  max-width: 400px;
 }
 .post-image {
   width: 306px;
@@ -112,7 +113,6 @@ section {
   padding: 0;
 }
 .info-container p {
-  padding-right: 10px;
   color: #5e7c88;
   font-size: 0.875rem;
   font-weight: 800;
@@ -137,13 +137,8 @@ h4 {
   /* background-color: aqua; */
 }
 .post-link {
-  background-color: var(--gold);
-  display: block;
   text-align: center;
-  width: 50%;
-  margin: 2rem auto;
-  border-radius: 5px;
-  padding: 8px 12px;
+  margin: 3rem auto 1rem auto;
 }
 .arrow-wrapper {
   display: flex;
@@ -161,9 +156,6 @@ h4 {
   flex: 1;
   margin-left: 10px;
 }
-/* .fas {
-  color: var(--navy);
-} */
 .circle {
   /* background-color: var(--navy); */
   height: 1rem;
@@ -184,6 +176,33 @@ h4 {
 
 /* styles that change
 --------------------*/
+@media only screen and (min-width: 768px) {
+  .post-wrapper {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    /* background-color: blueviolet; */
+  }
+}
+  @media only screen and (min-width: 1200px) {
+    .content-wrapper {
+      flex-direction: row;
+      width: 85%;
+      /* background-color: chartreuse; */
+    }
+  .featured {
+    margin-right: 2rem;
+    /* background-color: crimson; */
+  }
+  .recent-posts {
+    margin-right: 2rem;
+  }
+  .content-container {
+    flex: 2;
+    /* background-color: darkorange; */
+  }
+}
+@media only screen and (min-width: 1600px) {
 
-@media only screen and (max-width: 1200px) {
+.content-container {
+    flex: 3;
 }

@@ -70,11 +70,12 @@ header {
 .logo img {
   width: 220px;
 }
-.menu {
+nav.menu {
   display: none;
 }
 .mobile-container {
   display: flex;
+  display: none;
   flex-direction: column;
   background-color: var(--navy);
 }
@@ -99,23 +100,6 @@ header {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-/* .menu {
-  font-size: 1.5rem;
-}
-.menu li {
-  margin-left: 3rem;
-}
-.menu li a {
-  color: var(--white);
-  transition-property: color;
-  transition-duration: 0.5s;
-}
-.menu li a:hover {
-  color: var(--gold);
-}
-.media i {
-  margin-left: 2.25rem;
-} */
 
 /* main
 --------------------*/
@@ -127,6 +111,10 @@ aside {
 }
 .aside-container {
   width: 85%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  gap: 50px;
   margin: 0 auto;
   text-align: center;
   padding-top: 1rem;
@@ -152,6 +140,10 @@ h5 {
   width: 200px;
   border-radius: 10px;
 }
+/* #personal-info {
+  display: block;
+  width: 50%;
+} */
 #read-more {
   font-family: var(--adobe-caslon);
   text-decoration: underline;
@@ -185,7 +177,7 @@ label {
 .error-message:before {
   content: "\002A";
 }
-button {
+.button {
   font-family: var(--adobe-caslon);
   font-size: 1.25rem;
   background-color: var(--gold);
@@ -248,4 +240,73 @@ footer p {
 }
 .far {
   font-size: 2rem;
+}
+
+/* styles that change
+--------------------*/
+
+@media only screen and (min-width: 768px) {
+  /* main
+--------------------*/
+  /* aside */
+  .aside-container {
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* header
+--------------------*/
+  .logo {
+    width: 360px;
+  }
+  .logo img {
+    width: 360px;
+  }
+  nav.hamburger-menu {
+    display: none;
+  }
+  nav.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  ul.menu {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  ul.media {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .menu li {
+    margin-left: 3rem;
+  }
+  .menu li a,
+  .media li a i {
+    color: var(--white);
+    transition-property: color;
+    transition-duration: 0.5s;
+  }
+  .menu li a:hover,
+  .media li a i:hover {
+    color: var(--gold);
+  }
+
+  /* main
+--------------------*/
+  /* aside */
+  .aside-container {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+  }
+  aside {
+    flex: 1;
+  }
 }
