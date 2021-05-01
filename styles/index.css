@@ -5,7 +5,6 @@
 .line-wrapper {
   display: flex;
   align-items: center;
-  margin-top: 2rem;
 }
 .line-wrapper div:nth-child(1) {
   /* background-color: blue; */
@@ -29,6 +28,7 @@ main {
   background-image: url("../images/main_background_image_mobile.jpg");
   background-size: contain;
   margin-top: 0;
+  margin-bottom: 2rem;
   text-align: center;
   height: 670px;
 }
@@ -76,19 +76,15 @@ h1 {
   margin: 0 auto;
 }
 section {
-  /* background-color: greenyellow; */
+  padding-bottom: 3rem;
 }
 .feature-wrapper {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .feature-image {
-  margin: 0 16px 0 0;
-  width: 306px;
-  height: 188px;
-}
-.feature-image img {
+  margin: 0 2rem 0 0;
   width: 306px;
   height: 188px;
 }
@@ -106,7 +102,7 @@ section {
 .post-image {
   width: 306px;
   height: 188px;
-  margin: 0;
+  margin: 0 0 1rem 0;
 }
 .info-container {
   display: flex;
@@ -174,14 +170,23 @@ h4 {
   margin-left: 1rem;
   color: var(--navy);
 }
-
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 768px) {
+  .feature-wrapper {
+    flex-direction: row;
+  }
   .post-wrapper {
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto;
     /* background-color: blueviolet; */
+  }
+  h2,
+  h3 {
+    font-size: 1.375rem;
+  }
+  h4 {
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -194,15 +199,18 @@ h4 {
     font-size: 3.75rem;
   }
   .quote p {
-  font-size: 1.875rem;
-}
-.quote p:nth-child(1):before {
-  font-size: 3rem;
-}
-.quote p:nth-child(3) {
-  font-size: 1.5rem;
- 
-}
+    font-size: 1.875rem;
+  }
+  .quote p:nth-child(1):before {
+    font-size: 3rem;
+  }
+  .quote p:nth-child(3) {
+    font-size: 1.5rem;
+  }
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
   .featured {
     margin-right: 2rem;
     /* background-color: crimson; */
@@ -218,5 +226,19 @@ h4 {
 @media only screen and (min-width: 1600px) {
   .content-container {
     flex: 3;
+  }
+  .feature-image {
+    width: 524px;
+    height: 324px;
+  }
+  .post-image {
+    width: 492px;
+    height: 304px;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  .info-container p {
+    font-size: 1.125rem;
   }
 }

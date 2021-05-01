@@ -55,8 +55,10 @@ hr {
 fieldset {
   background-color: var(--light-blue);
   border: none;
+  margin-bottom: 2rem;
   padding: 1rem 1rem 3rem 1rem;
   text-align: center;
+  max-width: 500px;
 }
 .contact-input {
   display: flex;
@@ -73,10 +75,13 @@ textarea {
   section {
     width: 75%;
   }
+  h1 {
+    font-size: 1.35rem;
+  }
   fieldset {
-  padding: 1rem 3rem 3rem 3rem;
-  text-align: center;
-}
+    padding: 1rem 3rem 3rem 3rem;
+    text-align: center;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .content-wrapper {
@@ -88,6 +93,9 @@ textarea {
   section {
     flex: 2;
     margin-right: 4rem;
+  }
+  h1 {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1600px) {

@@ -41,7 +41,7 @@ a {
   color: var(--black);
 }
 i {
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: white;
 }
 header {
@@ -75,7 +75,7 @@ nav.menu {
 }
 .mobile-container {
   display: flex;
-  display: none;
+  display: block;
   flex-direction: column;
   background-color: var(--navy);
 }
@@ -107,14 +107,13 @@ nav.menu {
 aside {
   color: var(--navy);
   background-color: var(--light-grey);
-  margin-top: 3rem;
 }
 .aside-container {
   width: 85%;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto;
-  gap: 50px;
+  gap: 2rem;
   margin: 0 auto;
   text-align: center;
   padding-top: 1rem;
@@ -140,16 +139,17 @@ h5 {
   width: 200px;
   border-radius: 10px;
 }
-/* #personal-info {
-  display: block;
-  width: 50%;
-} */
+#personal-info {
+  max-width: 300px;
+}
 #read-more {
+  display: block;
   font-family: var(--adobe-caslon);
   text-decoration: underline;
   font-size: 1.125rem;
   margin-top: 0;
   padding-top: 0;
+  /* padding-bottom: 28px; */
 }
 .aside-input {
   display: flex;
@@ -252,12 +252,18 @@ footer p {
   .aside-container {
     grid-template-rows: auto;
     grid-template-columns: auto auto;
+    gap: 4rem;
+  }
+  h5 {
+    font-size: 1.25;
   }
 }
-
 @media only screen and (min-width: 1200px) {
   /* header
 --------------------*/
+  .mobile-container {
+    display: none;
+  }
   .logo {
     width: 360px;
   }
@@ -275,7 +281,7 @@ footer p {
   ul.menu {
     display: flex;
     justify-content: flex-end;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: right;
     margin-top: 0.5rem;
     margin-bottom: 0;
@@ -302,6 +308,9 @@ footer p {
   /* main
 --------------------*/
   /* aside */
+  aside {
+    margin-left: 2rem;
+  }
   .aside-container {
     grid-template-rows: auto auto;
     grid-template-columns: auto;

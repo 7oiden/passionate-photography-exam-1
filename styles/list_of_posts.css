@@ -74,7 +74,6 @@ hr {
 .post-container {
   width: 100%;
 }
-
 .post-image {
   width: 306px;
   height: 188px;
@@ -100,6 +99,9 @@ hr {
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 1.375rem;
+  }
   .post-wrapper {
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -109,6 +111,9 @@ hr {
   }
 }
 @media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 1.5rem;
+  }
   .content-wrapper {
     width: 85%;
     flex-direction: row;
@@ -120,7 +125,20 @@ hr {
   }
 }
 @media only screen and (min-width: 1600px) {
-  section {
-    flex: 3;
+  .content-wrapper {
+    width: 75%;
+  }
+  .post-wrapper {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    gap: 25px;
+    /* background-color: darkorange; */
+  }
+  .post-image {
+    width: 524px;
+    height: 324px;
+  }
+  .post-text {
+    max-width: 500px;
   }
 }

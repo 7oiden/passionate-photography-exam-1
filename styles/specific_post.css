@@ -20,6 +20,20 @@
   display: flex;
   flex-direction: column;
 }
+.line-wrapper {
+  display: flex;
+  align-items: center;
+}
+.line-wrapper div:nth-child(1) {
+  /* background-color: blue; */
+  margin-right: 10px;
+  flex: 1;
+}
+.line-wrapper div:nth-child(3) {
+  /* background-color: blue; */
+  flex: 7;
+  margin-left: 10px;
+}
 section {
   width: 85%;
   margin: 0 auto;
@@ -30,11 +44,18 @@ section a {
   margin-top: 2rem;
 }
 h1 {
+  font-family: var(--century-gothic);
+  color: var(--black);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+h2 {
   font-family: var(--adobe-caslon);
   color: var(--black);
   font-size: 1.375rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
 }
 .post-text {
 }
@@ -84,6 +105,16 @@ figcaption {
   section {
     width: 75%;
   }
+  .post-image {
+    width: 524px;
+    height: 324px;
+  }
+  h1 {
+    font-size: 1.375rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .content-wrapper {
@@ -95,6 +126,15 @@ figcaption {
   section {
     flex: 2;
     margin-right: 4rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.875rem;
+  }
+  .info-container p {
+    font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1600px) {

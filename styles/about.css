@@ -36,7 +36,7 @@
 }
 section {
   width: 85%;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   display: flex;
   flex-direction: column;
 }
@@ -49,15 +49,16 @@ h1 {
   font-size: 1.25rem;
   font-weight: 400;
 }
-
 h2 {
   font-family: var(--adobe-caslon);
   color: var(--black);
   font-size: 1.25rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
 }
 .post-text {
+  max-width: 400px;
 }
 .post-container {
   width: 100%;
@@ -88,6 +89,19 @@ figcaption {
   section {
     width: 75%;
   }
+  h1 {
+    font-size: 1.375rem;
+  }
+  h2 {
+    font-size: 1.375rem;
+  }
+  .post-image {
+    width: 524px;
+    height: 324px;
+  }
+  .post-text {
+    max-width: 500px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .content-wrapper {
@@ -99,6 +113,12 @@ figcaption {
   section {
     flex: 2;
     margin-right: 4rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1600px) {
