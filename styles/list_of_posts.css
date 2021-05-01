@@ -13,14 +13,15 @@
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 section {
   width: 85%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-section a {
-  margin-top: 2rem;
 }
 #first-post {
   margin-top: 0;
@@ -59,12 +60,18 @@ hr {
   border: none;
   width: 100%;
 }
+.divider {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 .post-text {
   margin-top: 0;
+  max-width: 300px;
 }
 .post-container {
   width: 100%;
 }
+
 .post-image {
   width: 306px;
   height: 188px;
@@ -85,4 +92,27 @@ hr {
   margin-right: 5px;
   margin-bottom: 5px;
   text-transform: uppercase;
+}
+
+/* styles that change
+--------------------*/
+@media only screen and (min-width: 768px) {
+  .post-wrapper {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    gap: 25px;
+    /* background-color: darkorange; */
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    width: 85%;
+    flex-direction: row;
+    margin: 0 auto;
+    /* background-color: blueviolet; */
+  }
+  section {
+    flex: 2;
+  }
 }
