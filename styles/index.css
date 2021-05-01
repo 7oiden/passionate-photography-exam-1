@@ -33,14 +33,15 @@ main {
   height: 670px;
 }
 h1 {
+  display: inline-block;
   background-color: var(--gold);
   font-family: var(--adobe-caslon);
-  width: 80%;
   font-size: 2rem;
   font-weight: 400;
   color: var(--black);
   display: inline-block;
   margin-top: 5rem;
+  max-width: 85%;
   padding: 20px 30px;
 }
 .quote {
@@ -189,6 +190,19 @@ h4 {
     width: 85%;
     /* background-color: chartreuse; */
   }
+  h1 {
+    font-size: 3.75rem;
+  }
+  .quote p {
+  font-size: 1.875rem;
+}
+.quote p:nth-child(1):before {
+  font-size: 3rem;
+}
+.quote p:nth-child(3) {
+  font-size: 1.5rem;
+ 
+}
   .featured {
     margin-right: 2rem;
     /* background-color: crimson; */

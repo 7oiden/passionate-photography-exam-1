@@ -1,6 +1,5 @@
 @import "imports/common_styles.css";
 
-
 /* main
 --------------------*/
 .breadcrumb {
@@ -13,6 +12,13 @@
   font-size: 0.875rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+.current {
+  font-weight: bold;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 section {
   width: 85%;
@@ -47,20 +53,45 @@ hr {
   width: 100%;
 }
 fieldset {
-    background-color: var(--light-blue);
-    border: none;
-    padding-bottom: 3rem;
-    text-align: center;
+  background-color: var(--light-blue);
+  border: none;
+  padding: 1rem 1rem 3rem 1rem;
+  text-align: center;
 }
 .contact-input {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-
 }
 textarea {
-    height: 200px;
+  height: 200px;
 }
 
 /* styles that change
 --------------------*/
+@media only screen and (min-width: 768px) {
+  section {
+    width: 75%;
+  }
+  fieldset {
+  padding: 1rem 3rem 3rem 3rem;
+  text-align: center;
+}
+}
+@media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    width: 85%;
+    flex-direction: row;
+    margin: 0 auto;
+    /* background-color: blueviolet; */
+  }
+  section {
+    flex: 2;
+    margin-right: 4rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  section {
+    flex: 3;
+  }
+}

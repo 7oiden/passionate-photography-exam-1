@@ -13,6 +13,13 @@
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+.current {
+  font-weight: bold;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .line-wrapper {
   display: flex;
   align-items: center;
@@ -74,4 +81,28 @@ em {
 figcaption {
   display: block;
   margin-bottom: 1rem;
+}
+/* styles that change
+--------------------*/
+@media only screen and (min-width: 768px) {
+  section {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    width: 85%;
+    flex-direction: row;
+    margin: 0 auto;
+    /* background-color: blueviolet; */
+  }
+  section {
+    flex: 2;
+    margin-right: 4rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  section {
+    flex: 3;
+  }
 }

@@ -310,3 +310,9 @@ footer p {
     flex: 1;
   }
 }
+@media only screen and (min-width: 1600px) {
+  nav.menu {
+    flex-direction: row;
+    align-items: center;
+  }
+}
