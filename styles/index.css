@@ -2,25 +2,7 @@
 
 /* main
 --------------------*/
-.line-wrapper {
-  display: flex;
-  align-items: center;
-}
-.line-wrapper div:nth-child(1) {
-  /* background-color: blue; */
-  margin-right: 10px;
-  flex: 1;
-}
-.line-wrapper div:nth-child(3) {
-  /* background-color: blue; */
-  flex: 7;
-  margin-left: 10px;
-}
-hr {
-  height: 1px;
-  background-color: #ccc;
-  border: none;
-}
+
 main {
   margin: 0 auto;
 }
@@ -93,6 +75,11 @@ section {
   grid-template-rows: auto auto auto auto;
   grid-template-columns: auto;
   gap: 25px;
+}
+.post-container {
+  margin: 0 auto;
+  max-width: 306px;
+  /* background-color: aqua; */
 }
 .post-text {
   margin-top: 0;
@@ -226,6 +213,10 @@ h4 {
 @media only screen and (min-width: 1600px) {
   .content-container {
     flex: 3;
+  }
+  .post-container {
+    margin: 0 auto;
+    max-width: 1000px;
   }
   .feature-image {
     width: 524px;

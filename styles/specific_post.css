@@ -2,37 +2,10 @@
 
 /* main
 --------------------*/
-.breadcrumb {
-  width: 85%;
-  margin: 1rem auto;
-  font-size: 0.875rem;
-}
-.arrow {
-  color: black;
-  font-size: 0.875rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.current {
-  font-weight: bold;
-}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
-}
-.line-wrapper {
-  display: flex;
-  align-items: center;
-}
-.line-wrapper div:nth-child(1) {
-  /* background-color: blue; */
-  margin-right: 10px;
-  flex: 1;
-}
-.line-wrapper div:nth-child(3) {
-  /* background-color: blue; */
-  flex: 7;
-  margin-left: 10px;
 }
 section {
   width: 85%;
@@ -56,8 +29,6 @@ h2 {
   font-weight: 400;
   margin-bottom: 0.5rem;
   text-decoration: underline;
-}
-.post-text {
 }
 .post-container {
   width: 100%;
@@ -136,9 +107,19 @@ figcaption {
   .info-container p {
     font-size: 1.125rem;
   }
+  .post-text {
+    max-width: 600px;
+  }
 }
 @media only screen and (min-width: 1600px) {
   section {
     flex: 3;
+  }
+  .post-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .post-text {
+    max-width: 800px;
   }
 }

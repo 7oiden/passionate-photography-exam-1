@@ -103,10 +103,51 @@ nav.menu {
 
 /* main
 --------------------*/
+/* breadcrumb */
+.breadcrumb {
+  width: 85%;
+  margin: 1rem auto;
+  font-size: 0.875rem;
+}
+.breadcrumb div {
+  color: var(--navy);
+}
+.arrow {
+  color: var(--navy);
+  font-size: 0.875rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.current {
+  font-weight: bold;
+  color: var(--navy);
+}
+/* headline wrapper */
+.line-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.line-wrapper div:nth-child(1) {
+  /* background-color: blue; */
+  margin-right: 10px;
+  flex: 1;
+}
+.line-wrapper div:nth-child(3) {
+  /* background-color: blue; */
+  flex: 7;
+  margin-left: 10px;
+}
+hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
 /* aside */
 aside {
   color: var(--navy);
   background-color: var(--light-grey);
+  border-radius: 0 20px 20px 0;
 }
 .aside-container {
   width: 85%;
@@ -196,6 +237,14 @@ button:hover {
   opacity: 0.75;
   box-shadow: none;
 }
+.subscribe-message {
+  color: green;
+}
+.subscribe-message:before {
+  content: "\2713";
+  font-size: 2rem;
+  margin-right: 3px;
+}
 .post-list {
   font-family: var(--adobe-caslon);
   text-align: left;
@@ -230,6 +279,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
   margin-bottom: 0;
 }
 footer div {
@@ -244,11 +294,20 @@ footer p {
 
 /* styles that change
 --------------------*/
+@media only screen and (min-width: 576px) {
+  aside {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   /* main
 --------------------*/
   /* aside */
+  aside {
+    width: 100%;
+  }
   .aside-container {
     grid-template-rows: auto;
     grid-template-columns: auto auto;
@@ -307,6 +366,13 @@ footer p {
 
   /* main
 --------------------*/
+  .breadcrumb {
+    font-size: 1rem;
+  }
+  .arrow {
+    color: var(--navy);
+    font-size: 1rem;
+  }
   /* aside */
   aside {
     margin-left: 2rem;

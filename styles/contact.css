@@ -2,20 +2,7 @@
 
 /* main
 --------------------*/
-.breadcrumb {
-  width: 85%;
-  margin: 1rem auto;
-  font-size: 0.875rem;
-}
-.arrow {
-  color: black;
-  font-size: 0.875rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.current {
-  font-weight: bold;
-}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -32,33 +19,14 @@ h1 {
   font-size: 1.25rem;
   font-weight: 400;
 }
-.line-wrapper {
-  display: flex;
-  align-items: center;
-}
-.line-wrapper div:nth-child(1) {
-  /* background-color: blue; */
-  margin-right: 10px;
-  flex: 1;
-}
-.line-wrapper div:nth-child(3) {
-  /* background-color: blue; */
-  flex: 7;
-  margin-left: 10px;
-}
-hr {
-  height: 1px;
-  background-color: #ccc;
-  border: none;
-  width: 100%;
-}
 fieldset {
   background-color: var(--light-blue);
   border: none;
   margin-bottom: 2rem;
   padding: 1rem 1rem 3rem 1rem;
   text-align: center;
-  max-width: 500px;
+  max-width: 524px;
+  margin: 0 auto;
 }
 .contact-input {
   display: flex;
@@ -101,5 +69,8 @@ textarea {
 @media only screen and (min-width: 1600px) {
   section {
     flex: 3;
+  }
+  fieldset {
+    margin: 0 auto;
   }
 }

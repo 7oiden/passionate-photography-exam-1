@@ -2,37 +2,10 @@
 
 /* main
 --------------------*/
-.breadcrumb {
-  width: 85%;
-  margin: 1rem auto;
-  font-size: 0.875rem;
-}
-.arrow {
-  color: black;
-  font-size: 0.875rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.current {
-  font-weight: bold;
-}
+
 .content-wrapper {
   display: flex;
   flex-direction: column;
-}
-.line-wrapper {
-  display: flex;
-  align-items: center;
-}
-.line-wrapper div:nth-child(1) {
-  /* background-color: blue; */
-  margin-right: 10px;
-  flex: 1;
-}
-.line-wrapper div:nth-child(3) {
-  /* background-color: blue; */
-  flex: 7;
-  margin-left: 10px;
 }
 section {
   width: 85%;
@@ -61,8 +34,9 @@ h2 {
   max-width: 400px;
 }
 .post-container {
-  width: 100%;
+  max-width: 306px;
   color: var(--black);
+  margin: 0 auto;
 }
 .post-image {
   width: 306px;
@@ -87,13 +61,15 @@ figcaption {
 --------------------*/
 @media only screen and (min-width: 768px) {
   section {
-    width: 75%;
   }
   h1 {
     font-size: 1.375rem;
   }
   h2 {
     font-size: 1.375rem;
+  }
+  .post-container {
+    max-width: 524px;
   }
   .post-image {
     width: 524px;
@@ -120,9 +96,17 @@ figcaption {
   h2 {
     font-size: 1.5rem;
   }
+  .post-text {
+    max-width: 600px;
+  }
 }
 @media only screen and (min-width: 1600px) {
   section {
     flex: 3;
+  }
+  .post-container {
+    margin: 0 auto;
+  }
+  .post-text {
   }
 }
