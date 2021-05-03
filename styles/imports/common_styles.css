@@ -197,10 +197,14 @@ h5 {
   flex-direction: column;
 }
 .input {
-  color: var(--black);
+  color: var(--navy);
   padding: 0.5rem;
   border: 2px solid gray;
   border-radius: 5px;
+  outline: none;
+}
+.input:focus {
+  border-color: var(--gold);
 }
 input[placeholder] {
   font-size: 1rem;
@@ -228,7 +232,7 @@ label {
   text-decoration: underline;
   border: none;
   padding: 0.5rem 2rem;
-  margin: 1rem 4rem 0 4rem;
+  margin: 1rem auto;
   border-radius: 5px;
   box-shadow: 0 3px 6px #00000029;
   transition-property: opacity, box-shadow;

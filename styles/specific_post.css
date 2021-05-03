@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
 }
-section {
+.blog-wrapper {
   width: 85%;
   margin: 0 auto;
   display: flex;
@@ -16,7 +16,8 @@ section {
 section a {
   margin-top: 2rem;
 }
-h1 {
+h1,
+h3 {
   font-family: var(--century-gothic);
   color: var(--black);
   font-size: 1.25rem;
@@ -69,11 +70,37 @@ figcaption {
   display: block;
   margin-bottom: 1rem;
 }
-
+.comments {
+  margin-bottom: 2rem;
+}
+.comment-container {
+  display: flex;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.comment-image {
+  width: 100px;
+  margin: 0 1rem 0 0;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+.comment-text {
+  margin: 0;
+}
+#comment-line {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  /* background-color: blueviolet; */
+}
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 768px) {
-  section {
+  .blog-wrapper {
     width: 75%;
   }
   .post-image {
@@ -94,7 +121,7 @@ figcaption {
     margin: 0 auto;
     /* background-color: blueviolet; */
   }
-  section {
+  .blog-wrapper {
     flex: 2;
     margin-right: 4rem;
   }
@@ -112,12 +139,13 @@ figcaption {
   }
 }
 @media only screen and (min-width: 1600px) {
-  section {
+  .blog-wrapper {
     flex: 3;
   }
-  .post-container {
+  section {
     width: 70%;
     margin: 0 auto;
+    /* background-color: blueviolet; */
   }
   .post-text {
     max-width: 800px;

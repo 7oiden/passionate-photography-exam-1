@@ -19,12 +19,11 @@ const newsletterForm = document.querySelector("#newsletter-form");
 const subscribeMessage = document.querySelector(".subscribe-message");
 const subscribeButton = document.querySelector("#subscribe-button");
 const newsletterEmail = document.querySelector("#newsletter-email");
-
 const emailError = document.querySelector("#email-error");
 
 function checkInput() {
   if (validateEmail(newsletterEmail.value)) {
-    emailError.style.display = "none";
+    emailError.style.visibility = "hidden";
   }
 }
 

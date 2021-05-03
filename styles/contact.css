@@ -9,7 +9,7 @@
 }
 section {
   width: 85%;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   display: flex;
   flex-direction: column;
 }
@@ -19,36 +19,57 @@ h1 {
   font-size: 1.25rem;
   font-weight: 400;
 }
-fieldset {
+#contact-form {
   background-color: var(--light-blue);
   border: none;
   margin-bottom: 2rem;
-  padding: 1rem 1rem 3rem 1rem;
+  padding-right: 7.5%;
+  padding-left: 7.5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
-  max-width: 524px;
   margin: 0 auto;
+  width: 100%;
 }
 .contact-input {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 textarea {
   height: 200px;
+  font-family: var(--open-sans);
+  font-size: 1rem;
+}
+#first-name-error,
+#last-name-error,
+#contact-email-error,
+#message-error {
+  visibility: hidden;
+}
+#success-message {
+  color: green;
+}
+#success-message:before {
+  content: "\2713";
+  font-size: 1.5rem;
+  margin-right: 3px;
 }
 
 /* styles that change
 --------------------*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   section {
-    width: 75%;
+    width: 70%;
   }
+  #contact-form {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+@media only screen and (min-width: 768px) {
   h1 {
     font-size: 1.35rem;
-  }
-  fieldset {
-    padding: 1rem 3rem 3rem 3rem;
-    text-align: center;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -65,12 +86,18 @@ textarea {
   h1 {
     font-size: 1.5rem;
   }
+  #contact-form {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
 }
 @media only screen and (min-width: 1600px) {
   section {
     flex: 3;
   }
-  fieldset {
-    margin: 0 auto;
+  #contact-form {
+    width: 70%;
+    padding-right: 10%;
+    padding-left: 10%;
   }
 }

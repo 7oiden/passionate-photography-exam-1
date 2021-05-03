@@ -84,8 +84,8 @@
             <h1>Contact</h1>
             <div><hr /></div>
           </div>
-          <fieldset>
-            <form class="contact-input" action="">
+          <form id="contact-form">
+            <div class="contact-input">
               <label for="first-name">First Name</label>
               <input
                 class="input"
@@ -94,11 +94,11 @@
                 id="first-name"
                 placeholder="First name"
               />
-            </form>
+            </div>
             <div class="error-message" id="first-name-error">
               Must be at least 2 characters
             </div>
-            <form class="contact-input" action="">
+            <div class="contact-input">
               <label for="first-name">Last Name</label>
               <input
                 class="input"
@@ -107,37 +107,41 @@
                 id="last-name"
                 placeholder="Last name"
               />
-            </form>
+            </div>
             <div class="error-message" id="last-name-error">
               Must be at least 2 characters
             </div>
-            <form class="contact-input" action="">
+            <div class="contact-input">
               <label for="first-name">E-mail</label>
               <input
                 class="input"
                 type="text"
-                name="last-name"
+                name="email"
                 id="contact-email"
                 placeholder="your@email.com"
               />
-            </form>
-            <div class="error-message" id="email-error">
+            </div>
+            <div class="error-message" id="contact-email-error">
               Please enter a valid e-mail adress
             </div>
-            <form class="contact-input" action="">
+            <div class="contact-input">
               <label for="message">Comment or message</label>
               <textarea class="input" name="" id="message"></textarea>
-            </form>
-            <div class="error-message" id="text-error">
+            </div>
+            <div class="error-message" id="message-error">
               Please enter a message
             </div>
-            <button type="submit" class="button" id="subscribe-button">Submit</button>
-            <div id="subscribe-message">
-              <!-- <p class="subscribe-message">
-                  Welcome! Please check your inbox
-                </p> -->
-            </div>
-          </fieldset>
+            <button
+              type="submit"
+              class="button"
+              id="contact-button"
+              name="contact"
+              value="contact"
+            >
+              Submit
+            </button>
+            <div class="success-message"></div>
+          </form>
         </section>
 
         <!-- aside -->
@@ -159,21 +163,29 @@
               <p><a href="about.html" id="read-more">Read more</a></p>
 
               <h5>Become a subscriber</h5>
-              <form class="aside-input" action="">
+              <form method="get" class="aside-input" id="newsletter-form">
                 <label id="label" for="email">E-mail:</label>
                 <input
                   class="input"
+                  id="newsletter-email"
                   type="text"
                   name="email"
-                  id="email"
                   placeholder="your@email.com"
                 />
+                <div class="error-message" id="email-error">
+                  Please enter a valid e-mail adress
+                </div>
+                <button
+                  type="submit"
+                  class="button"
+                  id="subscribe-button"
+                  name="subscribe"
+                  value="subscribe"
+                >
+                  Subscribe
+                </button>
               </form>
-              <div class="error-message" id="email-error">
-                Please enter a valid e-mail adress
-              </div>
-              <button class="button">Subscribe</button>
-              <p class="subscribe-message">Welcome! Please check your inbox</p>
+              <div class="subscribe-message"></div>
             </div>
             <div>
               <h5>Spesific search</h5>
@@ -237,5 +249,6 @@
       </div>
     </footer>
     <script src="js/common_scripts.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

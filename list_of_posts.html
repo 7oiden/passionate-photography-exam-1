@@ -215,25 +215,29 @@
               <p><a href="about.html" id="read-more">Read more</a></p>
 
               <h5>Become a subscriber</h5>
-              <form class="aside-input" action="">
+              <form method="get" class="aside-input" id="newsletter-form">
                 <label id="label" for="email">E-mail:</label>
                 <input
                   class="input"
+                  id="newsletter-email"
                   type="text"
                   name="email"
-                  id="email"
                   placeholder="your@email.com"
                 />
+                <div class="error-message" id="email-error">
+                  Please enter a valid e-mail adress
+                </div>
+                <button
+                  type="submit"
+                  class="button"
+                  id="subscribe-button"
+                  name="subscribe"
+                  value="subscribe"
+                >
+                  Subscribe
+                </button>
               </form>
-              <div class="error-message" id="email-error">
-                Please enter a valid e-mail adress
-              </div>
-              <button type="submit" class="button" id="subscribe-button">Subscribe</button>
-              <div id="subscribe-message">
-                <!-- <p class="subscribe-message">
-                  Welcome! Please check your inbox
-                </p> -->
-              </div>
+              <div class="subscribe-message"></div>
             </div>
             <div>
               <h5>Spesific search</h5>
