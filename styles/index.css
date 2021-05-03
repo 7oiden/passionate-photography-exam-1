@@ -27,7 +27,7 @@ h1 {
   padding: 20px 30px;
 }
 .quote {
-  margin-top: 300px;
+  margin-top: 240px;
 }
 .quote p {
   display: block;
@@ -177,6 +177,9 @@ h4 {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .main-container {
+    background-image: url("../images/main_background_image.jpg");
+  }
   .content-wrapper {
     flex-direction: row;
     width: 85%;

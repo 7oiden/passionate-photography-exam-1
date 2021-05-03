@@ -81,7 +81,7 @@ nav.menu {
 }
 .mobile-menu {
   margin: 0 auto;
-  display: flex;
+  display: none;
   justify-content: space-between;
   width: 85%;
 }
@@ -99,6 +99,9 @@ nav.menu {
 .social-media {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+#hamburger-menu {
+  cursor: pointer;
 }
 
 /* main
@@ -147,17 +150,14 @@ hr {
 aside {
   color: var(--navy);
   background-color: var(--light-grey);
-  border-radius: 0 20px 20px 0;
 }
 .aside-container {
   width: 85%;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto;
-  gap: 2rem;
   margin: 0 auto;
   text-align: center;
-  padding-top: 1rem;
   padding-bottom: 3rem;
 }
 .aside-container p {
@@ -197,13 +197,13 @@ h5 {
   flex-direction: column;
 }
 .input {
+  color: var(--black);
   padding: 0.5rem;
   border: 2px solid gray;
   border-radius: 5px;
 }
 input[placeholder] {
   font-size: 1rem;
-  color: grey;
 }
 label {
   font-size: 1rem;
@@ -218,6 +218,9 @@ label {
 .error-message:before {
   content: "\002A";
 }
+#email-error {
+  visibility: hidden;
+}
 .button {
   font-family: var(--adobe-caslon);
   font-size: 1.25rem;
@@ -225,7 +228,7 @@ label {
   text-decoration: underline;
   border: none;
   padding: 0.5rem 2rem;
-  margin-top: 2rem;
+  margin: 1rem 4rem 0 4rem;
   border-radius: 5px;
   box-shadow: 0 3px 6px #00000029;
   transition-property: opacity, box-shadow;
@@ -239,10 +242,11 @@ button:hover {
 }
 .subscribe-message {
   color: green;
+  margin: 0;
 }
-.subscribe-message:before {
+#subscribe-message:before {
   content: "\2713";
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 3px;
 }
 .post-list {
@@ -260,6 +264,7 @@ button:hover {
 }
 .dropdown {
   width: 100%;
+  margin-bottom: 3rem;
 }
 #categories,
 #archive {
@@ -311,7 +316,7 @@ footer p {
   .aside-container {
     grid-template-rows: auto;
     grid-template-columns: auto auto;
-    gap: 4rem;
+    gap: 3rem;
   }
   h5 {
     font-size: 1.25;
@@ -329,7 +334,7 @@ footer p {
   .logo img {
     width: 360px;
   }
-  nav.hamburger-menu {
+  #hamburger-menu {
     display: none;
   }
   nav.menu {
@@ -380,6 +385,7 @@ footer p {
   .aside-container {
     grid-template-rows: auto auto;
     grid-template-columns: auto;
+    gap: 0;
   }
   aside {
     flex: 1;

@@ -23,7 +23,7 @@
               <img src="images/logo.png" alt="" />
             </a>
           </figure>
-          <nav class="hamburger-menu"><i class="fas fa-bars"></i></nav>
+          <nav id="hamburger-menu"><i class="fas fa-bars"></i></nav>
           <!-- large screen menu -->
           <nav class="menu">
             <ul class="menu">
@@ -244,7 +244,7 @@
         <aside>
           <div class="aside-container">
             <div>
-              <h5>About me</h5>
+              <h5 class="top-h5">About me</h5>
               <figure class="about-image">
                 <img
                   src="images/cristopher.png"
@@ -259,21 +259,34 @@
               <p><a href="about.html" id="read-more">Read more</a></p>
 
               <h5>Become a subscriber</h5>
-              <form class="aside-input" action="">
+              <form method="get" class="aside-input" id="newsletter-form">
                 <label id="label" for="email">E-mail:</label>
                 <input
                   class="input"
+                  id="newsletter-email"
                   type="text"
                   name="email"
-                  id="email"
                   placeholder="your@email.com"
                 />
+                <div class="error-message" id="email-error">
+                  Please enter a valid e-mail adress
+                </div>
+                <button
+                  type="submit"
+                  class="button"
+                  id="subscribe-button"
+                  name="subscribe"
+                  value="subscribe"
+                >
+                  Subscribe
+                </button>
               </form>
-              <div class="error-message" id="email-error">
-                Please enter a valid e-mail adress
+
+              <div class="subscribe-message">
+                <!-- <p class="subscribe-message">
+                  Welcome! Please check your inbox
+                </p> -->
               </div>
-              <button class="button">Subscribe</button>
-              <p class="subscribe-message">Welcome! Please check your inbox</p>
             </div>
             <div>
               <h5>Spesific search</h5>
@@ -337,6 +350,6 @@
         <p>Christopher Duvall - 2021</p>
       </div>
     </footer>
-    <script src=""></script>
+    <script src="js/common_scripts.js"></script>
   </body>
 </html>

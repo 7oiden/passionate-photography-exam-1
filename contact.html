@@ -22,7 +22,7 @@
               <img src="images/logo.png" alt="" />
             </a>
           </figure>
-          <nav class="hamburger-menu"><i class="fas fa-bars"></i></nav>
+          <nav id="hamburger-menu"><i class="fas fa-bars"></i></nav>
           <!-- large screen menu -->
           <nav class="menu">
             <ul class="menu">
@@ -131,10 +131,12 @@
             <div class="error-message" id="text-error">
               Please enter a message
             </div>
-            <button class="button">Submit</button>
-            <p class="subscribe-message">
-              Your message has been submitted successfully
-            </p>
+            <button type="submit" class="button" id="subscribe-button">Submit</button>
+            <div id="subscribe-message">
+              <!-- <p class="subscribe-message">
+                  Welcome! Please check your inbox
+                </p> -->
+            </div>
           </fieldset>
         </section>
 
@@ -142,7 +144,7 @@
         <aside>
           <div class="aside-container">
             <div>
-              <h5>About me</h5>
+              <h5 class="top-h5">About me</h5>
               <figure class="about-image">
                 <img
                   src="images/cristopher.png"
@@ -234,6 +236,6 @@
         <p>Christopher Duvall - 2021</p>
       </div>
     </footer>
-    <script src=""></script>
+    <script src="js/common_scripts.js"></script>
   </body>
 </html>

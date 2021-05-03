@@ -19,11 +19,11 @@
       <div class="header-wrapper">
         <div class="header-container">
           <figure class="logo">
-            <a href="#">
+            <a href="index.html">
               <img src="images/logo.png" alt="" />
             </a>
           </figure>
-          <nav class="hamburger-menu"><i class="fas fa-bars"></i></nav>
+          <nav id="hamburger-menu"><i class="fas fa-bars"></i></nav>
           <!-- large screen menu -->
           <nav class="menu">
             <ul class="menu">
@@ -113,7 +113,7 @@
         <aside>
           <div class="aside-container">
             <div>
-              <h5>About me</h5>
+              <h5 class="top-h5">About me</h5>
               <figure class="about-image">
                 <img
                   src="images/cristopher.png"
@@ -141,8 +141,12 @@
               <div class="error-message" id="email-error">
                 Please enter a valid e-mail adress
               </div>
-              <button class="button">Subscribe</button>
-              <p class="subscribe-message">Welcome! Please check your inbox</p>
+              <button type="submit" class="button" id="subscribe-button">Subscribe</button>
+              <div id="subscribe-message">
+                <!-- <p class="subscribe-message">
+                  Welcome! Please check your inbox
+                </p> -->
+              </div>
             </div>
             <div>
               <h5>Spesific search</h5>
@@ -206,6 +210,6 @@
         <p>Christopher Duvall - 2021</p>
       </div>
     </footer>
-    <script src=""></script>
+    <script src="js/common_scripts.js"></script>
   </body>
 </html>
