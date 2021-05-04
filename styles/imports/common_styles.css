@@ -33,6 +33,8 @@ body {
   width: 100%;
   margin: 0;
 }
+/* header
+--------------------*/
 li {
   list-style: none;
 }
@@ -47,6 +49,7 @@ i {
 header {
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 .header-wrapper {
   width: 100%;
@@ -305,6 +308,9 @@ footer p {
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 576px) {
+  /* main
+--------------------*/
+  /* aside */
   aside {
     width: 70%;
     margin: 0 auto;
@@ -363,14 +369,21 @@ footer p {
   .menu li {
     margin-left: 3rem;
   }
-  .menu li a,
-  .media li a i {
+  .menu-item {
     color: var(--white);
+    border-bottom: 2px solid var(--navy);
+    transition-property: color border-bottom;
+    transition-duration: 0.5s;
+  }
+  .menu-item:hover {
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+  }
+  .social-media {
     transition-property: color;
     transition-duration: 0.5s;
   }
-  .menu li a:hover,
-  .media li a i:hover {
+  .social-media:hover {
     color: var(--gold);
   }
 

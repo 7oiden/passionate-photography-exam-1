@@ -30,7 +30,7 @@ h2 {
   font-family: var(--adobe-caslon);
   color: var(--black);
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 800;
   margin-bottom: 0.5rem;
   text-decoration: underline;
 }
@@ -65,9 +65,14 @@ hr {
   border: none;
   width: 100%;
 }
+.em {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 em {
   display: block;
   font-family: var(--adobe-caslon);
+  font-size: 1.125rem;
   font-weight: 800;
   padding-left: 1rem;
   padding-right: 4rem;
@@ -96,6 +101,7 @@ h3 {
 }
 h4 {
   margin: 0;
+  font-size: 1.125rem;
 }
 .comment-text {
   margin: 0;

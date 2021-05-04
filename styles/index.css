@@ -14,6 +14,21 @@ main {
   text-align: center;
   height: 670px;
 }
+.main-heading {
+  max-width: 85%;
+  display: inline-block;
+}
+.main-heading p {
+  display: block;
+  text-align: right;
+  color: var(--black);
+  font-size: 1.375rem;
+  padding: 0 2rem;
+  margin-top: 0.5rem;
+}
+strong {
+  text-transform: uppercase;
+}
 h1 {
   display: inline-block;
   background-color: var(--gold);
@@ -23,26 +38,30 @@ h1 {
   color: var(--black);
   display: inline-block;
   margin-top: 5rem;
-  max-width: 85%;
-  padding: 20px 30px;
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 6px 12px #00000029;
 }
 .quote {
-  margin-top: 240px;
+  margin: 280px auto 0 auto;
+  background-color: #00000066;
+  padding: 0.5rem 1rem 1rem 1rem;
 }
 .quote p {
   display: block;
   margin: 0 auto;
   font-family: var(--century-gothic);
   font-size: 1.125rem;
+  font-style: italic;
 }
 .quote p:nth-child(1):before {
   content: "\201D";
   font-size: 2rem;
 }
 .quote p:nth-child(3) {
-  font-family: var(--adobe-caslon);
-  font-style: italic;
+  font-family: var(--open-sans);
   font-size: 1.125rem;
+  font-style: normal;
   margin-top: 10px;
 }
 .content-wrapper {
@@ -71,6 +90,11 @@ section {
   width: 306px;
   height: 188px;
 }
+.slideshow-container {
+  display: flex;
+  position: relative;
+  max-width: 2000px;
+}
 .post-wrapper {
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -80,7 +104,13 @@ section {
 .post-container {
   margin: 0 auto;
   max-width: 306px;
+  opacity: 0;
+  pointer-events: none;
   /* background-color: aqua; */
+}
+.view {
+  opacity: 1;
+  pointer-events: all;
 }
 .post-text {
   margin-top: 0;
@@ -188,15 +218,19 @@ h4 {
   }
   h1 {
     font-size: 3.75rem;
+    margin-top: 150px;
+  }
+  .quote {
+    margin-top: 380px;
   }
   .quote p {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
   .quote p:nth-child(1):before {
     font-size: 3rem;
   }
   .quote p:nth-child(3) {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
   h2,
   h3 {
@@ -215,6 +249,15 @@ h4 {
   }
 }
 @media only screen and (min-width: 1600px) {
+  .main-container {
+    background-image: url("../images/main_background_image-crop.jpg");
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+  }
   .content-container {
     flex: 3;
   }
