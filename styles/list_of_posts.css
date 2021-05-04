@@ -38,7 +38,7 @@ h4 {
   margin-top: 0;
 }
 .post-container {
-  max-width: 306px;
+  /* max-width: 306px; */
   margin: 0 auto;
 }
 .post-image {
@@ -73,7 +73,7 @@ h4 {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto;
-    gap: 25px;
+    gap: 50px;
     /* background-color: darkorange; */
   }
 }
@@ -92,7 +92,9 @@ h4 {
   }
 }
 @media only screen and (min-width: 1600px) {
-  .content-wrapper {
+  section {
+    flex: 3;
+    /* background-color: blueviolet; */
   }
   .post-wrapper {
     display: flex;
@@ -101,7 +103,7 @@ h4 {
     /* background-color: darkorange; */
   }
   .post-container {
-    max-width: 560px;
+    width: 70%;
   }
   .post-image {
     width: 524px;

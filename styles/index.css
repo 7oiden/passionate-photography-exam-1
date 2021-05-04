@@ -59,6 +59,7 @@ h1 {
 }
 section {
   padding-bottom: 3rem;
+  /* background-color: blueviolet; */
 }
 .feature-wrapper {
   display: flex;
@@ -234,5 +235,8 @@ h4 {
   }
   .info-container p {
     font-size: 1.125rem;
+  }
+  .line-wrapper {
+    width: 100%;
   }
 }

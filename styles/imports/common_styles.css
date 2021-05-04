@@ -150,6 +150,7 @@ hr {
 aside {
   color: var(--navy);
   background-color: var(--light-grey);
+  max-height: 1800px;
 }
 .aside-container {
   width: 85%;
@@ -399,5 +400,9 @@ footer p {
   nav.menu {
     flex-direction: row;
     align-items: center;
+  }
+  .line-wrapper {
+    width: 70%;
+    margin: 0 auto 1rem auto;
   }
 }
