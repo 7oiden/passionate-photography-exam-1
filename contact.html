@@ -88,31 +88,19 @@
           </div>
           <form id="contact-form">
             <div class="contact-input">
-              <label for="first-name">First Name</label>
+              <label for="first-name">Name</label>
               <input
                 class="input"
                 type="text"
-                name="first-name"
-                id="first-name"
-                placeholder="First name"
+                name="full-name"
+                id="full-name"
+                placeholder="Name"
               />
             </div>
-            <div class="error-message" id="first-name-error">
-              Must be at least 2 characters
+            <div class="error-message" id="name-error">
+              Must be at least 5 characters
             </div>
-            <div class="contact-input">
-              <label for="first-name">Last Name</label>
-              <input
-                class="input"
-                type="text"
-                name="last-name"
-                id="last-name"
-                placeholder="Last name"
-              />
-            </div>
-            <div class="error-message" id="last-name-error">
-              Must be at least 2 characters
-            </div>
+            
             <div class="contact-input">
               <label for="first-name">E-mail</label>
               <input
@@ -127,11 +115,24 @@
               Please enter a valid e-mail adress
             </div>
             <div class="contact-input">
+              <label for="first-name">Subject</label>
+              <input
+                class="input"
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="error-message" id="subject-error">
+              Must be at least 15 characters
+            </div>
+            <div class="contact-input">
               <label for="message">Comment or message</label>
               <textarea class="input" name="" id="message"></textarea>
             </div>
             <div class="error-message" id="message-error">
-              Please enter a message
+              Must be at least 25 characters
             </div>
             <button
               type="submit"

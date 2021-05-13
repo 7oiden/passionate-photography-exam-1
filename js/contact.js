@@ -2,13 +2,13 @@
 
 const contactForm = document.querySelector("#contact-form");
 
-const firstName = document.querySelector("#first-name");
-const lastName = document.querySelector("#last-name");
+const fullName = document.querySelector("#full-name");
+const subject = document.querySelector("#subject");
 const contactEmail = document.querySelector("#contact-email");
 const message = document.querySelector("#message");
 
-const firstNameError = document.querySelector("#first-name-error");
-const lastNameError = document.querySelector("#last-name-error");
+const nameError = document.querySelector("#name-error");
+const subjectError = document.querySelector("#subject-error");
 const contactEmailError = document.querySelector("#contact-email-error");
 const messageError = document.querySelector("#message-error");
 
@@ -17,62 +17,63 @@ const contactButton = document.querySelector("#contact-button");
 const successMessage = document.querySelector(".success-message");
 
 function checkContactInput() {
-  if (checkLength(firstName.value, 1)) {
-    firstNameError.style.visibility = "hidden";
+  if (checkLength(fullName.value, 5)) {
+    nameError.style.visibility = "hidden";
   } else {
-    firstNameError.style.visibility = "visible";
+    nameError.style.visibility = "visible";
   }
-  if (checkLength(lastName.value, 1)) {
-    lastNameError.style.visibility = "hidden";
+   if (validateEmail(contactEmail.value)) {
+     contactEmailError.style.visibility = "hidden";
+   } else {
+     contactEmailError.style.visibility = "visible";
+   }
+  if (checkLength(subject.value, 15)) {
+    subjectError.style.visibility = "hidden";
   } else {
-    lastNameError.style.visibility = "visible";
+    subjectError.style.visibility = "visible";
   }
-  if (validateEmail(contactEmail.value)) {
-    contactEmailError.style.visibility = "hidden";
-  } else {
-    contactEmailError.style.visibility = "visible";
-  }
-  if (checkLength(message.value, 19)) {
+ 
+  if (checkLength(message.value, 25)) {
     messageError.style.visibility = "hidden";
   } else {
     messageError.style.visibility = "visible";
   }
 }
 
-firstName.addEventListener("keyup", checkContactInput);
-lastName.addEventListener("keyup", checkContactInput);
+fullName.addEventListener("keyup", checkContactInput);
 contactEmail.addEventListener("keyup", checkContactInput);
+subject.addEventListener("keyup", checkContactInput);
 message.addEventListener("keyup", checkContactInput);
 
 function validateContactForm(event) {
   event.preventDefault();
   console.log("hi");
 
-  if (checkLength(firstName.value, 1)) {
-    firstNameError.style.visibility = "hidden";
+  if (checkLength(fullName.value, 5)) {
+    nameError.style.visibility = "hidden";
   } else {
-    firstNameError.style.visibility = "visible";
-  }
-  if (checkLength(lastName.value, 1)) {
-    lastNameError.style.visibility = "hidden";
-  } else {
-    lastNameError.style.visibility = "visible";
+    nameError.style.visibility = "visible";
   }
   if (validateEmail(contactEmail.value)) {
     contactEmailError.style.visibility = "hidden";
   } else {
     contactEmailError.style.visibility = "visible";
   }
-  if (checkLength(message.value, 19)) {
+  if (checkLength(subject.value, 15)) {
+    subjectError.style.visibility = "hidden";
+  } else {
+    subjectError.style.visibility = "visible";
+  }
+  if (checkLength(message.value, 25)) {
     messageError.style.visibility = "hidden";
   } else {
     messageError.style.visibility = "visible";
   }
   if (
-    checkLength(firstName.value, 1) &&
-    checkLength(lastName.value, 1) &&
+    checkLength(fullName.value, 5) &&
     validateEmail(contactEmail.value) &&
-    checkLength(message.value, 19)
+    checkLength(subject.value, 15) &&
+    checkLength(message.value, 25)
   ) {
     successMessage.innerHTML = `<p id="success-message">Form was submitted successfully</p>`;
     form.reset();

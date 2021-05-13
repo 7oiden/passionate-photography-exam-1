@@ -41,8 +41,8 @@ textarea {
   font-family: var(--open-sans);
   font-size: 1rem;
 }
-#first-name-error,
-#last-name-error,
+#name-error,
+#subject-error,
 #contact-email-error,
 #message-error {
   visibility: hidden;
@@ -83,7 +83,7 @@ textarea {
     flex: 2;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   #contact-form {
     padding-right: 15%;
