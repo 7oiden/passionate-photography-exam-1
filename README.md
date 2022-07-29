@@ -6,7 +6,7 @@
 
 ## Description
 
-Passionate Photgraphy is personal blog site for the fictional photgrapher Christopher Duvall. The site is coded using HTML and vanilla Javascript, and is styled using regular CSS. The site consists of a homepage, a page for blog posts, pages for specific posts, an about page and a contact page.
+Passionate Photography is personal blog site for the fictional photographer Christopher Duvall. The site is coded using HTML and vanilla Javascript, and is styled using regular CSS. The site consists of a homepage, a page for blog posts, pages for specific posts, an about page and a contact page.
 
 The content for the website is stored on a WordPress installation used as a headless CMS, taking advantage of the WordPress REST API to fetch the data.
 
@@ -29,13 +29,13 @@ If images on the blog post page are clicked, a modal should appear giving the us
 
 ### Contact page:
 
-Create a contact us page, there should be 4 textboxes on this page:
+Create a contact us page, there should be 4 text boxes on this page:
 -	Name (Should be more than 5 characters long)
 -	Email address (Must be a valid email address)
 -	Subject (Should be more than 15 characters long)
 -	Message content (Should be more than 25 characters long)
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+Please use JavaScript for validation, show error messages if the values in the text boxes do not meet the requirements.
 
 <hr/>
 
