@@ -8,6 +8,8 @@ Screenshot of the projects hero at the homepage.
 
 Passionate Photgraphy is personal blog site for the fictional photgrapher Christopher Duvall. The site is coded using HTML and vanilla Javascript, and is styled using regular CSS. The site consists of a homepage, a page for blog posts, pages for specific posts, an about page and a contact page.
 
+The content for the website is stored on a Wordpress installation used as a headless CMS, taking advantage of the Wordpress REST API to fetch the data.
+
 This project was an exam from Noroff's Frontend course first year and was delivered in May 2021. The timeframe was 5 weeks, and the project requirements are listed in the next section.
 
 ## Assignment requirements:
@@ -18,7 +20,7 @@ The home page should have a ‘Latest Posts’ section which uses a carousel (sl
 
 ### Blog page:
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+The website should have at least 12 blog posts. The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
 
 ### Blog specific page:
 
