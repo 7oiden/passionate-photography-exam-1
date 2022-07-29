@@ -2,7 +2,7 @@
 
 ![image](https://res.cloudinary.com/dhd2paq70/image/upload/v1659100413/Passianate_photography_-_Home_bpshwn.png)
 
-Screenshot of the projects hero at the homepage.
+*Screenshot of the projects hero at the homepage*
 
 ## Description
 
