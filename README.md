@@ -8,7 +8,7 @@ Screenshot of the projects hero at the homepage.
 
 Passionate Photgraphy is personal blog site for the fictional photgrapher Christopher Duvall. The site is coded using HTML and vanilla Javascript, and is styled using regular CSS. The site consists of a homepage, a page for blog posts, pages for specific posts, an about page and a contact page.
 
-The content for the website is stored on a Wordpress installation used as a headless CMS, taking advantage of the Wordpress REST API to fetch the data.
+The content for the website is stored on a WordPress installation used as a headless CMS, taking advantage of the WordPress REST API to fetch the data.
 
 This project was an exam from Noroff's Frontend course first year and was delivered in May 2021. The timeframe was 5 weeks, and the assignment requirements are listed in the next section.
 
@@ -36,3 +36,29 @@ Create a contact us page, there should be 4 textboxes on this page:
 -	Message content (Should be more than 25 characters long)
 
 Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+
+<hr/>
+
+## Built With
+
+- HTML
+- Javascript
+- CSS
+
+## API Created With
+
+- [WordPress](https://wordpress.com)
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:7oiden/mercury-shoes.git
+```
+
+## Contact
+
+Get in touch at [LinkedIn](https://www.linkedin.com/in/tommy-j-16b56678/)
