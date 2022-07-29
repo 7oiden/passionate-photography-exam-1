@@ -10,7 +10,7 @@ Passionate Photgraphy is personal blog site for the fictional photgrapher Christ
 
 The content for the website is stored on a Wordpress installation used as a headless CMS, taking advantage of the Wordpress REST API to fetch the data.
 
-This project was an exam from Noroff's Frontend course first year and was delivered in May 2021. The timeframe was 5 weeks, and the project requirements are listed in the next section.
+This project was an exam from Noroff's Frontend course first year and was delivered in May 2021. The timeframe was 5 weeks, and the assignment requirements are listed in the next section.
 
 ## Assignment requirements:
 
