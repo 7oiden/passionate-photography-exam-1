@@ -2,111 +2,209 @@
 
 /* main
 --------------------*/
-
+main {
+  background-color: var(--light-grey);
+}
 .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.about-wrapper {
+  width: 85%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 section {
-  width: 85%;
-  margin: 0 auto 2rem auto;
-  display: flex;
-  flex-direction: column;
-  /* background-color: blueviolet; */
+  width: 100%;
 }
 section a {
   margin-top: 2rem;
 }
+.line-wrapper {
+  margin-bottom: 1rem;
+}
 h1 {
   font-family: var(--century-gothic);
   color: var(--black);
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 400;
-}
-h2 {
-  font-family: var(--adobe-caslon);
-  color: var(--black);
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin-bottom: 0.5rem;
-  text-decoration: underline;
-}
-.post-text {
-  /* max-width: 400px; */
 }
 .post-container {
-  /* max-width: 306px; */
+  width: 100%;
   color: var(--black);
   margin: 0 auto;
 }
 .post-image {
   width: 306px;
-  height: 188px;
+  height: 204px;
   margin: 0;
-}
-hr {
-  height: 1px;
-  background-color: #ccc;
-  border: none;
-  width: 100%;
-}
-em {
-  font-family: var(--century-gothic);
-  font-weight: 500;
 }
 figcaption {
   display: block;
   margin-bottom: 1rem;
 }
+h2 {
+  font-family: var(--futura);
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.post-text {
+  min-width: 306px;
+}
+blockquote {
+  font-family: var(--century-gothic);
+  font-weight: 600;
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--navy);
+  border-left: 3px solid var(--light-blue);
+  padding-left: 1rem;
+  margin: 2rem 1rem 2rem 1rem;
+}
+.bottom-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.bottom-wrapper figure {
+  margin: 0;
+  width: 306px;
+}
+.bottom-wrapper figure img {
+  margin: 0;
+  padding-bottom: 1.5rem;
+  width: 306px;
+}
+.bottom-wrapper div p {
+  display: block;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+#bold-text {
+  font-weight: bold;
+}
+.dividing-line {
+  margin: 3rem 10px;
+  height: 1px;
+  background: -webkit-linear-gradient(
+    left,
+    #fff 0%,
+    #ccc 15%,
+    #ccc 85%,
+    #fff 100%
+  );
+}
+hr {
+  background-color: #ccc;
+  border: none;
+}
+/* JS converted heading */
+h3 {
+  font-family: var(--century-gothic);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--light-blue);
+  text-align: center;
+  padding: 10px;
+  margin: 25px 0 1rem 0;
+}
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 768px) {
+  .about-wrapper {
+    width: 75%;
+  }
   section {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 5%;
   }
   h1 {
-    font-size: 1.375rem;
-  }
-  h2 {
-    font-size: 1.375rem;
-  }
-  .post-container {
-    /* max-width: 524px; */
+    font-size: 1.5rem;
   }
   .post-image {
     width: 524px;
-    height: 324px;
-  }
-  .post-text {
-    /* max-width: 500px; */
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .content-wrapper {
-    width: 85%;
-    flex-direction: row;
-    margin: 0 auto;
-    /* background-color: blueviolet; */
-  }
-  section {
-    flex: 2;
-  }
-  h1 {
-    font-size: 1.75rem;
+    height: 349px;
   }
   h2 {
     font-size: 1.5rem;
   }
   .post-text {
-    /* max-width: 600px; */
+    min-width: 524px;
+  }
+  /* JS converted heading */
+  h3 {
+    font-size: 1.25rem;
+  }
+  .bottom-wrapper {
+    flex-direction: row;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+  }
+  .bottom-wrapper figure {
+    margin-right: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  section {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  .content-wrapper {
+    width: 90%;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .about-wrapper {
+    flex: 2;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  .post-text {
+    font-size: 1.125rem;
+  }
+  blockquote {
+    font-size: 1.25rem;
+  }
+  .bottom-wrapper p {
+    font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  section {
+  .line-wrapper {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.875rem;
+  }
+  .about-wrapper {
     flex: 3;
   }
-  .post-container {
+  section {
     width: 70%;
   }
+  .post-image {
+    width: 720px;
+    height: 480px;
+  }
   .post-text {
+    min-width: 720px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  section {
+    width: 70%;
+    margin: 0 auto;
   }
 }

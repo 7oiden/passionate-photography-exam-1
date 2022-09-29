@@ -2,10 +2,13 @@
 
 /* main
 --------------------*/
-
+main {
+  background-color: var(--light-grey);
+}
 .content-wrapper {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 section {
   width: 85%;
@@ -13,20 +16,23 @@ section {
   display: flex;
   flex-direction: column;
 }
+.line-wrapper {
+  margin-bottom: 1rem;
+}
 h1 {
   font-family: var(--century-gothic);
   color: var(--black);
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-weight: 400;
 }
 #contact-form {
-  background-color: var(--light-blue);
-  border: none;
+  background-color: var(--light-grey);
+  border: 4px solid var(--light-blue);
   margin-bottom: 2rem;
   padding-right: 7.5%;
   padding-left: 7.5%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   text-align: center;
   margin: 0 auto;
   width: 100%;
@@ -34,7 +40,16 @@ h1 {
 .contact-input {
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+}
+.contact-input label {
+  font-size: 0.875rem;
+}
+.input {
+  color: var(--navy);
+  padding: 0.5rem;
+  border: 3px solid var(--light-blue);
+  outline: none;
+  border-radius: 0;
 }
 textarea {
   height: 200px;
@@ -46,16 +61,38 @@ textarea {
 #contact-email-error,
 #message-error {
   visibility: hidden;
+  padding-bottom: 1rem;
 }
 #success-message {
   color: green;
+  animation: 1s fadeIn;
+  animation-fill-mode: forwards;
 }
 #success-message:before {
   content: "\2713";
   font-size: 1.5rem;
   margin-right: 3px;
 }
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+/* JS converted heading */
+h2 {
+  font-family: var(--century-gothic);
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--light-blue);
+  text-align: center;
+  padding: 10px;
+  margin: 2rem 0 1rem 0;
+}
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 576px) {
@@ -65,37 +102,55 @@ textarea {
   #contact-form {
     padding-right: 10%;
     padding-left: 10%;
+    padding-top: 3rem;
   }
 }
 @media only screen and (min-width: 768px) {
   h1 {
-    font-size: 1.35rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .content-wrapper {
-    width: 85%;
-    flex-direction: row;
-    margin: 0 auto;
-    /* background-color: blueviolet; */
-  }
-  section {
-    flex: 2;
-  }
-  h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   #contact-form {
     padding-right: 15%;
     padding-left: 15%;
   }
+  /* JS converted heading */
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #contact-form {
+    width: 85%;
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .content-wrapper {
+    width: 90%;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  section {
+    flex: 2;
+  }
+  #contact-form {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+  .contact-input label {
+    font-size: 1rem;
+  }
 }
 @media only screen and (min-width: 1600px) {
+  h1 {
+    font-size: 1.875rem;
+  }
   section {
     flex: 3;
   }
   #contact-form {
-    width: 70%;
+    width: 60%;
     padding-right: 10%;
     padding-left: 10%;
   }

@@ -1,5 +1,4 @@
 // contact form
-
 const contactForm = document.querySelector("#contact-form");
 
 const fullName = document.querySelector("#full-name");
@@ -17,23 +16,23 @@ const contactButton = document.querySelector("#contact-button");
 const successMessage = document.querySelector(".success-message");
 
 function checkContactInput() {
-  if (checkLength(fullName.value, 5)) {
+  if (checkLength(fullName.value, 4)) {
     nameError.style.visibility = "hidden";
   } else {
     nameError.style.visibility = "visible";
   }
-   if (validateEmail(contactEmail.value)) {
-     contactEmailError.style.visibility = "hidden";
-   } else {
-     contactEmailError.style.visibility = "visible";
-   }
-  if (checkLength(subject.value, 15)) {
+  if (validateEmail(contactEmail.value)) {
+    contactEmailError.style.visibility = "hidden";
+  } else {
+    contactEmailError.style.visibility = "visible";
+  }
+  if (checkLength(subject.value, 14)) {
     subjectError.style.visibility = "hidden";
   } else {
     subjectError.style.visibility = "visible";
   }
- 
-  if (checkLength(message.value, 25)) {
+
+  if (checkLength(message.value, 24)) {
     messageError.style.visibility = "hidden";
   } else {
     messageError.style.visibility = "visible";
@@ -47,9 +46,8 @@ message.addEventListener("keyup", checkContactInput);
 
 function validateContactForm(event) {
   event.preventDefault();
-  console.log("hi");
 
-  if (checkLength(fullName.value, 5)) {
+  if (checkLength(fullName.value, 4)) {
     nameError.style.visibility = "hidden";
   } else {
     nameError.style.visibility = "visible";
@@ -59,24 +57,23 @@ function validateContactForm(event) {
   } else {
     contactEmailError.style.visibility = "visible";
   }
-  if (checkLength(subject.value, 15)) {
+  if (checkLength(subject.value, 14)) {
     subjectError.style.visibility = "hidden";
   } else {
     subjectError.style.visibility = "visible";
   }
-  if (checkLength(message.value, 25)) {
+  if (checkLength(message.value, 24)) {
     messageError.style.visibility = "hidden";
   } else {
     messageError.style.visibility = "visible";
   }
   if (
-    checkLength(fullName.value, 5) &&
+    checkLength(fullName.value, 4) &&
     validateEmail(contactEmail.value) &&
-    checkLength(subject.value, 15) &&
-    checkLength(message.value, 25)
+    checkLength(subject.value, 14) &&
+    checkLength(message.value, 24)
   ) {
     successMessage.innerHTML = `<p id="success-message">Form was submitted successfully</p>`;
-    form.reset();
   }
 }
 
@@ -95,3 +92,7 @@ function validateEmail(contactEmail) {
   const patternMatches = regEx.test(contactEmail);
   return patternMatches;
 }
+
+// I'm aware that the brief states that the inputs should have more than 5, 15 and 25 characters.
+  // But for me it makes much more sense to have at least 5, 15 and 25 as they are "whole" numbers,
+  // and that a minumum 6 character name, seems way to long

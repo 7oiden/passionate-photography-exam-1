@@ -1,15 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="specific-post">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="decription" content="" />
-    <title>Passionate Photography | Home-page</title>
+    <meta
+      name="description"
+      content="A blog by award winning photographer Christopher Duvall about becoming a better photographer. 
+      Learn about a new topic every week. Wheter you are a beginner-, advanced-, hobby- or professional-photographer, 
+      there are always new things to learn in this constantly evolving field."
+    />
+    <!-- title is created dynamically -->
+    <title>Passionate Photography</title>
+    <link rel="shortcut icon" type="image" href="images/photo_logo.png" />
     <script
       src="https://kit.fontawesome.com/fbd3401b24.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Hotjar Tracking Code for https://passioante-photography.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2384742, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
     <link rel="stylesheet" href="https://use.typekit.net/fhs3ndh.css" />
     <link rel="stylesheet" href="styles/specific_post.css" />
   </head>
@@ -19,29 +42,37 @@
         <div class="header-container">
           <figure class="logo">
             <a href="index.html">
-              <img src="images/logo.png" alt="" />
+              <img src="images/logo.png" alt="Passionate Photography logo" />
             </a>
           </figure>
-          <nav id="hamburger-menu"><i class="fas fa-bars"></i></nav>
+          <nav id="hamburger-menu" aria-label="menu icon">
+            <i class="fas fa-bars"></i>
+          </nav>
           <!-- large screen menu -->
-          <nav class="menu">
+          <nav class="menu" aria-label="main menu">
             <ul class="menu">
               <li><a class="menu-item" href="index.html">Home</a></li>
               <li>
-                <a class="menu-item" href="list_of_posts.html">All posts</a>
+                <a class="menu-item" href="list_of_posts.html">Blog posts</a>
               </li>
               <li><a class="menu-item" href="about.html">About me</a></li>
               <li><a class="menu-item" href="contact.html">Contact</a></li>
             </ul>
             <ul class="media">
               <li>
-                <a href=""><i class="social-media fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com" aria-label="facebook icon"
+                  ><i class="social-media fab fa-facebook"></i
+                ></a>
               </li>
               <li>
-                <a href=""><i class="social-media fab fa-twitter"></i></a>
+                <a href="https://www.twitter.com" aria-label="twitter icon"
+                  ><i class="social-media fab fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a href=""><i class="social-media fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com" aria-label="instagram icon"
+                  ><i class="social-media fab fa-instagram"></i
+                ></a>
               </li>
             </ul>
           </nav>
@@ -49,22 +80,28 @@
       </div>
       <!-- small screen menu -->
       <div class="mobile-container">
-        <nav class="mobile-menu">
+        <nav class="mobile-menu" aria-label="main menu">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="list_of_posts.html">All Posts</a></li>
+            <li><a href="list_of_posts.html">Blog Posts</a></li>
             <li><a href="about.html">About me</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <ul>
             <li>
-              <a href=""><i class="social-media fab fa-facebook"></i></a>
+              <a href="https://www.facebook.com" aria-label="facebook icon"
+                ><i class="social-media fab fa-facebook"></i
+              ></a>
             </li>
             <li>
-              <a href=""><i class="social-media fab fa-twitter"></i></a>
+              <a href="https://www.twitter.com" aria-label="twitter icon"
+                ><i class="social-media fab fa-twitter"></i
+              ></a>
             </li>
             <li>
-              <a href=""><i class="social-media fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com" aria-label="instagram icon"
+                ><i class="social-media fab fa-instagram"></i
+              ></a>
             </li>
           </ul>
         </nav>
@@ -72,127 +109,99 @@
     </header>
 
     <main>
-      <nav class="breadcrumb">
+      <nav class="breadcrumb" aria-label="hieracy of content">
         <div>
           <a href="index.html" class="previous"> Home</a>
           <i class="arrow fas fa-chevron-right"></i>
-          <a href="products_overview.html" class="current"
-            >Become a street photographer</a
-          >
+          <a href="list_of_posts.html" class="previous">All Posts</a>
+          <i class="arrow fas fa-chevron-right"></i>
+          <a href="#" class="current"></a>
         </div>
       </nav>
-
       <div class="content-wrapper">
         <div class="blog-wrapper">
           <section>
-            <div class="line-wrapper">
-              <div><hr /></div>
-              <h1>Post page</h1>
-              <div><hr /></div>
-            </div>
             <div class="post-container">
-              <figure class="post-image">
-                <img
-                  class="post-image"
-                  src="images/asian_street-720-crop.jpg"
-                  alt=""
-                />
-              </figure>
-              <h2>Become a street photographer</h2>
-              <div class="info-container">
-                <p>Street</p>
-                <p>/</p>
-                <p>April 26 - 2021</p>
-                <p>/</p>
-                <p>2 comments</p>
-              </div>
-              <p class="post-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-                qui in asperiores, voluptates alias pariatur ipsum? Dolore quasi
-                qui vero nostrum consequuntur, error neque tempore laboriosam
-                obcaecati nam, expedita impedit.
-              </p>
-              <p class="post-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-                qui in asperiores, voluptates alias pariatur ipsum? Dolore quasi
-                qui vero nostrum consequuntur, error neque tempore laboriosam
-                obcaecati nam, expedita impedit.
-              </p>
-              <p class="post-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-                qui in asperiores, voluptates alias pariatur ipsum? Dolore quasi
-                qui vero nostrum consequuntur, error neque tempore laboriosam
-                obcaecati nam, expedita impedit.
-              </p>
-              <hr class="em" />
-              <p>
-                <em>
-                  More practically, I have a rule about motion and movement in
-                  my photographs. Specifically this: if there’s movement, I want
-                  to see it. I want to feel it.
-                </em>
-              </p>
-              <hr class="em" />
-              <p class="post-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-                qui in asperiores, voluptates alias pariatur ipsum? Dolore quasi
-                qui vero nostrum consequuntur, error neque tempore laboriosam
-                obcaecati nam, expedita impedit.
-              </p>
-              <figure class="post-image">
-                <img class="post-image" src="images/river-1080.jpg" alt="" />
-              </figure>
-              <p class="post-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
-                qui in asperiores, voluptates alias pariatur ipsum? Dolore quasi
-                qui vero nostrum consequuntur, error neque tempore laboriosam
-                obcaecati nam, expedita impedit.
-              </p>
+              <div class="spinner"></div>
+              <!-- dynamic created content -->
+            </div>
+            <div class="modal">
+              <!-- <span class="close"><i class="far fa-window-close"></i></span> -->
+              <img class="modal-content" id="image" />
+              <figcaption id="caption"></figcaption>
             </div>
           </section>
           <section class="comments">
             <div class="line-wrapper" id="comment-line">
               <div><hr /></div>
-              <h3>Comments</h3>
+              <h2>Comments</h2>
               <div><hr /></div>
             </div>
-            <div class="comment-container">
-              <figure class="comment-image">
-                <img src="images/edward.png" alt="" class="comment-image" />
-              </figure>
-              <div class="comment-wrapper">
-                <h4>Edward Hudson</h4>
-                <div class="info-container">
-                  <p>April 19</p>
-                  <p>/</p>
-                  <p>2021</p>
-                </div>
-                <p class="comment-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quisquam esse fugit dolorum ullam quis! Assumenda doloribus
-                  optio quaerat officia odio corrupti? Facilis, suscipit! Illo,
-                  quos eos. Veniam libero ipsum voluptate?
-                </p>
-              </div>
+            <div class="comment-wrapper">
+              <div class="spinner"></div>
+              <!-- dynamic created content -->
             </div>
-            <div class="comment-container">
-              <figure class="comment-image">
-                <img src="images/gloria.png" alt="" class="comment-image" />
-              </figure>
-              <div class="comment-wrapper">
-                <h4>Gloria Fields</h4>
-                <div class="info-container">
-                  <p>April 17</p>
-                  <p>/</p>
-                  <p>2021</p>
+            <div class="line-wrapper" id="comment-divider">
+              <div><hr /></div>
+              <h3>Leave a comment</h3>
+              <div><hr /></div>
+            </div>
+            <div class="leave-comment">
+              <form id="comment-form">
+                <div class="input-container">
+                  <label for="name"
+                    ><strong>Name</strong> (must be at least 3
+                    characters)</label
+                  >
+                  <input
+                    class="comment-input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                  />
                 </div>
-                <p class="comment-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Quisquam esse fugit dolorum ullam quis! Assumenda doloribus
-                  optio quaerat officia odio corrupti? Facilis, suscipit! Illo,
-                  quos eos. Veniam libero ipsum voluptate?
-                </p>
-              </div>
+                <div class="comment-error" id="comment-name-error">
+                  Must be at least 3 characters
+                </div>
+                <div class="input-container">
+                  <label for="comment-email"><strong>E-mail</strong></label>
+                  <input
+                    class="comment-input"
+                    type="text"
+                    name="email"
+                    id="comment-email"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                <div class="comment-error" id="comment-email-error">
+                  Please enter a valid e-mail adress
+                </div>
+                <div class="input-container">
+                  <label for="comment"
+                    ><strong>Comment</strong> (must be at least 5
+                    characters)</label
+                  >
+                  <textarea
+                    class="comment-input"
+                    name="comment"
+                    id="comment-textarea"
+                  ></textarea>
+                </div>
+                <div class="comment-error" id="comment-error">
+                  Must be at least 5 characters
+                </div>
+                <div class="comment-sent"></div>
+                <button
+                  type="submit"
+                  class="button"
+                  id="comment-button"
+                  name="contact"
+                  value="contact"
+                >
+                  Post comment
+                </button>
+              </form>
             </div>
           </section>
         </div>
@@ -200,23 +209,28 @@
         <aside>
           <div class="aside-container">
             <div>
-              <h5 class="top-h5">About me</h5>
-              <figure class="about-image">
-                <img
-                  src="images/cristopher.png"
-                  alt="Image of Christopher Duvall"
-                />
-              </figure>
-              <p id="personal-info">
-                I’m Christopher Duvall. I’m a photographer, author, adventurer,
-                and entrepreneur. I want to see this world for the astonishing
-                place it is, and help others do the same. Welcome here.
-              </p>
-              <p><a href="about.html" id="read-more">Read more</a></p>
-
+              <h5>About me</h5>
+              <a href="about.html">
+                <figure class="about-image">
+                  <img
+                    src="images/cristopher.jpg"
+                    alt="Photo of me, Christopher Duvall photgrapher and explorer"
+                  />
+                </figure>
+                <p class="personal-info">
+                  I’m Christopher Duvall, an award winning and passionate
+                  photographer with more than 20 years of experience in the art
+                  of photography.
+                </p>
+                <p class="personal-info">
+                  This is a blog about photography and how <em>you</em> can
+                  become a better one. Welcome here.
+                </p>
+                <p id="read-more">Learn more</p></a
+              >
               <h5>Become a subscriber</h5>
               <form method="get" class="aside-input" id="newsletter-form">
-                <label id="label" for="email">E-mail:</label>
+                <label for="newsletter-email">E-mail:</label>
                 <input
                   class="input"
                   id="newsletter-email"
@@ -240,35 +254,33 @@
               <div class="subscribe-message"></div>
             </div>
             <div>
-              <h5>Spesific search</h5>
-              <form class="aside-input" action="">
+              <h5>Specific search</h5>
+              <form class="aside-input" id="search-form">
+                <label for="search">Search:</label>
                 <input
                   class="input"
                   type="search"
                   name="search"
                   id="search"
-                  placeholder="SEARCH"
+                  placeholder="Search..."
                 />
+                <i
+                  id="search-icon"
+                  class="fas fa-search"
+                  aria-label="search-icon"
+                ></i>
               </form>
-
-              <h5>Most viewed posts</h5>
-              <ul class="post-list">
-                <li><a href="">Become a street photographer</a></li>
-                <li><a href="">Captivating Landscape Photo</a></li>
-                <li><a href="">Black & White</a></li>
-                <li><a href="">Shoot great portraits</a></li>
+              <h5>Featured posts</h5>
+              <ul class="post-list featured-posts-list">
+                <!-- dynamic created content -->
               </ul>
-
               <h5>Most recent posts</h5>
-              <ul class="post-list">
-                <li><a href="">Become a street photographer</a></li>
-                <li><a href="">Captivating Landscape Photo</a></li>
-                <li><a href="">Black & White</a></li>
-                <li><a href="">Shoot great portraits</a></li>
+              <ul class="post-list recent-posts-list">
+                <!-- dynamic created content -->
               </ul>
-
               <h5>Categories</h5>
-              <form action="" class="dropdown">
+              <form class="dropdown">
+                <label for="categories">Select category:</label>
                 <select name="categories" id="categories">
                   <option value="Street">Street</option>
                   <option value="Street">Lanscape</option>
@@ -277,9 +289,9 @@
                   <option value="Street">Cityscape</option>
                 </select>
               </form>
-
               <h5>Article Archives</h5>
-              <form action="" class="dropdown">
+              <form class="dropdown">
+                <label for="archive">Select month:</label>
                 <select name="archive" id="archive">
                   <option value="Street">Descember - 2020</option>
                   <option value="Street">January - 2021</option>
@@ -293,6 +305,7 @@
         </aside>
       </div>
     </main>
+
     <footer>
       <i class="far fa-copyright"></i>
       <div>
@@ -300,6 +313,8 @@
         <p>Christopher Duvall - 2021</p>
       </div>
     </footer>
+    <script src="js/components/error.js"></script>
+    <script src="js/specific_post.js"></script>
     <script src="js/common_scripts.js"></script>
   </body>
 </html>
