@@ -12,24 +12,22 @@ main {
   background-color: white;
 } */
 
-.about-wrapper {
+/* .about-wrapper {
   width: 85%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
+} */
 
-section {
+/* section {
   width: 100%;
-}
+} */
 
-section a {
+/* section a {
   margin-top: 2rem;
-}
+} */
 
-.line-wrapper {
+/* .line-wrapper {
   margin-bottom: 1rem;
-}
+} */
 
 /* h1 {
   font-family: var(--century-gothic);
@@ -137,15 +135,15 @@ hr {
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 768px) {
-  .about-wrapper {
+  /* .about-wrapper {
     width: 75%;
-  }
+  } */
 
-  section {
+  /* section {
     width: 100%;
     margin: 0 auto;
     padding-left: 5%;
-  }
+  } */
 
   /* h1 {
     font-size: 1.5rem;
@@ -181,10 +179,10 @@ hr {
 }
 
 @media only screen and (min-width: 992px) {
-  section {
+  /* section {
     width: 85%;
     margin: 0 auto;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -220,9 +218,9 @@ hr {
 }
 
 @media only screen and (min-width: 1600px) {
-  .line-wrapper {
+  /* .line-wrapper {
     width: 100%;
-  }
+  } */
 
   /* h1 {
     font-size: 1.875rem;
@@ -232,9 +230,9 @@ hr {
     flex: 3;
   }
 
-  section {
+  /* section {
     width: 70%;
-  }
+  } */
 
   .post-image {
     width: 720px;
@@ -247,8 +245,8 @@ hr {
 }
 
 @media only screen and (min-width: 1800px) {
-  section {
+  /* section {
     width: 70%;
     margin: 0 auto;
-  }
+  } */
 }
