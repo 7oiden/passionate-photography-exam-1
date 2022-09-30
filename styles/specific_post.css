@@ -5,11 +5,11 @@ main {
   background-color: var(--light-grey);
 }
 
-.content-wrapper {
+/* .content-wrapper {
   display: flex;
   flex-direction: column;
   background-color: white;
-}
+} */
 
 .blog-wrapper {
   width: 85%;
@@ -351,11 +351,11 @@ h3 {
 }
 
 @media only screen and (min-width: 1200px) {
-  .content-wrapper {
+  /* .content-wrapper {
     width: 90%;
     flex-direction: row;
     margin: 0 auto;
-  }
+  } */
 
   .blog-wrapper {
     flex: 2;

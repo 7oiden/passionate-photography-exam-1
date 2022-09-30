@@ -79,11 +79,11 @@ h1 {
   margin-top: 10px;
 }
 
-.content-wrapper {
+/* .content-wrapper {
   display: flex;
   flex-direction: column;
   background-color: white;
-}
+} */
 
 .content-container {
   width: 100%;
@@ -109,9 +109,9 @@ h4 {
   text-decoration: underline;
 }
 
-section.featured {
+/* section.featured {
   margin: 0 auto;
-}
+} */
 
 .featured:first-child {
   margin-top: 2rem;
@@ -215,7 +215,7 @@ section.featured {
 
 .post-link {
   text-align: center;
-  margin: 6rem auto 4rem auto;
+  margin: 6rem auto 3rem auto;
 }
 
 .arrow-wrapper {
@@ -432,11 +432,11 @@ section.featured {
     font-size: 1.25rem;
   }
 
-  .content-wrapper {
+  /* .content-wrapper {
     width: 90%;
     flex-direction: row;
     margin: 0 auto;
-  }
+  } */
 
   .content-container {
     width: 66.66666667%;

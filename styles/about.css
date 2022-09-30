@@ -6,11 +6,11 @@ main {
   background-color: var(--light-grey);
 }
 
-.content-wrapper {
+/* .content-wrapper {
   display: flex;
   flex-direction: column;
   background-color: white;
-}
+} */
 
 .about-wrapper {
   width: 85%;
@@ -192,11 +192,11 @@ hr {
     font-size: 1.75rem;
   } */
 
-  .content-wrapper {
+  /* .content-wrapper {
     width: 90%;
     flex-direction: row;
     margin: 0 auto;
-  }
+  } */
 
   .about-wrapper {
     flex: 2;

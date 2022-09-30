@@ -6,11 +6,11 @@ main {
   background-color: var(--light-grey);
 }
 
-.content-wrapper {
+/* .content-wrapper {
   display: flex;
   flex-direction: column;
   background-color: white;
-}
+} */
 
 section {
   width: 85%;
@@ -146,11 +146,11 @@ textarea {
 }
 
 @media only screen and (min-width: 1200px) {
-  .content-wrapper {
+  /* .content-wrapper {
     width: 90%;
     flex-direction: row;
     margin: 0 auto;
-  }
+  } */
 
   section {
     flex: 2;
