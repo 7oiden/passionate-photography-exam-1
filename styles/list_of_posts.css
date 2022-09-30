@@ -12,12 +12,12 @@ main {
   background-color: white;
 } */
 
-section {
+/* .main-section {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
+} */
 
 /* h1 {
   font-family: var(--century-gothic);
@@ -191,9 +191,9 @@ h2 {
     margin: 0 auto;
   } */
 
-  section {
+  /* .main-section {
     flex: 2;
-  }
+  } */
 
   h2 {
     font-size: 1.375rem;
@@ -212,13 +212,13 @@ h2 {
   /* h1 {
     font-size: 1.875rem;
   } */
-  .content-wrapper {
+  /* .content-wrapper {
     width: 90%;
-  }
+  } */
 
-  section {
+  /* .main-section {
     flex: 3;
-  }
+  } */
 
   /* .line-wrapper {
     width: 95%;

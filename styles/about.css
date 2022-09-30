@@ -135,9 +135,9 @@ hr {
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 768px) {
-  /* .about-wrapper {
-    width: 75%;
-  } */
+  .about-wrapper {
+    width: 90%;
+  }
 
   /* section {
     width: 100%;
