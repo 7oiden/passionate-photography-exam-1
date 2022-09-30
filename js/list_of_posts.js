@@ -1,7 +1,7 @@
 const postWrapper = document.querySelector(".post-wrapper");
 const featureWrapper = document.querySelector(".feature-wrapper");
 
-//important! this variable is redeclaired at common_scripts.js
+//important! this variable is redeclared at common_scripts.js
 var htmlSelector = document.querySelectorAll("html");
 
 console.log(htmlSelector[0]);
@@ -83,7 +83,7 @@ async function fetchPosts() {
      <figure class="post-image">
      <img class="post-image" src="${mediaArray[j].source_url}" alt="${mediaArray[j].alt_text}"/>
      </figure>
-     <h2 class="dynamic-header">${results[i].title.rendered}</h2>
+     <h2 class="dynamic-header post-heading">${results[i].title.rendered}</h2>
      <div class="info-container">
      <p class="info">${categoryName}</p>
      <p class="info">${results[i].formatted_date}</p>
@@ -98,7 +98,8 @@ async function fetchPosts() {
 
         if (htmlSelector[0].className === "index-page") {
           sliderHeading.forEach(function (h2) {
-            h2.outerHTML = "<h4>" + h2.innerHTML + "</h4>";
+            // h2.outerHTML = "<h4>" + h2.innerHTML + "</h4>";
+            h2.outerHTML = `<h4 class="post-heading"> ${h2.innerHTML} </h4>`;
           });
         }
       }
@@ -114,7 +115,7 @@ async function fetchPosts() {
      <figure class="feature-image">
      <img class="feature-image" src="${mediaArray[0].source_url}" alt="${mediaArray[0].alt_text}"/>
      </figure>
-     <h4 id="feature-heading">${results[i].title.rendered}</h4>
+     <h4 class="post-heading">${results[i].title.rendered}</h4>
      <div class="info-container">
      <p class="info">${categoryName}</p>
      <p class="info">${results[i].formatted_date}</p>
@@ -128,7 +129,7 @@ async function fetchPosts() {
   } catch (error) {
     console.log(error);
     postWrapper.innerHTML = displayError(
-      "An error has occured when trying to retrive the API"
+      "An error has occurred when trying to retrieve the API"
     );
   }
 }
@@ -162,6 +163,4 @@ if (htmlSelector[0].className !== "index-page") {
   postLoader.addEventListener("click", loadMorePosts);
 }
 
-//sort 
-
-
+//sort

@@ -36,7 +36,7 @@ async function fetchSpecific() {
   } catch (error) {
     console.log(error);
     postContainer.innerHTML = displayError(
-      "An error has occured when trying to retrive the API"
+      "An error has occurred when trying to retrieve the API"
     );
   }
 }
@@ -87,7 +87,7 @@ function createHtml(details) {
      <img class="post-image" id="my-image" src="${details._embedded["wp:featuredmedia"]["0"].source_url}" alt="${details._embedded["wp:featuredmedia"]["0"].alt_text}"/>
      <figcaption>- Click image to enlarge -</figcaption>
      </figure>
-     <h1>${details.title.rendered}</h1>
+     <h1 class="post-title">${details.title.rendered}</h1>
      <div class="info-container" id="gradient-border">
      <p class="info">${categoryName}</p>
      <p class="info">${details.formatted_date}</p>
@@ -157,7 +157,7 @@ async function fetchComments() {
   } catch (error) {
     console.log(error);
     postContainer.innerHTML = displayError(
-      "An error has occured when trying to retrive the API"
+      "An error has occurred when trying to retrieve the API"
     );
   }
 }

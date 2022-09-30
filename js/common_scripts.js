@@ -96,7 +96,7 @@ fetchPosts();
 //convert headings
 const asideHeading = document.querySelectorAll("h5");
 
-//important! this variable is also declaired at list_of_posts.js
+//important! this variable is also declared at list_of_posts.js
 var htmlSelector = document.querySelectorAll("html");
 
 if (htmlSelector[0].className === "contact-page") {
