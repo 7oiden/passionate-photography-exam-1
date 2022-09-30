@@ -1,5 +1,4 @@
-@import "imports/common_styles.css";
-
+@import "./imports/common_styles.css";
 /* main
 --------------------*/
 main {
@@ -293,7 +292,7 @@ h3 {
 }
 
 /* JS converted heading */
-h4 {
+/* h4 {
   font-family: var(--century-gothic);
   font-size: 1.125rem;
   font-weight: 700;
@@ -302,7 +301,7 @@ h4 {
   text-align: center;
   padding: 10px;
   margin: 32px 0 1rem 0;
-}
+} */
 
 /* styles that change
 --------------------*/
@@ -335,9 +334,9 @@ h4 {
   }
 
   /* JS converted heading */
-  h4 {
+  /* h4 {
     font-size: 1.25rem;
-  }
+  } */
 
   .modal-content {
     width: 85%;

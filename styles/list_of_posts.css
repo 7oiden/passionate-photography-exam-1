@@ -1,4 +1,4 @@
-@import "imports/common_styles.css";
+@import "./imports/common_styles.css";
 
 /* main
 --------------------*/
@@ -129,7 +129,7 @@ h2 {
 } */
 
 /* JS converted heading */
-h3 {
+/* h3 {
   font-family: var(--century-gothic);
   font-size: 1.125rem;
   font-weight: 700;
@@ -138,7 +138,7 @@ h3 {
   text-align: center;
   padding: 10px;
   margin: 2rem 0 1rem 0;
-}
+} */
 
 /* styles that change
 --------------------*/
@@ -169,9 +169,9 @@ h3 {
 }
 
 /* JS converted heading */
-h3 {
+/* h3 {
   font-size: 1.25rem;
-}
+} */
 
 @media only screen and (min-width: 900px) {
   .post-wrapper {

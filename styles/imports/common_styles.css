@@ -2,7 +2,7 @@
   --navy: #3a4352;
   --gold: #feb41c;
   --blue-gray: #4b5f6d;
-  --highlight: #5e7c88;
+  --highlight: #264c85;
   --light-grey: #f3f3f3;
   --light-blue: #d2d6d9;
   --white: #fff;
@@ -28,8 +28,7 @@ html {
 
 body {
   background-color: var(--white);
-  /* color: var(--dark-text); */
-  color: pink;
+  color: var(--dark-text);
   font-family: var(--open-sans);
   font-size: 1rem;
   width: 100%;
@@ -258,16 +257,15 @@ aside {
   border-radius: 10px;
 }
 
-.personal-info {
+.aside-text {
   max-width: 400px;
-  /* color: var(--navy); */
+  color: var(--navy);
 }
 
 #read-more {
   display: block;
   font-family: var(--adobe-caslon);
-  font-weight: bold;
-  color: var(--navy);
+  color: var(--highlight);
   text-decoration: underline;
   font-size: 1.125rem;
   margin: 0;
@@ -367,8 +365,9 @@ label {
   }
 }
 
-.post-list {
-  font-family: var(--futura);
+.aside-list {
+  font-family: var(--adobe-caslon);
+  color: var(--highlight);
   text-align: left;
   font-size: 1.25rem;
   margin-left: 0;
@@ -376,7 +375,7 @@ label {
   text-decoration: underline;
 }
 
-.post-list li {
+.aside-list li {
   padding-bottom: 10px;
   list-style-type: disc;
   margin-left: 20px;
@@ -558,6 +557,10 @@ footer p {
     gap: 3rem;
   }
 
+  .aside-heading {
+    font-size: 1.25rem;
+  }
+
   #read-more {
     font-size: 1.25rem;
   }
@@ -692,7 +695,7 @@ footer p {
   }
 
   .aside-heading {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
   }
 
   footer p {
