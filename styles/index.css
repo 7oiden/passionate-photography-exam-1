@@ -17,9 +17,13 @@ main {
 }
 
 .main-heading {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 4rem 10% 0 10%;
   display: inline-block;
+}
+
+.main-heading-bg {
+  background-color: white;
+  margin-bottom: 1rem;
 }
 
 .main-heading p {
@@ -35,23 +39,25 @@ strong {
 }
 
 h1 {
-  display: inline-block;
-  background-color: var(--gold);
+  /* display: inline-block; */
+  background-color: #feb41cbf;
   font-family: var(--adobe-caslon);
   font-size: 1.625rem;
   font-weight: 400;
   color: var(--black);
   display: inline-block;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
+  /* margin-top: 4rem;
+  margin-bottom: 1rem; */
+  margin: 0;
   padding: 1rem 2rem;
   box-shadow: 0 6px 12px #00000029;
 }
 
 .quote {
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   background-color: #00000066;
-  padding: 0.5rem 1rem 1rem 1rem;
+  color: var(--white);
+  padding: 1rem;
   position: absolute;
   position: absolute;
   left: 0;
@@ -70,13 +76,15 @@ h1 {
 .quote p:nth-child(1):before {
   content: "\201D";
   font-size: 2rem;
+  font-weight: bold;
+  padding-right: 0.25rem;
 }
 
 .quote p:nth-child(3) {
-  font-family: var(--open-sans);
-  font-size: 0.875rem;
   font-style: normal;
-  margin-top: 10px;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 /* .content-wrapper {
@@ -388,9 +396,9 @@ h4 {
     width: 70%;
   }
 
-  /* #feature-heading {
-    font-size: 1.5rem;
-  } */
+  .main-heading {
+    margin-top: 6rem;
+  }
 
   .slideshow-container {
     width: 75%;
@@ -409,7 +417,6 @@ h4 {
 
   h1 {
     font-size: 3.75rem;
-    margin-top: 100px;
   }
 
   .main-heading p {
@@ -471,8 +478,8 @@ h4 {
     height: 965px;
   }
 
-  h1 {
-    margin-top: 150px;
+  .main-heading {
+    margin-top: 8rem;
   }
 
   .content-container {
