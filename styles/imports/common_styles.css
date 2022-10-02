@@ -243,6 +243,10 @@ aside {
   padding-bottom: 3rem;
 }
 
+.aside-container:first-child {
+  margin-top: 1rem;
+}
+
 .aside-container p {
   text-align: left;
 }
@@ -357,6 +361,8 @@ label {
 #subscribe-button {
   background-color: var(--navy);
   color: white;
+  font-size: 1.125rem;
+  margin: 0.5rem 50% 0 0;
 }
 
 #subscribe-message {
@@ -386,8 +392,8 @@ label {
   font-family: var(--adobe-caslon);
   color: var(--highlight);
   text-align: left;
-  font-size: 1.25rem;
-  margin-left: 0;
+  font-size: 1.125rem;
+  margin-left: 0.5rem;
   padding-left: 0;
   text-decoration: underline;
 }
@@ -546,10 +552,9 @@ footer p {
   /* main
 --------------------*/
   /* aside */
-  aside {
+  .aside-container {
     width: 70%;
-    margin: -3rem auto 0 auto;
-  }
+  } 
 }
 
 @media only screen and (min-width: 768px) {
@@ -564,18 +569,15 @@ footer p {
   }
 
   /* aside */
-  aside {
+  /* aside {
     width: 100%;
-  }
+  } */
 
   .aside-container {
+    width: 85%;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-  }
-
-  .aside-heading {
-    font-size: 1.25rem;
   }
 
   #read-more {
@@ -585,6 +587,7 @@ footer p {
 
 @media only screen and (min-width: 992px) {
   .aside-container {
+    width: 75%;
     gap: 6rem;
   }
 }
@@ -704,22 +707,37 @@ footer p {
   }
 
   /* aside */
+  aside {
+    /* width: 70%; */
+    flex: 1;
+    margin: -3rem auto 0 auto;
+  }
+
   .aside-container {
+    width: 90%;
     grid-template-rows: auto auto;
     grid-template-columns: auto;
     gap: 0;
   }
 
-  aside {
-    flex: 1;
+  .aside-container:first-child {
+    margin-top: 4rem;
   }
 
   .aside-heading {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
 
   footer p {
     font-size: 1.125rem;
+  }
+
+  .aside-list {
+    font-size: 1.25rem;
+  }
+
+  #subscribe-button {
+    font-size: 1.25rem;
   }
 }
 

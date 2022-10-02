@@ -293,9 +293,7 @@ h4 {
 }
 
 /* aside */
-.aside-container:first-child {
-  margin-top: 50px;
-}
+
 
 /* h5 {
   font-family: var(--century-gothic);
