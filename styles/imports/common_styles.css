@@ -144,7 +144,7 @@ nav.menu {
   padding: 1rem 0 0 5%;
   font-size: 0.875rem;
   background-color: var(--white);
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .breadcrumb div a {
@@ -210,7 +210,7 @@ hr {
 .section-heading {
   font-family: var(--century-gothic);
   color: var(--dark-text);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -362,7 +362,7 @@ label {
   background-color: var(--navy);
   color: white;
   font-size: 1.125rem;
-  margin: 0.5rem 50% 0 0;
+  margin: 0.75rem 50% 0 0;
 }
 
 #subscribe-message {
@@ -560,9 +560,9 @@ footer p {
 @media only screen and (min-width: 768px) {
   /* main
 --------------------*/
-  .section-heading {
+  /* .section-heading {
     font-size: 1.75rem;
-  }
+  } */
 
   .button {
     font-size: 1.25rem;
@@ -721,7 +721,7 @@ footer p {
   }
 
   .aside-container:first-child {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .aside-heading {

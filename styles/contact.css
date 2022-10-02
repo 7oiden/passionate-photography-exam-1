@@ -32,7 +32,8 @@ section {
 
 #contact-form {
   background-color: var(--light-grey);
-  border: 4px solid var(--light-blue);
+  /* border: 4px solid var(--light-blue); */
+  border-radius: 10px;
   margin-bottom: 2rem;
   padding-right: 7.5%;
   padding-left: 7.5%;

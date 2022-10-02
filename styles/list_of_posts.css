@@ -124,10 +124,11 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* #load-button {
-  margin-top: 1rem;
-  margin-bottom: 120px;
-} */
+#load-button {
+  display: flex;
+  align-self: center;
+  margin: 1rem auto 3rem auto;
+}
 
 /* JS converted heading */
 /* h3 {
@@ -157,7 +158,7 @@ h2 {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto;
-    gap: 2rem;
+    gap: 1rem 2rem;
   }
 
   .post-container {
@@ -176,7 +177,7 @@ h2 {
 
 @media only screen and (min-width: 900px) {
   .post-wrapper {
-    gap: 50px;
+    gap: 1rem 3rem;
   }
 }
 
