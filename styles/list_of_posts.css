@@ -20,7 +20,7 @@ main {
 } */
 
 /* h1 {
-  font-family: var(--century-gothic);
+  font-family: var(--main-heading);
   color: var(--black);
   font-size: 1.375rem;
   font-weight: 400;
@@ -132,7 +132,7 @@ h2 {
 
 /* JS converted heading */
 /* h3 {
-  font-family: var(--century-gothic);
+  font-family: var(--main-heading);
   font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;

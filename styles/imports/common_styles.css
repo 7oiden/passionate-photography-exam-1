@@ -8,9 +8,12 @@
   --white: #fff;
   --black: #000;
   --dark-text: #6d6d6d;
-  --century-gothic: "franklin-gothic-urw", "arial", sans-serif;
+  --main-heading: "franklin-gothic-urw", "arial", sans-serif;
   --open-sans: "open-sans", "arial", sans-serif;
-  --adobe-caslon: "adobe-caslon", "orpheus", "times new roman";
+  --hero-heading: "adobe-caslon", "orpheus", "times new roman";
+  --links: "adobe-caslon",
+    "orpheus",
+    "times new roman";
   --futura: "futura PT";
 }
 
@@ -94,6 +97,7 @@ nav.menu {
 }
 
 .mobile-menu {
+  font-family: var(--links);
   margin: 0 auto;
   display: none;
   justify-content: space-between;
@@ -107,7 +111,7 @@ nav.menu {
 
 .mobile-menu ul li {
   padding-top: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
 }
 
 .mobile-menu ul li a {
@@ -208,7 +212,7 @@ hr {
 }
 
 .section-heading {
-  font-family: var(--century-gothic);
+  font-family: var(--main-heading);
   color: var(--black);
   font-size: 1.75rem;
   font-weight: 400;
@@ -217,12 +221,12 @@ hr {
 }
 
 .post-heading {
-  font-family: var(--adobe-caslon);
+  font-family: var(--links);
   color: var(--navy);
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
-  padding: 1rem 1rem 0.5rem 0;
+  padding: 1rem 0 0.5rem 0;
   /* text-decoration: none; */
 }
 
@@ -252,7 +256,7 @@ aside {
 }
 
 .aside-heading {
-  font-family: var(--century-gothic);
+  font-family: var(--main-heading);
   font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -275,7 +279,7 @@ aside {
 
 .about-image img {
   width: 125px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .aside-text {
@@ -285,7 +289,7 @@ aside {
 
 #read-more {
   display: block;
-  font-family: var(--adobe-caslon);
+  font-family: var(--links);
   color: var(--highlight);
   text-decoration: underline;
   font-size: 1.125rem;
@@ -337,7 +341,7 @@ label {
 }
 
 .button {
-  font-family: var(--adobe-caslon);
+  font-family: var(--links);
   font-size: 1.125rem;
   background-color: var(--gold);
   color: black;
@@ -389,7 +393,7 @@ label {
 }
 
 .aside-list {
-  font-family: var(--adobe-caslon);
+  font-family: var(--links);
   color: var(--highlight);
   text-align: left;
   font-size: 1.125rem;
@@ -645,7 +649,7 @@ footer {
     /* margin-top: 0.5rem; */
     margin: 0;
     padding: 0;
-    font-family: var(--adobe-caslon);
+    font-family: var(--links);
     font-size: 1.375rem;
   }
 

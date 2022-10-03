@@ -7,8 +7,7 @@ main {
 }
 
 .main-container {
-  background: url("../images/main_background_image-upto576px.jpg") no-repeat
-    center center;
+  background: url("../images/main_background_image.jpg") no-repeat center bottom;
   background-size: cover;
   margin-top: 0;
   text-align: center;
@@ -41,7 +40,7 @@ strong {
 h1 {
   /* display: inline-block; */
   background-color: #feb41cbf;
-  font-family: var(--adobe-caslon);
+  font-family: var(--hero-heading);
   font-size: 1.625rem;
   font-weight: 400;
   color: var(--black);
@@ -68,7 +67,7 @@ h1 {
 .quote p {
   display: block;
   margin: 0 auto;
-  font-family: var(--century-gothic);
+  font-family: var(--main-heading);
   font-size: 1rem;
   font-style: italic;
 }
@@ -103,7 +102,7 @@ h1 {
 
 /* h2,
 h3 {
-  font-family: var(--century-gothic);
+  font-family: var(--main-heading);
   color: var(--navy);
   font-size: 1.5rem;
   font-weight: 400;
@@ -317,7 +316,7 @@ h4 {
 
 
 /* h5 {
-  font-family: var(--century-gothic);
+  font-family: var(--main-heading);
   font-size: 1.125rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -338,7 +337,7 @@ h4 {
 
 @media only screen and (min-width: 576px) {
   .main-container {
-    background-image: url("../images/main_background_image-upto768px.jpg");
+    /* background-image: url("../images/main_background_image-upto768px.jpg"); */
     height: 954px;
   }
 
@@ -359,7 +358,7 @@ h4 {
 
 @media only screen and (min-width: 768px) {
   .main-container {
-    background-image: url("../images/main_background_image-upto992px.jpg");
+    /* background-image: url("../images/main_background_image-upto992px.jpg"); */
     height: 900px;
   }
 
@@ -414,7 +413,7 @@ h4 {
 
 @media only screen and (min-width: 992px) {
   .main-container {
-    background-image: url("../images/main_background_image-upto1200px.jpg");
+    /* background-image: url("../images/main_background_image-upto1200px.jpg"); */
     height: 660px;
   }
 
@@ -442,7 +441,7 @@ h4 {
   }
 
   .main-container {
-    background-image: url("../images/main_background_image-upto1600px.jpg");
+    /* background-image: url("../images/main_background_image.jpg"); */
     height: 720px;
   }
 
@@ -454,9 +453,9 @@ h4 {
     font-size: 1.375rem;
   }
 
-  .quote {
+  /* .quote {
     bottom: 70px;
-  }
+  } */
 
   .quote p {
     font-size: 1.375rem;
@@ -519,7 +518,7 @@ h4 {
 
 @media only screen and (min-width: 1600px) {
   .main-container {
-    background-image: url("../images/main_background_image-upto2560px.jpg");
+    /* background-image: url("../images/main_background_image-upto2560px.jpg"); */
     height: 965px;
   }
 
@@ -584,9 +583,9 @@ h4 {
 }
 
 @media only screen and (min-width: 1900px) {
-  .main-container {
+  /* .main-container {
     height: 1200px;
-  }
+  } */
 
   .feature-wrapper {
     width: 65%;
