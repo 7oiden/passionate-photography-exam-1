@@ -7,7 +7,7 @@
   --light-blue: #d2d6d9;
   --white: #fff;
   --black: #000;
-  --dark-text: #777777;
+  --dark-text: #6d6d6d;
   --century-gothic: "franklin-gothic-urw", "arial", sans-serif;
   --open-sans: "open-sans", "arial", sans-serif;
   --adobe-caslon: "adobe-caslon", "orpheus", "times new roman";
@@ -255,7 +255,7 @@ aside {
   font-family: var(--century-gothic);
   font-size: 1.125rem;
   font-weight: 600;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   background-color: var(--light-blue);
   color: var(--navy);
   text-align: center;
