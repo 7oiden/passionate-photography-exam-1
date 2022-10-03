@@ -138,7 +138,7 @@ nav.menu {
 .main-section {
   width: 90%;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 0;
 }
 
 /* breadcrumb */
@@ -397,7 +397,7 @@ label {
   color: var(--highlight);
   text-align: left;
   font-size: 1.125rem;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
   padding-left: 0;
   text-decoration: underline;
 }
@@ -599,10 +599,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
-
-  #read-more {
-    font-size: 1.25rem;
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -701,6 +697,7 @@ footer {
 
   .main-section {
     flex: 2;
+    padding-top: 1rem;
   }
   
   .line-wrapper {
@@ -745,6 +742,10 @@ footer {
   }
 
   .aside-heading {
+    font-size: 1.25rem;
+  }
+
+  #read-more {
     font-size: 1.25rem;
   }
 

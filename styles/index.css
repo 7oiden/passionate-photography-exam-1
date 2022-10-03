@@ -52,23 +52,28 @@ h1 {
   box-shadow: 0 6px 12px #00000029;
 }
 
-.quote {
-  margin: 0 auto;
+.quote-wrapper {
   background-color: #00000066;
-  color: var(--white);
-  padding: 1rem;
-  position: absolute;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 50px;
 }
 
+.quote {
+  /* margin: 0 auto; */
+  color: var(--white);
+  padding: 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .quote p {
   display: block;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   font-family: var(--main-heading);
-  font-size: 1rem;
   font-style: italic;
 }
 
@@ -79,11 +84,12 @@ h1 {
   padding-right: 0.25rem;
 }
 
-.quote p:nth-child(3) {
+.quote p:nth-child(2) {
+  font-family: var(--open-sans);
   font-style: normal;
-  font-weight: bold;
-  margin-top: 1rem;
-  padding-bottom: 0.5rem;
+  /* font-weight: bold; */
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 /* .content-wrapper {
@@ -97,6 +103,7 @@ h1 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
   /* color: black; */
 }
 
@@ -465,7 +472,7 @@ h4 {
     font-size: 3rem;
   }
 
-  .quote p:nth-child(3) {
+  .quote p:nth-child(2) {
     font-size: 1.25rem;
   }
 
