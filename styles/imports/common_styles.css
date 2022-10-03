@@ -209,7 +209,7 @@ hr {
 
 .section-heading {
   font-family: var(--century-gothic);
-  color: var(--dark-text);
+  color: var(--black);
   font-size: 1.75rem;
   font-weight: 400;
   margin: 0;
@@ -222,7 +222,7 @@ hr {
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
-  padding: 1rem 0 0.5rem 0;
+  padding: 1rem 1rem 0.5rem 0;
   /* text-decoration: none; */
 }
 
