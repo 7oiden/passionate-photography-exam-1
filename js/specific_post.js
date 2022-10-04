@@ -87,7 +87,7 @@ function createHtml(details) {
      <img class="post-image" id="my-image" src="${details._embedded["wp:featuredmedia"]["0"].source_url}" alt="${details._embedded["wp:featuredmedia"]["0"].alt_text}"/>
      <figcaption>- Click image to enlarge -</figcaption>
      </figure>
-     <h1 class="post-title">${details.title.rendered}</h1>
+     <h2 class="post-title">${details.title.rendered}</h2>
      <div class="info-container" id="gradient-border">
      <p class="info">${categoryName}</p>
      <p class="info">${details.formatted_date}</p>

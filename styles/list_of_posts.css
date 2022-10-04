@@ -34,7 +34,7 @@ main {
 .post-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   width: 100%;
   margin: 0 auto;
   /* background-color: pink; */
@@ -115,7 +115,6 @@ h2 {
 
 .post-text p {
   margin-top: 0;
-  margin-bottom: 4rem;
   padding: 0;
 }
 
@@ -127,7 +126,7 @@ h2 {
 #load-button {
   display: flex;
   align-self: center;
-  margin: 1rem auto 3rem auto;
+  margin: 2rem auto 8rem auto;
 }
 
 /* JS converted heading */
