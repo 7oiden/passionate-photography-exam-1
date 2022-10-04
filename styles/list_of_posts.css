@@ -71,14 +71,14 @@ main {
   opacity: 0.9;
 }
 
-.post-text {
+/* .post-text {
   margin-top: 0;
   height: 130px;
   overflow: hidden;
-}
+} */
 
 .post-text p {
-  margin-top: 0;
+  margin: 0.25rem 0 1.5rem 0;
   padding: 0;
 }
 
@@ -124,21 +124,21 @@ main {
 
 @media only screen and (min-width: 1600px) {
 
-  .post-wrapper {
+  /* .post-wrapper {
     display: flex;
     width: 100%;
     flex-direction: column;
     margin: 0 auto;
-  }
+  } */
 
-  .post-image {
+  /* .post-image {
     max-width: 720px;
-  }
+  } */
 
-  .post-text {
+  /* .post-text {
     max-width: 720px;
     height: 100px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1800px) {

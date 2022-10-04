@@ -89,7 +89,7 @@ async function fetchPosts() {
      <p class="info">${results[i].formatted_date}</p>
      <p>${numReplies} comments</p>
      </div>
-     <div class="post-text">${results[i].content.rendered}</div>
+     <div class="post-text">${results[i].excerpt.rendered}</div>
      </a>
      </div>
      `;
@@ -121,7 +121,7 @@ async function fetchPosts() {
      <p class="info">${results[i].formatted_date}</p>
      <p>${numReplies} comments</p>
      </div>
-     <div class="feature-text">${results[i].content.rendered}</div>
+     <div class="feature-text">${results[i].excerpt.rendered}</div>
      </a>
      </div>`;
       }
