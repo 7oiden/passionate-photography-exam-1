@@ -6,54 +6,18 @@ main {
   background-color: var(--light-grey);
 }
 
-/* .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-} */
-
-/* .main-section {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-} */
-
-/* h1 {
-  font-family: var(--main-heading);
-  color: var(--black);
-  font-size: 1.375rem;
-  font-weight: 400;
-} */
-
-/* .line-wrapper {
-  margin-left: 2rem;
-  margin-right: 2rem;
-} */
-
 .post-wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
   margin: 0 auto;
-  /* background-color: pink; */
 }
 
 .post-container {
   margin: 0 auto;
   display: none;
   padding-bottom: 1rem;
-}
-
-h2 {
-  font-family: var(--futura);
-  font-weight: 500;
-  font-size: 1.25rem;
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-  padding: 0;
-  text-decoration: underline;
 }
 
 .post-container:nth-child(1) {
@@ -129,31 +93,11 @@ h2 {
   margin: 2rem auto 8rem auto;
 }
 
-/* JS converted heading */
-/* h3 {
-  font-family: var(--main-heading);
-  font-size: 1.125rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: var(--light-blue);
-  text-align: center;
-  padding: 10px;
-  margin: 2rem 0 1rem 0;
-} */
-
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 768px) {
-  /* .line-wrapper {
-    margin-bottom: 1rem;
-  } */
-
-  /* h1 {
-    font-size: 1.5rem;
-  } */
-
+  
   .post-wrapper {
-    /* width: auto; */
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto;
@@ -163,16 +107,7 @@ h2 {
   .post-container {
     margin: 0 auto 1rem auto;
   }
-
-  .post-text {
-    /* max-width: 306px; */
-  }
 }
-
-/* JS converted heading */
-/* h3 {
-  font-size: 1.25rem;
-} */
 
 @media only screen and (min-width: 900px) {
   .post-wrapper {
@@ -181,52 +116,13 @@ h2 {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* h1 {
-    font-size: 1.75rem;
-  } */
-
-  /* .content-wrapper {
-    width: 100%;
-    flex-direction: row;
-    margin: 0 auto;
-  } */
-
-  /* .main-section {
-    flex: 2;
-  } */
-
-  h2 {
-    font-size: 1.375rem;
-  }
 
   .post-wrapper {
     width: 90%;
   }
-
-  /* .post-container {
-    margin-top: 1rem;
-  } */
 }
 
 @media only screen and (min-width: 1600px) {
-  /* h1 {
-    font-size: 1.875rem;
-  } */
-  /* .content-wrapper {
-    width: 90%;
-  } */
-
-  /* .main-section {
-    flex: 3;
-  } */
-
-  /* .line-wrapper {
-    width: 95%;
-  } */
-
-  h2 {
-    font-size: 1.5rem;
-  }
 
   .post-wrapper {
     display: flex;

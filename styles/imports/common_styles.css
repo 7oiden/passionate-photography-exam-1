@@ -232,7 +232,7 @@ hr {
   font-weight: 600;
   margin: 0;
   padding: 1rem 0 0.25rem 0;
-  /* text-decoration: none; */
+  text-decoration: underline;
 }
 
 /* aside */
@@ -492,7 +492,7 @@ input[type="search"] {
   flex-wrap: wrap;
   font-weight: 600;
   color: var(--footer);
-  padding: 0 0 0.375rem 0;
+  padding: 0.25rem 0 0.375rem 0;
   font-family: var(--main-heading);
   /* text-transform: uppercase; */
 }
@@ -726,7 +726,7 @@ footer {
   }
 
   .post-heading {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 
   /* aside */
@@ -786,6 +786,10 @@ footer {
   .line-wrapper {
     /* width: 70%; */
     /* margin: 0 auto 1rem auto; */
+  }
+
+  .post-heading {
+    font-size: 1.5rem;
   }
 
   .info-container p {
