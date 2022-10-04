@@ -101,7 +101,7 @@
   </header>
 
   <main>
-    <nav class="breadcrumb" aria-label="hieracy of content">
+    <nav class="breadcrumb" aria-label="hierarchy of content">
       <div>
         <a href="index.html" class="previous"> Home</a>
         <i class="arrow fas fa-chevron-right"></i>
@@ -109,56 +109,59 @@
       </div>
     </nav>
     <div class="content-wrapper">
-      <section class="main-section">
-        <div class="line-wrapper">
-          <div>
-            <hr />
+      <div class="main-section">
+        <section>
+          <div class="line-wrapper">
+            <div>
+              <hr />
+            </div>
+            <h1 class="section-heading">Contact</h1>
+            <div>
+              <hr />
+            </div>
           </div>
-          <h1 class="section-heading">Contact</h1>
-          <div>
-            <hr />
-          </div>
-        </div>
-        <form id="contact-form">
-          <div class="contact-input">
-            <label for="full-name"><strong>Name</strong> (must be at least 5 characters)</label>
-            <input class="input" type="text" name="full-name" id="full-name" placeholder="Name" />
-          </div>
-          <div class="error-message" id="name-error">
-            Must be at least 5 characters
-          </div>
-          <div class="contact-input">
-            <label for="contact-email"><strong>E-mail</strong></label>
-            <input class="input" type="text" name="email" id="contact-email" placeholder="your@email.com" />
-          </div>
-          <div class="error-message" id="contact-email-error">
-            Please enter a valid e-mail adress
-          </div>
-          <!-- I'm aware that the brief states that the inputs should have more than 5, 15 and 25 characters.
-            But for me it makes much more sense to have at least 5, 15 and 25 as they are "whole" numbers,
-            and that a minumum 6 character name, seems way to long -->
-          <div class="contact-input">
-            <label for="subject"><strong>Subject</strong> (must be at least 15
-              characters)</label>
-            <input class="input" type="text" name="subject" id="subject" placeholder="Subject" />
-          </div>
-          <div class="error-message" id="subject-error">
-            Must be at least 15 characters
-          </div>
-          <div class="contact-input">
-            <label for="message"><strong>Comment or message</strong> (must be at least 25
-              characters)</label>
-            <textarea class="input" name="" id="message"></textarea>
-          </div>
-          <div class="error-message" id="message-error">
-            Must be at least 25 characters
-          </div>
-          <button type="submit" class="button" id="contact-button" name="contact" value="contact">
-            Submit
-          </button>
-          <div class="success-message"></div>
-        </form>
-      </section>
+          <form id="contact-form">
+            <div class="contact-input">
+              <label for="full-name">Name</label>
+              <input class="input" type="text" name="full-name" id="full-name" placeholder="Name" />
+              <div class="error-message" id="name-error">
+                Must be at least 5 characters
+              </div>
+            </div>
+
+            <div class="contact-input">
+              <label for="contact-email">E-mail</label>
+              <input class="input" type="text" name="email" id="contact-email" placeholder="your@email.com" />
+              <div class="error-message" id="contact-email-error">
+                Please enter a valid e-mail address
+              </div>
+            </div>
+
+            <div class="contact-input">
+              <label for="subject">Subject</label>
+              <input class="input" type="text" name="subject" id="subject" placeholder="Subject" />
+              <div class="error-message" id="subject-error">
+                Must be at least 15 characters
+              </div>
+            </div>
+
+            <div class="contact-input">
+              <label for="message">Comment or message</label>
+              <textarea class="input" name="" id="message"></textarea>
+              <div class="error-message" id="message-error">
+                Must be at least 25 characters
+              </div>
+            </div>
+
+            <div>
+              <button type="submit" class="button" id="contact-button" name="contact" value="contact">
+                Submit
+              </button>
+              <div class="success-message"></div>
+            </div>
+          </form>
+        </section>
+      </div>
       <!-- aside -->
       <aside>
         <div class="aside-container">
@@ -166,7 +169,7 @@
             <h5 class="aside-heading">About me</h5>
             <a href="about.html">
               <figure class="about-image">
-                <img src="images/cristopher.jpg" alt="Photo of me, Christopher Duvall photgrapher and explorer" />
+                <img src="images/cristopher.jpg" alt="Photo of me, Christopher Duvall photographer and explorer" />
               </figure>
               <p class="aside-text">
                 I’m <strong>Christopher Duvall</strong>, an award winning and passionate
@@ -184,7 +187,7 @@
               <label for="newsletter-email">E-mail:</label>
               <input class="input" id="newsletter-email" type="text" name="email" placeholder="your@email.com" />
               <div class="error-message" id="email-error">
-                Please enter a valid e-mail adress
+                Please enter a valid e-mail address
               </div>
               <button type="submit" class="button" id="subscribe-button" name="subscribe" value="subscribe">
                 Subscribe
@@ -210,7 +213,7 @@
               <label for="categories">Select category:</label>
               <select name="categories" id="categories">
                 <option value="Street">Street</option>
-                <option value="Street">Lanscape</option>
+                <option value="Street">Landscape</option>
                 <option value="Street">Black & white</option>
                 <option value="Street">Portrait</option>
                 <option value="Street">Cityscape</option>
@@ -220,7 +223,7 @@
             <form class="dropdown">
               <label for="archive">Select month:</label>
               <select name="archive" id="archive">
-                <option value="Street">Descember - 2020</option>
+                <option value="Street">December - 2020</option>
                 <option value="Street">January - 2021</option>
                 <option value="Street">February - 2021</option>
                 <option value="Street">March - 2021</option>
