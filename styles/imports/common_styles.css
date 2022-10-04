@@ -146,6 +146,11 @@ nav.menu {
   padding: 0;
 }
 
+section {
+  width: 100%;
+  margin: 0 auto;
+}
+
 /* breadcrumb */
 .breadcrumb {
   width: 100%;
@@ -306,6 +311,20 @@ aside {
   display: flex;
   flex-direction: column;
   max-width: 350px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--light-grey);
+  margin: 0 auto 3rem auto;
+  padding: 3rem 7.5%;
+}
+
+.contact-input {
+  display: flex;
+  flex-direction: column;
 }
 
 .input {
@@ -568,6 +587,11 @@ footer {
 @media only screen and (min-width: 576px) {
   /* main
 --------------------*/
+  .form {
+    border-radius: 10px;
+    padding: 3rem 10%;
+  }
+
   /* aside */
   .aside-container {
     width: 70%;
@@ -586,9 +610,13 @@ footer {
 @media only screen and (min-width: 768px) {
   /* main
 --------------------*/
-  /* .section-heading {
-    font-size: 1.75rem;
-  } */
+  section {
+    width: 90%;
+  }
+
+  .form {
+    padding: 3rem 15%;
+  }
 
   .button {
     font-size: 1.25rem;
@@ -608,6 +636,14 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
+  section {
+      width: 85%;
+    }
+
+  .form {
+    padding: 3rem 20%;
+  }
+
   .aside-container {
     width: 75%;
     gap: 6rem;
@@ -729,6 +765,10 @@ footer {
     font-size: 1.375rem;
   }
 
+  .form {
+    gap: 1.25rem;
+  }
+
   /* aside */
   aside {
     /* width: 70%; */
@@ -783,6 +823,10 @@ footer {
     width: 90%;
   }
 
+  section {
+    width: 70%;
+  }
+
   .line-wrapper {
     /* width: 70%; */
     /* margin: 0 auto 1rem auto; */
@@ -806,5 +850,11 @@ footer {
 
   .section-heading {
     font-size: 2.25rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  section {
+    width: 65%;
   }
 }

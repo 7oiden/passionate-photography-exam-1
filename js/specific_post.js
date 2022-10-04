@@ -177,19 +177,19 @@ const commentSent = document.querySelector(".comment-sent");
 
 function checkCommentInput() {
   if (checkLength(name.value, 2)) {
-    commentNameError.style.visibility = "hidden";
+    commentNameError.style.display = "none";
   } else {
-    commentNameError.style.visibility = "visible";
+    commentNameError.style.display = "block";
   }
   if (validateEmail(commentEmail.value)) {
-    commentEmailError.style.visibility = "hidden";
+    commentEmailError.style.display = "none";
   } else {
-    commentEmailError.style.visibility = "visible";
+    commentEmailError.style.display = "block";
   }
   if (checkLength(comment.value, 4)) {
-    commentError.style.visibility = "hidden";
+    commentError.style.display = "none";
   } else {
-    commentError.style.visibility = "visible";
+    commentError.style.display = "block";
   }
 }
 
@@ -201,19 +201,19 @@ function validateCommentForm(event) {
   event.preventDefault();
 
   if (checkLength(name.value, 2)) {
-    commentNameError.style.visibility = "hidden";
+    commentNameError.style.display = "none";
   } else {
-    commentNameError.style.visibility = "visible";
+    commentNameError.style.display = "block";
   }
   if (validateEmail(commentEmail.value)) {
-    commentEmailError.style.visibility = "hidden";
+    commentEmailError.style.display = "none";
   } else {
-    commentEmailError.style.visibility = "visible";
+    commentEmailError.style.display = "block";
   }
   if (checkLength(comment.value, 4)) {
-    commentError.style.visibility = "hidden";
+    commentError.style.display = "none";
   } else {
-    commentError.style.visibility = "visible";
+    commentError.style.display = "block";
   }
   if (
     checkLength(name.value, 2) &&
@@ -223,6 +223,12 @@ function validateCommentForm(event) {
     commentSent.innerHTML = `
     <p id="success-message"><strong>Thank you for your comment!</strong> 
     The comment is sent for approval, and will normally appear within a day.</p>`;
+
+    commentForm.reset();
+
+    setTimeout(function () {
+      commentSent.innerHTML = "";
+    }, 3000);
   }
 }
 

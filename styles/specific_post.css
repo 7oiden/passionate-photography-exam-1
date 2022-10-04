@@ -5,10 +5,10 @@ main {
   background-color: var(--light-grey);
 }
 
-section {
+/* section {
   width: 100%;
   margin: 0 auto;
-}
+} */
 
 section a {
   margin-top: 1rem;
@@ -175,41 +175,38 @@ h3 {
 }
 
 /* comment-form */
-#comment-divider {
-  margin-top: 3rem;
-}
 
-.leave-comment {
+/* .leave-comment {
   background-color: var(--light-grey);
   padding-top: 1rem;
   padding-bottom: 2rem;
   margin-top: 1rem;
   border-radius: 10px;
-}
+} */
 
-#comment-form {
+/* #comment-form {
   display: flex;
   flex-direction: column;
   width: 90%;
   max-width: 450px;
   margin: 0 auto;
-}
+} */
 
-.input-container {
+/* .input-container {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-}
+} */
 
-.input-container:first-child {
+/* .input-container:first-child {
   margin-top: 1.5rem;
-}
+} */
 
-.input-container label {
+/* .input-container label {
   font-size: 0.875rem;
-}
+} */
 
-.comment-input {
+/* .comment-input {
   color: var(--navy);
   padding: 0.5rem;
   border: 3px solid var(--light-blue);
@@ -218,7 +215,7 @@ h3 {
 
 .comment-input:focus {
   border: 3px solid var(--gold);
-}
+} */
 
 #comment-author {
   padding: 0;
@@ -238,15 +235,19 @@ h3 {
   font-size: 1rem;
 }
 
-.comment-error {
+#comment-name-error, #comment-email-error, #comment-error {
+  display: none;
+}
+
+/* .comment-error {
   text-align: left;
   color: #be3e35;
   visibility: hidden;
-}
+} */
 
-.comment-error:before {
+/* .comment-error:before {
   content: "\002A";
-}
+} */
 
 #success-message {
   color: green;
@@ -279,9 +280,9 @@ h3 {
 --------------------*/
 @media only screen and (min-width: 768px) {
  
-  section {
+  /* section {
     width: 90%;
-  }
+  } */
 
   .post-title {
     font-size: 1.5rem;
@@ -293,9 +294,9 @@ h3 {
 }
 
 @media only screen and (min-width: 992px) {
-  section {
+  /* section {
     width: 85%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -353,9 +354,9 @@ h3 {
 
 @media only screen and (min-width: 1600px) {
   
-  section {
+  /* section {
     width: 70%;
-  }
+  } */
 
   .post-title {
     font-size: 2rem;
@@ -366,8 +367,8 @@ h3 {
   }
 }
 
-@media only screen and (min-width: 1800px) {
+/* @media only screen and (min-width: 1800px) {
   section {
     width: 65%;
   }
-}
+} */

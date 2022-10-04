@@ -143,7 +143,7 @@
             <div class="spinner"></div>
             <!-- dynamic created content -->
           </div>
-          <div class="line-wrapper" id="comment-divider">
+          <div class="line-wrapper">
             <div>
               <hr />
             </div>
@@ -152,35 +152,38 @@
               <hr />
             </div>
           </div>
-          <div class="leave-comment">
-            <form id="comment-form">
-              <div class="input-container">
+          
+            <form id="comment-form" class="form">
+              <div class="contact-input">
                 <label for="name">Name</label>
-                <input class="comment-input" type="text" name="name" id="name" placeholder="Name" />
+                <input class="input" type="text" name="name" id="name" placeholder="Name" />
+                <div class="error-message" id="comment-name-error">
+                  Must be at least 3 characters
+                </div>
               </div>
-              <div class="comment-error" id="comment-name-error">
-                Must be at least 3 characters
-              </div>
-              <div class="input-container">
+
+              <div class="contact-input">
                 <label for="comment-email">E-mail</label>
-                <input class="comment-input" type="text" name="email" id="comment-email" placeholder="your@email.com" />
+                <input class="input" type="text" name="email" id="comment-email" placeholder="your@email.com" />
+                <div class="error-message" id="comment-email-error">
+                  Please enter a valid e-mail address
+                </div>
               </div>
-              <div class="comment-error" id="comment-email-error">
-                Please enter a valid e-mail adress
-              </div>
-              <div class="input-container">
+
+              <div class="contact-input">
                 <label for="comment">Comment</label>
-                <textarea class="comment-input" name="comment" id="comment-textarea"></textarea>
+                <textarea class="input" name="comment" id="comment-textarea"></textarea>
+                <div class="error-message" id="comment-error">
+                  Must be at least 5 characters
+                </div>
               </div>
-              <div class="comment-error" id="comment-error">
-                Must be at least 5 characters
-              </div>
+
               <div class="comment-sent"></div>
               <button type="submit" class="button" id="comment-button" name="contact" value="contact">
                 Post comment
               </button>
             </form>
-          </div>
+        
         </section>
       </div>
       <!-- aside -->

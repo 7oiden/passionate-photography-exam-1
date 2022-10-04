@@ -6,10 +6,10 @@ main {
   background-color: var(--light-grey);
 }
 
-section {
+/* section {
   width: 100%;
   margin: 0 auto;
-}
+} */
 
 .post-title {
   font-family: var(--main-heading);
@@ -95,9 +95,9 @@ hr {
 --------------------*/
 @media only screen and (min-width: 768px) {
   
-  section {
+  /* section {
     width: 90%;
-  }
+  } */
 
   .post-title {
     font-size: 1.5rem;
@@ -115,9 +115,9 @@ hr {
 }
 
 @media only screen and (min-width: 992px) {
-  section {
+  /* section {
       width: 85%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -141,17 +141,17 @@ hr {
 
 @media only screen and (min-width: 1600px) {
   
-  section {
+  /* section {
     width: 70%;
-  }
+  } */
 
   .post-title {
     font-size: 2rem;
   }
 }
 
-@media only screen and (min-width: 1800px) {
+/* @media only screen and (min-width: 1800px) {
   section {
     width: 65%;
   }
-}
+} */
