@@ -89,7 +89,7 @@ nav.menu {
 }
 
 .mobile-container {
-  background-color: var(--navy);
+  background-color: var(--navy); 
 }
 
 .mobile-menu {
@@ -99,7 +99,23 @@ nav.menu {
   display: none;
   justify-content: space-between;
   width: 85%;
+  /* animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center; */
 }
+
+/* @keyframes growDown {
+  0% {
+    transform: scaleY(0)
+  }
+
+  80% {
+    transform: scaleY(1.1)
+  }
+
+  100% {
+    transform: scaleY(1)
+  }
+} */
 
 .mobile-menu ul {
   margin: 0;
@@ -247,6 +263,7 @@ aside {
   /* color: var(--navy); */
   background-color: var(--light-grey);
   min-height: 100%;
+  margin-top: 5rem;
 }
 
 .aside-container {
@@ -520,7 +537,7 @@ input[type="search"] {
 
 .info-container p {
   /* color: var(--navy); */
-  color: gray;
+  /* color: gray; */
   padding: 0;
   margin: 0;
   /* font-size: 0.875rem; */
@@ -590,7 +607,7 @@ footer {
   /* main
 --------------------*/
   .form {
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 3rem 10%;
   }
 

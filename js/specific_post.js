@@ -127,29 +127,41 @@ const commentUrl =
 
 const corsFixComments = "https://noroffcors.herokuapp.com/" + commentUrl;
 
-console.log(commentUrl);
+// console.log(commentUrl);
 
 async function fetchComments() {
   try {
     const response = await fetch(corsFixComments);
     const comments = await response.json();
 
-    console.log(comments);
-    console.log(comments.length);
+    // console.log(comments);
+    // console.log(comments.length);
 
     commentWrapper.innerHTML = "";
 
     if (comments.length === 0) {
-      commentWrapper.innerHTML = `<p class="comments-default">No comments yet - but feel free to leave one!</p>`;
+      commentWrapper.innerHTML = `<div class="comment-container"><span>No comments yet, but feel free to leave one!</span></div>`;
     } else {
       for (let i = 0; i < comments.length; i++) {
+
+        console.log(comments[i].date);
+        let initialDate = comments[i].date;
+        let formattedDate = new Date(initialDate).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+        });
+        console.log(formattedDate);
         commentWrapper.innerHTML += `
        <div class="comment-container">
        <figure class="comment-image"><img id="myimg" class="comment-image" src="${comments[i].author_avatar_urls[96]}" alt="image of a generic avatar"/> </figure>
        <div>
-       <p id="comment-author">${comments[i].author_name}</p>
-       <div class="info-container"><p>${comments[i].date}</p></div>
-       <p id="comment-text">${comments[i].content.rendered}</p>
+       <span id="comment-author">${comments[i].author_name}</span>
+       <div class="info-container"><span>${formattedDate}</span></div>
+       <div id="comment-text">${comments[i].content.rendered}</div>
        </div>
        </div> `;
       }
