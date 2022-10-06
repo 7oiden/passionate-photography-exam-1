@@ -82,6 +82,8 @@ function createHtml(details) {
     }
   }
 
+  const commentIcon = `<svg class="comment-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 240c0 114.9-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6C73.6 471.1 44.7 480 16 480c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4l0 0 0 0 0 0 0 0 .3-.3c.3-.3 .7-.7 1.3-1.4c1.1-1.2 2.8-3.1 4.9-5.7c4.1-5 9.6-12.4 15.2-21.6c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208z"/></svg>`;
+
   postContainer.innerHTML = `
      <figure class="post-image">
      <img class="post-image" id="my-image" src="${details._embedded["wp:featuredmedia"]["0"].source_url}" alt="${details._embedded["wp:featuredmedia"]["0"].alt_text}"/>
@@ -91,7 +93,10 @@ function createHtml(details) {
      <div class="info-container" id="gradient-border">
      <p class="info">${categoryName}</p>
      <p class="info">${details.formatted_date}</p>
-     <p>${numReplies} comments</p>
+     <div class="icon-wrapper">
+     ${commentIcon}
+     <p>${numReplies}</p>
+     </div>
      </div>
      <div class="post-text">${details.content.rendered}</div>
  `;
@@ -143,8 +148,6 @@ async function fetchComments() {
       commentWrapper.innerHTML = `<div class="comment-container"><span>No comments yet, but feel free to leave one!</span></div>`;
     } else {
       for (let i = 0; i < comments.length; i++) {
-
-        console.log(comments[i].date);
         let initialDate = comments[i].date;
         let formattedDate = new Date(initialDate).toLocaleDateString("en-US", {
           year: "numeric",
@@ -154,7 +157,7 @@ async function fetchComments() {
           minute: "2-digit",
           hour12: false,
         });
-        console.log(formattedDate);
+
         commentWrapper.innerHTML += `
        <div class="comment-container">
        <figure class="comment-image"><img id="myimg" class="comment-image" src="${comments[i].author_avatar_urls[96]}" alt="image of a generic avatar"/> </figure>
