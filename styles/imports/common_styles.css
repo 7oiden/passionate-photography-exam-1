@@ -48,6 +48,11 @@ a {
   color: inherit;
 }
 
+figure, img {
+  margin: 0;
+  padding: 0;
+}
+
 i {
   color: white;
 }
@@ -528,7 +533,7 @@ input[type="search"] {
 .info-container {
   display: flex;
   flex-wrap: wrap;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--footer);
   padding: 0.25rem 0 0.375rem 0;
   font-family: var(--main-heading);

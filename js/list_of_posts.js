@@ -81,17 +81,19 @@ async function fetchPosts() {
 
         postWrapper.innerHTML += `
     <div class="post-container" id="gradient-border">
-     <a href="specific_post.html?id=${results[i].id}">
+     <a href="specific_post.html?id=${results[i].id}" class="test">
      <figure class="post-image">
      <img class="post-image" src="${mediaArray[j].source_url}" alt="${mediaArray[j].alt_text}"/>
      </figure>
+     <div class="card">
      <h2 class="dynamic-header post-heading">${results[i].title.rendered}</h2>
-     <div class="info-container">
+     <div class="info-container card-info">
      <p class="info">${categoryName}</p>
      <p class="info">${results[i].formatted_date}</p>
      <div class="icon-wrapper">
      ${commentIcon}
      <p>${numReplies}</p>
+     </div>
      </div>
      </div>
      <div class="post-text">${results[i].excerpt.rendered}</div>
@@ -120,7 +122,7 @@ async function fetchPosts() {
      <figure class="feature-image">
      <img class="feature-image" src="${mediaArray[0].source_url}" alt="${mediaArray[0].alt_text}"/>
      </figure>
-     <h4 class="post-heading">${results[i].title.rendered}</h4>
+     <h4 class="feature-heading">${results[i].title.rendered}</h4>
      <div class="info-container">
      <p class="info">${categoryName}</p>
      <p class="info">${results[i].formatted_date}</p>

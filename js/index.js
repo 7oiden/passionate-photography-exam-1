@@ -7,12 +7,34 @@ const next = document.querySelector(".next");
 
 let sliderIndex = 0;
 
+let percentage = 0;
+
+if (window.innerWidth < 768) {
+  percentage = -12.5;
+} else if (window.innerWidth >= 768) {
+  percentage = -25;
+}
+
+let windowWidth = 0;
+
+function resizeListener() {
+  windowWidth = window.innerWidth;
+
+  if (windowWidth < 768) {
+    percentage = -12.5;
+  } else if (windowWidth >= 768) {
+    percentage = -25;
+  }
+}
+
+window.addEventListener("resize", resizeListener);
+
 circles.forEach(function (indicator, circleIndex) {
   indicator.addEventListener("click", function () {
     sliderIndex = circleIndex;
     document.querySelector(".selected").classList.remove("selected");
     indicator.classList.add("selected");
-    slider.style.transform = "translate(" + circleIndex * -25 + "%)";
+    slider.style.transform = "translate(" + circleIndex * percentage + "%)";
   });
 });
 
@@ -20,12 +42,12 @@ previous.addEventListener("click", function () {
   sliderIndex = sliderIndex > 0 ? sliderIndex - 1 : 0;
   document.querySelector(".selected").classList.remove("selected");
   indicatorCircles.children[sliderIndex].classList.add("selected");
-  slider.style.transform = "translate(" + sliderIndex * -25 + "%)";
+  slider.style.transform = "translate(" + sliderIndex * percentage + "%)";
 });
 
 next.addEventListener("click", function () {
   sliderIndex = sliderIndex < 3 ? sliderIndex + 1 : 3;
   document.querySelector(".selected").classList.remove("selected");
   indicatorCircles.children[sliderIndex].classList.add("selected");
-  slider.style.transform = "translate(" + sliderIndex * -25 + "%)";
+  slider.style.transform = "translate(" + sliderIndex * percentage + "%)";
 });
