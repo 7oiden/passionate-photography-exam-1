@@ -4,7 +4,7 @@ const featureWrapper = document.querySelector(".feature-wrapper");
 //important! this variable is redeclared at common_scripts.js
 var htmlSelector = document.querySelectorAll("html");
 
-console.log(htmlSelector[0]);
+// console.log(htmlSelector[0]);
 
 const embed = "?_embed";
 const perPage = "&per_page=15";
@@ -23,7 +23,7 @@ async function fetchPosts() {
     const response = await fetch(corsFixUrl);
     const results = await response.json();
 
-    console.log(results);
+    // console.log(results);
 
     postWrapper.innerHTML = "";
 

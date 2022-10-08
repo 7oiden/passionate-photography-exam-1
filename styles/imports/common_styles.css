@@ -80,6 +80,26 @@ header {
   padding-bottom: 0.5rem;
 }
 
+.trigger-menu {
+  transition: transform 0.4s;
+}
+
+.scroll-down {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up {
+  transform: none;
+}
+
+.dropdown-show {
+  display: flex;
+}
+
+.dropdown-hide {
+  display: none;
+}
+
 .logo {
   width: 200px;
   margin: 0;
@@ -101,7 +121,7 @@ nav.menu {
   background-color: var(--navy);
   font-family: var(--links);
   margin: 0 auto;
-  display: none;
+  /* display: none; */
   justify-content: space-between;
   width: 85%;
   /* animation: growDown 300ms ease-in-out forwards;
