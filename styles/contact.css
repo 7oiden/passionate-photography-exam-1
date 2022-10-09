@@ -31,7 +31,7 @@ main {
 } */
 
 .input {
-  color: var(--navy);
+  color: var(--header);
   padding: 0.5rem;
   border: 3px solid var(--light-blue);
   outline: none;

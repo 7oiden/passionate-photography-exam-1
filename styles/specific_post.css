@@ -16,7 +16,7 @@ section a {
 
 .post-title {
   font-family: var(--main-heading);
-  color: var(--navy);
+  color: var(--header);
   font-size: 1.375rem;
   font-weight: 600;
   margin-top: 2rem;
@@ -50,7 +50,7 @@ blockquote {
   font-weight: 600;
   font-size: 1.125rem;
   font-style: italic;
-  /* color: var(--navy); */
+  /* color: var(--header); */
   border-left: 3px solid var(--light-blue);
   padding-left: 1rem;
   margin: 2rem 1rem 2rem 1rem;
@@ -205,14 +205,14 @@ h3 {
 } */
 
 /* .comment-input {
-  color: var(--navy);
+  color: var(--header);
   padding: 0.5rem;
   border: 3px solid var(--light-blue);
   outline: none;
 }
 
 .comment-input:focus {
-  border: 3px solid var(--gold);
+  border: 3px solid var(--accent);
 } */
 
 #comment-author {
@@ -221,7 +221,7 @@ h3 {
   font-family: var(--main-heading);
   font-size: 1.125rem;
   font-weight: bold;
-  color: var(--navy)
+  color: var(--header)
 }
 
 #comment-text {
@@ -339,9 +339,9 @@ h3 {
     font-size: 1.5rem;
   }
 
-  .comments-default {
+  /* .comments-default {
     font-size: 1.25rem;
-  }
+  } */
 
   .comment-image {
     width: 75px;

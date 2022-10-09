@@ -18,7 +18,7 @@ function toggleNavbar() {
     navbar.classList.remove("scroll-up");
     return;
   }
-  
+
   if (currentScroll > lastScroll && !navbar.classList.contains("scroll-down")) {
     // down
     navbar.classList.remove("scroll-up");
@@ -68,7 +68,7 @@ const emailError = document.querySelector("#email-error");
 
 function checkInput() {
   if (validateEmail(newsletterEmail.value)) {
-    emailError.style.visibility = "hidden";
+    emailError.style.display = "none";
   }
 }
 
@@ -78,9 +78,9 @@ function validateForm(event) {
   event.preventDefault();
 
   if (validateEmail(newsletterEmail.value)) {
-    emailError.style.visibility = "hidden";
+    emailError.style.display = "none";
   } else {
-    emailError.style.visibility = "visible";
+    emailError.style.display = "block";
   }
   if (validateEmail(newsletterEmail.value)) {
     subscribeMessage.innerHTML = `<p id="subscribe-message">Welcome! Please check your inbox</p>`;

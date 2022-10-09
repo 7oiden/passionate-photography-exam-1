@@ -35,7 +35,7 @@
 
 <body>
   <header>
-    <div class="header-wrapper">
+    <div class="header-wrapper trigger-menu">
       <div class="header-container">
         <figure class="logo">
           <a href="index.html">
@@ -48,13 +48,13 @@
         <!-- large screen menu -->
         <nav class="menu" aria-label="main menu">
           <ul class="menu">
-            <li><a class="menu-item" href="index.html">Home</a></li>
+            <li>
+              <a class="menu-item current-page" href="index.html">Home</a>
+            </li>
             <li>
               <a class="menu-item" href="list_of_posts.html">Articles</a>
             </li>
-            <li>
-              <a class="menu-item current-page" href="about.html">About me</a>
-            </li>
+            <li><a class="menu-item" href="about.html">About me</a></li>
             <li><a class="menu-item" href="contact.html">Contact</a></li>
           </ul>
           <ul class="media">
@@ -63,8 +63,7 @@
                   class="social-media fab fa-facebook"></i></a>
             </li>
             <li>
-              <a href="https://www.twitter.com" aria-label="twitter icon"><i
-                  class="social-media fab fa-twitter"></i></a>
+              <a href="https://www.twitter.com" aria-label="twitter icon"><i class="social-media fab fa-twitter"></i></a>
             </li>
             <li>
               <a href="https://www.instagram.com" aria-label="instagram icon"><i
@@ -73,30 +72,30 @@
           </ul>
         </nav>
       </div>
-    </div>
-    <!-- small screen menu -->
-    <div class="mobile-container">
-      <nav class="mobile-menu" aria-label="main menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="list_of_posts.html">Articles</a></li>
-          <li><a href="about.html">About me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul id="icon-list">
-          <li>
-            <a href="https://www.facebook.com" aria-label="facebook icon"><i
-                class="social-media fab fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" aria-label="twitter icon"><i class="social-media fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com" aria-label="instagram icon"><i
-                class="social-media fab fa-instagram"></i></a>
-          </li>
-        </ul>
-      </nav>
+      <!-- small screen menu -->
+      <div class="mobile-container">
+        <nav class="mobile-menu dropdown-hide" aria-label="main menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="list_of_posts.html">Articles</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul id="icon-list">
+            <li>
+              <a href="https://www.facebook.com" aria-label="facebook icon"><i
+                  class="social-media fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" aria-label="twitter icon"><i class="social-media fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" aria-label="instagram icon"><i
+                  class="social-media fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -197,7 +196,7 @@
         <div class="aside-container">
           <div>
             <h5 class="aside-heading">About me</h5>
-            <a href="about.html">
+            <div class="aside-block">
               <figure class="about-image">
                 <img src="images/cristopher.jpg" alt="Photo of me, Christopher Duvall photgrapher and explorer" />
               </figure>
@@ -210,58 +209,70 @@
                 This is a blog about photography and how <em>you</em> can
                 become a better one. Welcome here.
               </p>
-              <p id="read-more">Learn more</p>
-            </a>
+              <a href="about.html" class="button secondary-button">Learn more</a>
+            </div>
             <h5 class="aside-heading">Become a subscriber</h5>
-            <form method="get" class="aside-input" id="newsletter-form">
-              <label for="newsletter-email">E-mail:</label>
-              <input class="input" id="newsletter-email" type="text" name="email" placeholder="your@email.com" />
-              <div class="error-message" id="email-error">
-                Please enter a valid e-mail adress
-              </div>
-              <button type="submit" class="button" id="subscribe-button" name="subscribe" value="subscribe">
-                Subscribe
-              </button>
-            </form>
-            <div class="subscribe-message"></div>
+            <div class="aside-block">
+              <form method="get" class="aside-input" id="newsletter-form">
+                <label for="newsletter-email">E-mail:</label>
+                <input class="input" id="newsletter-email" type="text" name="email" placeholder="your@email.com" />
+                <div class="error-message" id="email-error">
+                  Please enter a valid e-mail address
+                </div>
+                <div class="subscribe-message"></div>
+                <button type="submit" class="button" id="subscribe-button" name="subscribe" value="subscribe">
+                  Subscribe
+                </button>
+              </form>
+            </div>
           </div>
           <div>
             <h5 class="aside-heading">Specific search</h5>
-            <form class="aside-input" id="search-form">
-              <label for="search">Search:</label>
-              <input class="input" type="search" name="search" id="search" placeholder="Search..." />
-              <i id="search-icon" class="fas fa-search" aria-label="search-icon"></i>
-            </form>
+            <div class="aside-block">
+              <form class="aside-input" id="search-form">
+                <label for="search">Search:</label>
+                <input class="input" type="search" name="search" id="search" placeholder="Search..." />
+                <i id="search-icon" class="fas fa-search" aria-label="search-icon"></i>
+              </form>
+            </div>
             <h5 class="aside-heading">Featured articles</h5>
-            <ul class="aside-list featured-posts-list">
-              <!-- dynamic created content -->
-            </ul>
+            <div class="aside-block">
+              <ul class="aside-list featured-posts-list">
+                <!-- dynamic created content -->
+              </ul>
+            </div>
             <h5 class="aside-heading">Most recent articles</h5>
-            <ul class="aside-list recent-posts-list">
-              <!-- dynamic created content -->
-            </ul>
+            <div class="aside-block">
+              <ul class="aside-list recent-posts-list">
+                <!-- dynamic created content -->
+              </ul>
+            </div>
             <h5 class="aside-heading">Categories</h5>
-            <form class="dropdown">
-              <label for="categories">Select category:</label>
-              <select name="categories" id="categories">
-                <option value="Street">Street</option>
-                <option value="Street">Lanscape</option>
-                <option value="Street">Black & white</option>
-                <option value="Street">Portrait</option>
-                <option value="Street">Cityscape</option>
-              </select>
-            </form>
+            <div class="aside-block">
+              <form class="dropdown">
+                <label for="categories">Select category:</label>
+                <select name="categories" id="categories">
+                  <option value="Street">Street</option>
+                  <option value="Street">Landscape</option>
+                  <option value="Street">Black & white</option>
+                  <option value="Street">Portrait</option>
+                  <option value="Street">Cityscape</option>
+                </select>
+              </form>
+            </div>
             <h5 class="aside-heading">Article Archives</h5>
-            <form class="dropdown">
-              <label for="archive">Select month:</label>
-              <select name="archive" id="archive">
-                <option value="Street">Descember - 2020</option>
-                <option value="Street">January - 2021</option>
-                <option value="Street">February - 2021</option>
-                <option value="Street">March - 2021</option>
-                <option value="Street">April - 2021</option>
-              </select>
-            </form>
+            <div class="aside-block">
+              <form class="dropdown">
+                <label for="archive">Select month:</label>
+                <select name="archive" id="archive">
+                  <option value="Street">December - 2020</option>
+                  <option value="Street">January - 2021</option>
+                  <option value="Street">February - 2021</option>
+                  <option value="Street">March - 2021</option>
+                  <option value="Street">April - 2021</option>
+                </select>
+              </form>
+            </div>
           </div>
         </div>
       </aside>

@@ -13,7 +13,7 @@ main {
 
 .post-title {
   font-family: var(--main-heading);
-  color: var(--navy);
+  color: var(--header);
   font-size: 1.375rem;
   font-weight: 600;
   margin-top: 2rem;
@@ -40,7 +40,7 @@ blockquote {
   font-weight: 600;
   font-size: 1.125rem;
   font-style: italic;
-  /* color: var(--navy); */
+  /* color: var(--header); */
   border-left: 3px solid var(--light-blue);
   padding-left: 1rem;
   margin: 2rem 1rem 2rem 1rem;

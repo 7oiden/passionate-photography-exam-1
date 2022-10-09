@@ -28,7 +28,7 @@ main {
 .main-heading p {
   display: block;
   text-align: right;
-  color: var(--navy);
+  color: var(--header);
   padding: 0 1rem;
   margin-top: 0.5rem;
 }
@@ -38,14 +38,15 @@ strong {
 }
 
 h1 {
-  background-color: #feb41cbf;
+  background-color: var(--accent);
   font-family: var(--hero-heading);
   font-size: 1.625rem;
   font-weight: 400;
-  color: var(--black);
+  color: var(--white);
   display: inline-block;
   margin: 0;
   padding: 1rem 2rem;
+  border-radius: 3px;
   box-shadow: 0 6px 12px #00000029;
 }
 
@@ -60,6 +61,7 @@ h1 {
 .quote {
   /* margin: 0 auto; */
   color: var(--white);
+  font-family: var(--main-heading);
   padding: 1rem;
   margin: 0 auto;
   display: flex;
@@ -70,7 +72,6 @@ h1 {
   display: block;
   margin: 0;
   padding: 0;
-  font-family: var(--main-heading);
   font-style: italic;
 }
 
@@ -82,7 +83,7 @@ h1 {
 }
 
 .quote p:nth-child(2) {
-  font-family: var(--open-sans);
+  /* font-family: var(--open-sans); */
   font-style: normal;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -126,7 +127,7 @@ h4 {
 
 .feature-heading {
   font-family: var(--links);
-  color: var(--navy);
+  color: var(--header);
   font-size: 1.25rem;
   font-weight: 600;
   margin: 0;
@@ -232,14 +233,14 @@ h4 {
   height: 1rem;
   border-radius: 50%;
   background-color: transparent;
-  border: 3px solid var(--navy);
+  border: 3px solid var(--header);
   margin: 0;
   padding: 0;
   cursor: pointer;
 }
 
 .selected {
-  background-color: var(--navy);
+  background-color: var(--header);
 }
 
 .previous,
@@ -250,13 +251,13 @@ h4 {
 .fa-chevron-circle-left {
   font-size: 2rem;
   margin-right: 0.75rem;
-  color: var(--navy);
+  color: var(--header);
 }
 
 .fa-chevron-circle-right {
   font-size: 2rem;
   margin-left: 0.75rem;
-  color: var(--navy);
+  color: var(--header);
 }
 
 .line-left {
