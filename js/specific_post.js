@@ -1,5 +1,5 @@
 //fetch specific post
-const currentBreadcrumb = document.querySelector(".current");
+const activeBreadcrumb = document.querySelector(".active");
 const postContainer = document.querySelector(".post-container");
 const postImage = document.querySelector(".post-image");
 const postHeading = document.querySelector("h2");
@@ -28,7 +28,7 @@ async function fetchSpecific() {
     const response = await fetch(corsFixSpecific);
     const details = await response.json();
 
-    console.log(details);
+    // console.log(details);
 
     document.title = `Passionate Photography | Post-page | ${details.title.rendered}`;
 
@@ -52,7 +52,7 @@ function createHtml(details) {
     numReplies = replies[0].length;
   }
 
-  currentBreadcrumb.innerHTML = `${details.title.rendered}`;
+  activeBreadcrumb.innerHTML = `${details.title.rendered}`;
 
   const categoriesArray = details.categories;
 
