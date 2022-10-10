@@ -1,7 +1,7 @@
 :root {
   --header: #3a4352;
   /* --header: #515E73; */
-  /* --accent: #feb41c; */
+  --gold: #feb41c;
   --accent: #36878F;
   --footer: #4b5f6d;
   --highlight: #264c85;
@@ -748,10 +748,10 @@ footer {
     display: none;
   }
 
-  .header-container {
+  /* .header-container {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
+  } */
 
   nav.menu {
     width: 100%;

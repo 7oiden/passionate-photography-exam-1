@@ -4,6 +4,8 @@ const navbar = document.querySelector(".trigger-menu");
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const mobileMenu = document.querySelector(".mobile-menu");
 
+// const logo = document.querySelector(".logo")
+
 let lastScroll = 0;
 
 function toggleNavbar() {
