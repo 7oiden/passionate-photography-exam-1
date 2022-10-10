@@ -236,7 +236,7 @@ h3 {
 
 #comment-textarea {
   height: 150px;
-  font-family: var(--open-sans);
+  font-family: var(--body-text);
   font-size: 1rem;
 }
 

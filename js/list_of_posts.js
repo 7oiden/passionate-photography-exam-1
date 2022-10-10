@@ -81,7 +81,7 @@ async function fetchPosts() {
 
         postWrapper.innerHTML += `
     <div class="post-container" id="gradient-border">
-     <a href="specific_post.html?id=${results[i].id}" class="test">
+     <a href="specific_post.html?id=${results[i].id}">
      <figure class="post-image">
      <img class="post-image" src="${mediaArray[j].source_url}" alt="${mediaArray[j].alt_text}"/>
      </figure>

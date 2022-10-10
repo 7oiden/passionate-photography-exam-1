@@ -6,26 +6,21 @@ main {
   margin: 0 auto;
 }
 
-.main-container {
+.hero-container {
   background: url("../images/main_background_image.jpg") no-repeat center bottom;
   background-size: cover;
   margin-top: -3rem;
   text-align: center;
-  height: 620px;
+  height: 670px;
   position: relative;
 }
 
-.main-heading {
+.hero-heading {
   margin: 7rem 5% 0 5%;
   display: inline-block;
 }
 
-/* .main-heading-bg {
-  background-color: transparent;
-  margin-bottom: 1rem;
-} */
-
-.main-heading p {
+.hero-subheading  {
   display: block;
   text-align: right;
   color: var(--header);
@@ -39,7 +34,6 @@ strong {
 }
 
 h1 {
-  /* background-color: var(--accent); */
   font-family: var(--hero-heading);
   font-size: 2.25rem;
   font-weight: 600;
@@ -62,7 +56,7 @@ h1 {
 .quote {
   /* margin: 0 auto; */
   color: var(--white);
-  font-family: var(--main-heading);
+  font-family: var(--hero-heading);
   padding: 1rem;
   margin: 0 auto;
   display: flex;
@@ -84,7 +78,7 @@ h1 {
 }
 
 .quote p:nth-child(2) {
-  /* font-family: var(--open-sans); */
+  font-family: var(--main-heading);
   font-style: normal;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -96,6 +90,7 @@ h1 {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
+  padding-bottom: 6rem;
   /* color: black; */
 }
 
@@ -282,11 +277,11 @@ h4 {
 --------------------*/
 
 @media only screen and (min-width: 576px) {
-  .main-container {
+  .hero-container {
     height: 954px;
   }
 
-  .main-heading p {
+  .hero-heading p {
     text-align: right;
   }
 
@@ -300,7 +295,7 @@ h4 {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-container {
+  .hero-container {
     height: 900px;
   }
 
@@ -335,7 +330,7 @@ h4 {
 }
 
 @media only screen and (min-width: 992px) {
-  .main-container {
+  .hero-container {
     height: 660px;
   }
 
@@ -347,7 +342,7 @@ h4 {
     width: 70%;
   }
 
-  .main-heading {
+  .hero-heading {
     margin-top: 9rem;
   }
 }
@@ -357,7 +352,7 @@ h4 {
     background-color: var(--light-grey);
   }
 
-  .main-container {
+  .hero-container {
     height: 720px;
   }
 
@@ -365,7 +360,7 @@ h4 {
     font-size: 4rem;
   }
 
-  .main-heading p {
+  .hero-heading p {
     font-size: 1.375rem;
   }
 
@@ -408,11 +403,11 @@ h4 {
 }
 
 @media only screen and (min-width: 1600px) {
-  .main-container {
+  .hero-container {
     height: 965px;
   }
 
-  .main-heading {
+  .hero-heading {
     margin-top: 11rem;
   }
 

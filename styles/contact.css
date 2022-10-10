@@ -40,7 +40,7 @@ main {
 
 textarea {
   height: 200px;
-  font-family: var(--open-sans);
+  font-family: var(--body-text);
   font-size: 1rem;
 }
 
