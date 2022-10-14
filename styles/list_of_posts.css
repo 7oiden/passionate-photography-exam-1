@@ -63,6 +63,7 @@ main {
 .post-image {
   width: 100%;
   margin: 0;
+  padding: 0;
   transition: opacity 0.5s;
   opacity: 1;
 }
@@ -99,8 +100,8 @@ main {
   
   .post-wrapper {
     display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem 2rem;
   }
 
@@ -141,12 +142,3 @@ main {
   } */
 }
 
-@media only screen and (min-width: 1800px) {
-  .post-wrapper {
-    width: 90%;
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto auto;
-    gap: 50px;
-  }
-}

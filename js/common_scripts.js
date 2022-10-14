@@ -1,4 +1,4 @@
-//remove logo on scroll
+//hide navbar on scroll
 const navbar = document.querySelector(".trigger-menu");
 
 const hamburgerMenu = document.querySelector("#hamburger-menu");
@@ -40,15 +40,6 @@ function toggleNavbar() {
 window.addEventListener("scroll", toggleNavbar);
 
 //mobile dropdown menu
-
-// function mobileMenuDropdown() {
-//   if (mobileMenu.style.display === "flex") {
-//     mobileMenu.style.display = "none";
-//   } else {
-//     mobileMenu.style.display = "flex";
-//   }
-// }
-
 function mobileMenuDropdown() {
   if (mobileMenu.classList.contains("dropdown-hide")) {
     mobileMenu.classList.remove("dropdown-hide");

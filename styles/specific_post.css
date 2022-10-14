@@ -56,14 +56,13 @@ blockquote {
   margin: 2rem 1rem 2rem 1rem;
 }
 
-h2,
+/* h2,
 h3 {
   font-family: var(--main-heading);
-  /* color: var(--black); */
   font-size: 1.25rem;
   font-weight: 400;
   margin: 0;
-}
+} */
 
 /* common styles override */
 #gradient-border {
@@ -343,10 +342,10 @@ h3 {
     font-size: 1.75rem;
   }
 
-  h2,
+  /* h2,
   h3 {
     font-size: 1.5rem;
-  }
+  } */
 
   /* .comments-default {
     font-size: 1.25rem;

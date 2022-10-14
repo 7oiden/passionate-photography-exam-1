@@ -1,3 +1,5 @@
+import { postsUrl } from "./settings/api.js";
+
 const postWrapper = document.querySelector(".post-wrapper");
 const featureWrapper = document.querySelector(".feature-wrapper");
 
@@ -6,24 +8,45 @@ var htmlSelector = document.querySelectorAll("html");
 
 // console.log(htmlSelector[0]);
 
-const embed = "?_embed";
-const perPage = "&per_page=15";
-const order = "&orderby=date";
+// const embed = "?_embed";
+// const perPage = "&per_page=15";
+// const order = "&orderby=date";
 
-const postsUrl =
-  "http://7oiden.com/passionate-photography/wp-json/wp/v2/posts/" +
-  embed +
-  perPage +
-  order;
+// const postsUrl =
+//   "http://7oiden.com/passionate-photography/wp-json/wp/v2/posts/" +
+//   embed +
+//   perPage +
+//   order;
 
-const corsFixUrl = "https://noroffcors.herokuapp.com/" + postsUrl;
+// const corsFixUrl = "https://noroffcors.herokuapp.com/" + postsUrl;
 
 async function fetchPosts() {
   try {
-    const response = await fetch(corsFixUrl);
+    const response = await fetch(postsUrl);
     const results = await response.json();
 
-    // console.log(results);
+    //new code
+
+    // const searchInput = document.querySelector("#search");
+
+    // searchInput.onkeyup = function (event) {
+    //   const searchValue = event.target.value.trim().toLowerCase();
+
+    //   const filteredPosts = results.filter(function (post) {
+    //     if (post.title.rendered.toLowerCase().includes(searchValue)) {
+    //       return true;
+    //     }
+    //   });
+
+    //   console.log(filteredPosts);
+    //   filteredPosts.forEach((element) => {
+    //     console.log(element.title.rendered);
+    //   });
+    // };
+
+    ////
+
+    console.log(results);
 
     postWrapper.innerHTML = "";
 
