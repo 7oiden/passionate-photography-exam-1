@@ -529,12 +529,13 @@ label {
   position: absolute;
   font-size: 1.125rem;
   color: var(--header);
-  top: 35px;
-  left: 0.5rem;
+  bottom: 0.75rem;
+  right: 1rem;
+  /* transform: translateY(-50%); */
 }
 
 input[type="search"] {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 
 /* loading styles */
