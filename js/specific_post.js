@@ -1,4 +1,4 @@
-import { baseUrl } from "./settings/api.js";
+import { postsUrl, commentsUrl } from "./settings/api.js";
 
 //fetch specific post
 const currentBreadcrumb = document.querySelector(".active");
@@ -17,7 +17,7 @@ const embed = "?_embed";
 
 // console.log(queryString);
 
-const specificPostUrl = baseUrl + id + embed;
+const specificPostUrl = postsUrl + id + embed;
 
 // const corsFixSpecific = "https://noroffcors.herokuapp.com/" + specificPostUrl;
 
@@ -120,16 +120,12 @@ function createHtml(details) {
 //fetch comments
 const commentWrapper = document.querySelector(".comment-wrapper");
 
-const commentUrl =
-  "http://7oiden.com/passionate-photography/wp-json/wp/v2/comments?post=" + id;
-
-const corsFixComments = "https://noroffcors.herokuapp.com/" + commentUrl;
-
-console.log(commentUrl);
+const specificCommentsUrl =
+  commentsUrl + id;
 
 async function fetchComments() {
   try {
-    const response = await fetch(corsFixComments);
+    const response = await fetch(specificCommentsUrl);
     const comments = await response.json();
 
     console.log(comments);

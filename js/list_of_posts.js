@@ -8,21 +8,17 @@ var htmlSelector = document.querySelectorAll("html");
 
 // console.log(htmlSelector[0]);
 
-// const embed = "?_embed";
-// const perPage = "&per_page=15";
-// const order = "&orderby=date";
+const embed = "?_embed";
+const perPage = "&per_page=15";
+const order = "&orderby=date";
 
-// const postsUrl =
-//   "http://7oiden.com/passionate-photography/wp-json/wp/v2/posts/" +
-//   embed +
-//   perPage +
-//   order;
+const url = postsUrl + embed + perPage + order;
 
 // const corsFixUrl = "https://noroffcors.herokuapp.com/" + postsUrl;
 
 async function fetchPosts() {
   try {
-    const response = await fetch(postsUrl);
+    const response = await fetch(url);
     const results = await response.json();
 
     //new code
