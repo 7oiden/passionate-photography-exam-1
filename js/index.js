@@ -1,3 +1,38 @@
+import { postsUrl } from "./settings/api.js";
+import displayAlert from "./components/displayAlert.js";
+import { renderFeaturePost } from "./ui/renderFeaturePost.js";
+import { renderPosts } from "./ui/renderPosts.js";
+
+const embed = "?_embed";
+// const perPage = "&per_page=15";
+// const order = "&orderby=date";
+
+const url = postsUrl + embed;
+
+(async function fetchApi() {
+  try {
+    const response = await fetch(url);
+    const json = await response.json();
+
+    const featurePost = json.filter(function (post) {
+      if (post.tags.length >= 2) {
+        return true;
+      }
+    });
+
+    renderFeaturePost(featurePost);
+    renderPosts(json);
+
+  } catch (error) {
+    console.log(error);
+    displayAlert(
+      "error",
+      "An error has occurred when trying to retrieve the API",
+      ".post-wrapper"
+    );
+  }
+})();
+
 //carousel
 const slider = document.querySelector(".post-wrapper");
 const indicatorCircles = document.querySelector(".circle-wrapper");

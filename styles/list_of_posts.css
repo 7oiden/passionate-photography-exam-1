@@ -91,7 +91,7 @@ main {
 #load-button {
   display: flex;
   align-self: center;
-  margin: 2rem auto 6rem auto;
+  margin: 0 auto 6rem auto;
 }
 
 /* styles that change
