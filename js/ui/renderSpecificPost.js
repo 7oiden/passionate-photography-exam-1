@@ -1,3 +1,5 @@
+import { commentIcon } from "../settings/constants.js";
+
 const currentBreadcrumb = document.querySelector(".active");
 const postContainer = document.querySelector(".post-container");
 
@@ -37,7 +39,7 @@ export function renderSpecificPost(details) {
         categoryName = "Street";
         break;
       case 1:
-        categoryName = "Uncategorized";
+        categoryName = "Unspecified";
         break;
     }
   }
@@ -51,7 +53,10 @@ export function renderSpecificPost(details) {
      <div class="info-container" id="gradient-border">
      <p class="info">${categoryName}</p>
      <p class="info">${details.formatted_date}</p>
-     <p>${numReplies} comments</p>
+     <div class="icon-wrapper">
+     ${commentIcon} 
+     <p>${numReplies}</p>
+     </div>
      </div>
      <div class="post-text">${details.content.rendered}</div>
  `;

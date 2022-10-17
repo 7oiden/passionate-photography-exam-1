@@ -3,10 +3,9 @@ import displayAlert from "./components/displayAlert.js";
 import { renderPosts } from "./ui/renderPosts.js";
 import loadMorePosts from "./components/loadMoreButton.js";
 import navbarFunc from "./components/navbarFunc.js";
-import convertHeadings from "./components/convertHeadings.js";
+import asideSection from "./asideSection.js";
 
 navbarFunc();
-convertHeadings();
 
 const embed = "?_embed";
 const perPage = "&per_page=15";
@@ -29,3 +28,5 @@ const url = postsUrl + embed + perPage + order;
     );
   }
 })();
+
+asideSection();

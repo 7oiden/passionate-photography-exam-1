@@ -1,3 +1,5 @@
+import { checkLength, validateEmail } from "./formValidators.js";
+
 const form = document.querySelector("#comment-form");
 const name = document.querySelector("#name");
 const commentEmail = document.querySelector("#comment-email");
@@ -8,7 +10,10 @@ const commentError = document.querySelector("#comment-error");
 // const commentButton = document.querySelector("#comment-button");
 const commentSent = document.querySelector(".comment-sent");
 
-export default function commentForm() {
+let value = "";
+let len = 0;
+
+export default function validateCommentForm() {
   function checkCommentInput() {
     if (checkLength(name.value, 2)) {
       commentNameError.style.display = "none";
@@ -67,17 +72,6 @@ export default function commentForm() {
 
   form.addEventListener("submit", validateCommentForm);
 
-  function checkLength(value, len) {
-    if (value.trim().length > len) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  function validateEmail(contactEmail) {
-    const regEx = /\S+@\S+\.\S+/;
-    const patternMatches = regEx.test(contactEmail);
-    return patternMatches;
-  }
+  checkLength(value, len);
+  validateEmail(commentEmail);
 }

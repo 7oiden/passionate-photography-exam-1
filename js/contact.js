@@ -1,8 +1,7 @@
-import contactForm from "./components/contactForm.js";
+import validateContactForm from "./components/validateContactForm.js";
 import navbarFunc from "./components/navbarFunc.js";
-import convertHeadings from "./components/convertHeadings.js";
+import asideSection from "./asideSection.js";
 
 navbarFunc();
-convertHeadings();
-
-contactForm();
+asideSection();
+validateContactForm();

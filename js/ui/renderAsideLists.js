@@ -1,8 +1,7 @@
-//aside
 const recentPosts = document.querySelector(".recent-posts-list");
 const featuredPosts = document.querySelector(".featured-posts-list");
 
-export function renderPostLists(posts) {
+export function renderAsideLists(posts) {
   recentPosts.innerHTML = "";
   featuredPosts.innerHTML = "";
 

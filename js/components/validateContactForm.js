@@ -1,4 +1,6 @@
-export default function contactForm() {
+import { checkLength, validateEmail } from "./formValidators.js";
+
+export default function validateContactForm() {
   const contactForm = document.querySelector("#contact-form");
   const fullName = document.querySelector("#full-name");
   const subject = document.querySelector("#subject");
@@ -8,8 +10,11 @@ export default function contactForm() {
   const subjectError = document.querySelector("#subject-error");
   const contactEmailError = document.querySelector("#contact-email-error");
   const messageError = document.querySelector("#message-error");
-  const contactButton = document.querySelector("#contact-button");
+  // const contactButton = document.querySelector("#contact-button");
   const successMessage = document.querySelector(".success-message");
+
+  let value = "";
+  let len = 0;
 
   function checkContactInput() {
     if (checkLength(fullName.value, 4)) {
@@ -69,7 +74,7 @@ export default function contactForm() {
       checkLength(subject.value, 14) &&
       checkLength(message.value, 24)
     ) {
-      successMessage.innerHTML = `<p id="success-message">Your request was submitted successfully</p>`;
+      successMessage.innerHTML = `<p id="success-message">Your enquiry was submitted successfully</p>`;
       contactForm.reset();
 
       setTimeout(function () {
@@ -80,17 +85,6 @@ export default function contactForm() {
 
   contactForm.addEventListener("submit", validateContactForm);
 
-  function checkLength(value, len) {
-    if (value.trim().length > len) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  function validateEmail(contactEmail) {
-    const regEx = /\S+@\S+\.\S+/;
-    const patternMatches = regEx.test(contactEmail);
-    return patternMatches;
-  }
+  checkLength(value, len);
+  validateEmail(contactEmail);
 }

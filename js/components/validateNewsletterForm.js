@@ -3,8 +3,9 @@ const subscribeMessage = document.querySelector(".subscribe-message");
 // const subscribeButton = document.querySelector("#subscribe-button");
 const newsletterEmail = document.querySelector("#newsletter-email");
 const emailError = document.querySelector("#email-error");
+import { validateEmail } from "./formValidators.js";
 
-export default function newsletterForm() {
+export default function validateNewsletterForm() {
   function checkInput() {
     if (validateEmail(newsletterEmail.value)) {
       emailError.style.display = "none";
@@ -23,7 +24,7 @@ export default function newsletterForm() {
     }
     if (validateEmail(newsletterEmail.value)) {
       subscribeMessage.innerHTML = `<p id="subscribe-message">Welcome! Please check your inbox</p>`;
-      contactForm.reset();
+      form.reset();
 
       setTimeout(function () {
         subscribeMessage.innerHTML = "";
@@ -33,9 +34,5 @@ export default function newsletterForm() {
 
   form.addEventListener("submit", validateForm);
 
-  function validateEmail(newsletterEmail) {
-    const regEx = /\S+@\S+\.\S+/;
-    const patternMatches = regEx.test(newsletterEmail);
-    return patternMatches;
-  }
+  validateEmail(newsletterEmail);
 }

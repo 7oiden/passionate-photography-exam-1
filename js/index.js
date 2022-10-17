@@ -3,14 +3,13 @@ import displayAlert from "./components/displayAlert.js";
 import { renderFeaturePost } from "./ui/renderFeaturePost.js";
 import { renderPosts } from "./ui/renderPosts.js";
 import navbarFunc from "./components/navbarFunc.js";
-import convertHeadings from "./components/convertHeadings.js";
+import asideSection from "./asideSection.js";
 
 navbarFunc();
-convertHeadings();
 
 const embed = "?_embed";
-// const perPage = "&per_page=15";
-// const order = "&orderby=date";
+const perPage = "&per_page=15";
+const order = "&orderby=date";
 
 const url = postsUrl + embed;
 
@@ -36,6 +35,8 @@ const url = postsUrl + embed;
     );
   }
 })();
+
+asideSection();
 
 //carousel
 const slider = document.querySelector(".post-wrapper");

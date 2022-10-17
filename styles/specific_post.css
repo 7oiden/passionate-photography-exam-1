@@ -109,11 +109,22 @@ h3 {
   /* background-color: pink; */
 }
 
+.comment-container p {
+  margin: 0;
+  padding: 0;
+}
+
+#comment-author {
+  color: var(--black);
+  font-weight: 600;
+}
+
 .comment-image {
   width: 50px;
   margin: 0 1.5rem 0 0;
   border-radius: 5px;
 }
+
 
 /* modal */
 #my-image {
@@ -177,8 +188,9 @@ h3 {
 }
 
 #comment-line {
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 0;
 }
 
 /* comment-form */

@@ -1,5 +1,3 @@
-//load more button
-
 let currentPosts = 10;
 const postLoader = document.querySelector("#load-button");
 
@@ -8,9 +6,9 @@ export default function loadMorePosts(event) {
     ...document.querySelectorAll(".post-wrapper .post-container"),
   ];
 
-  for (let u = currentPosts; u < currentPosts + 2; u++) {
-    if (postList[u]) {
-      postList[u].style.display = "block";
+  for (let i = currentPosts; i < currentPosts + 2; i++) {
+    if (postList[i]) {
+      postList[i].style.display = "block";
     }
   }
 
