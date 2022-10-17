@@ -93,50 +93,6 @@ function validateEmail(newsletterEmail) {
   return patternMatches;
 }
 
-//aside
-//featured posts and recent posts
-const recentPosts = document.querySelector(".recent-posts-list");
-const featuredPosts = document.querySelector(".featured-posts-list");
-
-const recentPostsUrl =
-  "http://7oiden.com/passionate-photography/wp-json/wp/v2/posts/?_embed&per_page=12&orderby=date&per_page=15";
-
-const corsFix = "https://noroffcors.herokuapp.com/" + recentPostsUrl;
-
-async function fetchPosts() {
-  try {
-    const response = await fetch(corsFix);
-    const results = await response.json();
-
-    recentPosts.innerHTML = "";
-
-    for (let i = 0; i < results.length; i++) {
-      // console.log(results[i].tags.length);
-
-      if (results[i].tags.length > 0) {
-        featuredPosts.innerHTML += `
-      <li><a href="specific_post.html?id=${results[i].id}">${results[i].title.rendered}</a></li>
-      `;
-      }
-    }
-
-    for (let j = 0; j < results.length; j++) {
-      if (j >= 4) {
-        break;
-      }
-      recentPosts.innerHTML += `
-      <li><a href="specific_post.html?id=${results[j].id}">${results[j].title.rendered}</a></li>
-      `;
-    }
-  } catch (error) {
-    console.log(error);
-    resultsContainer.innerHTML = displayError(
-      "An error has occurred when trying to retrieve the API"
-    );
-  }
-}
-
-fetchPosts();
 
 //convert headings
 const asideHeading = document.querySelectorAll("h5");
