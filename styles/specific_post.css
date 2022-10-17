@@ -225,6 +225,8 @@ h3 {
   color: green;
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
+  margin: 0;
+  padding: 0;
 }
 
 #success-message:before {

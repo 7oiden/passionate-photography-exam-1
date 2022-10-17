@@ -2,6 +2,11 @@ import { postsUrl } from "./settings/api.js";
 import displayAlert from "./components/displayAlert.js";
 import { renderFeaturePost } from "./ui/renderFeaturePost.js";
 import { renderPosts } from "./ui/renderPosts.js";
+import navbarFunc from "./components/navbarFunc.js";
+import convertHeadings from "./components/convertHeadings.js";
+
+navbarFunc();
+convertHeadings();
 
 const embed = "?_embed";
 // const perPage = "&per_page=15";
@@ -22,7 +27,6 @@ const url = postsUrl + embed;
 
     renderFeaturePost(featurePost);
     renderPosts(json);
-
   } catch (error) {
     console.log(error);
     displayAlert(

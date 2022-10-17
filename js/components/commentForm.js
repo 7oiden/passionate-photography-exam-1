@@ -58,6 +58,10 @@ export default function commentForm() {
     <p id="success-message"><strong>Thank you for your comment!</strong> 
     The comment is sent for approval, and will normally appear within a day.</p>`;
       form.reset();
+
+      setTimeout(function () {
+        commentSent.innerHTML = "";
+      }, 3000);
     }
   }
 

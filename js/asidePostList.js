@@ -1,6 +1,10 @@
 import { postsUrl } from "./settings/api.js";
 import displayAlert from "./components/displayAlert.js";
 import { renderPostLists } from "./ui/renderPostLists.js";
+import newsletterForm from "./components/newsletterForm.js";
+import convertHeadings from "./components/convertHeadings.js";
+
+convertHeadings();
 
 const embed = "?_embed";
 const perPage = "&per_page=15";
@@ -23,3 +27,5 @@ const url = postsUrl + embed + perPage + order;
     );
   }
 })();
+
+newsletterForm();

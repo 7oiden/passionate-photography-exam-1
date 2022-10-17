@@ -2,6 +2,11 @@ import { postsUrl, commentsUrl } from "./settings/api.js";
 import { renderSpecificPost } from "./ui/renderSpecificPost.js";
 import { renderComments } from "./ui/renderComments.js";
 import commentForm from "./components/commentForm.js";
+import navbarFunc from "./components/navbarFunc.js";
+import convertHeadings from "./components/convertHeadings.js";
+
+navbarFunc();
+convertHeadings();
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);

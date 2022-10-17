@@ -34,70 +34,72 @@
 </head>
 
 <body>
-<header>
-  <div class="header-wrapper trigger-menu">
-    <div class="header-container">
-      <figure class="logo">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Passionate Photography logo" />
-        </a>
-      </figure>
-      <nav id="hamburger-menu" aria-label="menu icon">
-        <i class="fas fa-bars menu-icon"></i>
-      </nav>
-      <!-- large screen menu -->
-      <nav class="menu" aria-label="main menu">
-        <ul class="menu">
-          <li>
-            <a class="menu-item" href="index.html">Home</a>
-          </li>
-          <li>
-            <a class="menu-item" href="list_of_posts.html">Articles</a>
-          </li>
-          <li><a class="menu-item" href="about.html">About me</a></li>
-          <li><a class="menu-item active" href="contact.html">Contact</a></li>
-        </ul>
-        <ul class="media">
-          <li>
-            <a href="https://www.facebook.com" aria-label="facebook icon"><i
-                class="social-media fab fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" aria-label="twitter icon"><i class="social-media fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com" aria-label="instagram icon"><i
-                class="social-media fab fa-instagram"></i></a>
-          </li>
-        </ul>
-      </nav>
+  <header>
+    <div class="header-wrapper trigger-menu">
+      <div class="header-container">
+        <figure class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Passionate Photography logo" />
+          </a>
+        </figure>
+        <nav id="hamburger-menu" aria-label="menu icon">
+          <i class="fas fa-bars menu-icon"></i>
+        </nav>
+        <!-- large screen menu -->
+        <nav class="menu" aria-label="main menu">
+          <ul class="menu">
+            <li>
+              <a class="menu-item" href="index.html">Home</a>
+            </li>
+            <li>
+              <a class="menu-item" href="list_of_posts.html">Articles</a>
+            </li>
+            <li><a class="menu-item" href="about.html">About me</a></li>
+            <li><a class="menu-item active" href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="media">
+            <li>
+              <a href="https://www.facebook.com" aria-label="facebook icon"><i
+                  class="social-media fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" aria-label="twitter icon"><i
+                  class="social-media fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" aria-label="instagram icon"><i
+                  class="social-media fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- small screen menu -->
+      <div class="mobile-container">
+        <nav class="mobile-menu dropdown-hide" aria-label="main menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="list_of_posts.html">Articles</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul id="icon-list">
+            <li>
+              <a href="https://www.facebook.com" aria-label="facebook icon"><i
+                  class="social-media fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" aria-label="twitter icon"><i
+                  class="social-media fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" aria-label="instagram icon"><i
+                  class="social-media fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <!-- small screen menu -->
-    <div class="mobile-container">
-      <nav class="mobile-menu dropdown-hide" aria-label="main menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="list_of_posts.html">Articles</a></li>
-          <li><a href="about.html">About me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <ul id="icon-list">
-          <li>
-            <a href="https://www.facebook.com" aria-label="facebook icon"><i
-                class="social-media fab fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://www.twitter.com" aria-label="twitter icon"><i class="social-media fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com" aria-label="instagram icon"><i
-                class="social-media fab fa-instagram"></i></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+  </header>
 
   <main>
     <nav class="breadcrumb" aria-label="hierarchy of content">
@@ -258,8 +260,7 @@
     </div>
   </footer>
   <script src="js/asidePostList.js" type="module"></script>
-  <script src="js/common_scripts.js"></script>
-  <script src="js/contact.js"></script>
+  <script src="js/contact.js" type="module"></script>
 </body>
 
 </html>
