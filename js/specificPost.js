@@ -14,6 +14,8 @@ const embed = "?_embed";
 
 const specificUrl = postsUrl + id + embed;
 
+asideSection();
+
 (async function fetchApi() {
   try {
     const response = await fetch(specificUrl);
@@ -30,7 +32,10 @@ const specificUrl = postsUrl + id + embed;
   }
 })();
 
-const commentUrl = commentsUrl + id;
+const perPage = "&per_page=25";
+const order = "&orderby=date";
+
+const commentUrl = commentsUrl + id + perPage + order;
 
 (async function fetchApi() {
   try {
@@ -38,7 +43,7 @@ const commentUrl = commentsUrl + id;
     const json = await response.json();
 
     renderComments(json);
-    console.log(json);
+    // console.log(json);
   } catch (error) {
     console.log(error);
     displayAlert(
@@ -50,4 +55,4 @@ const commentUrl = commentsUrl + id;
 })();
 
 submitCommentForm();
-asideSection();
+

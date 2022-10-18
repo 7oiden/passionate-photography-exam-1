@@ -24,8 +24,6 @@ export default function submitCommentForm(event) {
 
   validateCommentForm();
 
-  console.log(nameValue);
-
   if (
     checkLength(nameValue, 2) &&
     validateEmail(emailValue) &&

@@ -8,7 +8,7 @@ import asideSection from "./asideSection.js";
 navbarFunc();
 
 const embed = "?_embed";
-const perPage = "&per_page=15";
+const perPage = "&per_page=25";
 const order = "&orderby=date";
 
 const url = postsUrl + embed + perPage + order;

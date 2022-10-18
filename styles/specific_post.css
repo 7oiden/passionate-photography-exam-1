@@ -130,6 +130,24 @@ h3 {
   border-radius: 5px;
 }
 
+/* /////////////////// */
+.remove-comment {
+  display: none;
+}
+
+.disabled {
+  background-color: grey;
+  pointer-events: none;
+  cursor: default;
+}
+
+#comments-button {
+  display: none;
+}
+
+#leave-comment {
+  margin-top: 4rem;
+}
 
 /* modal */
 #my-image {

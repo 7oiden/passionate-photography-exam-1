@@ -1,5 +1,5 @@
 import { postsUrl } from "./settings/api.js";
-import displayAlert from "./components/displayAlert.js";
+// import displayAlert from "./components/displayAlert.js";
 import { renderAsideLists } from "./ui/renderAsideLists.js";
 import validateNewsletterForm from "./components/validateNewsletterForm.js";
 import convertHeadings from "./components/convertHeadings.js";
@@ -21,11 +21,11 @@ export default function asideSection() {
       renderAsideLists(json);
     } catch (error) {
       console.log(error);
-      displayAlert(
-        "error",
-        "An error has occurred when trying to retrieve the API",
-        ".post-wrapper"
-      );
+      // displayAlert(
+      //   "error",
+      //   "An error has occurred when trying to retrieve the API",
+      //   ".post-wrapper"
+      // );
     }
   })();
 
