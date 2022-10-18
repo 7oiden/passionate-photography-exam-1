@@ -1,7 +1,7 @@
 import { postsUrl, commentsUrl } from "./settings/api.js";
 import { renderSpecificPost } from "./ui/renderSpecificPost.js";
 import { renderComments } from "./ui/renderComments.js";
-import validateCommentForm from "./components/validateCommentForm.js";
+import submitCommentForm from "./components/submitCommentForm.js";
 import navbarFunc from "./components/navbarFunc.js";
 import asideSection from "./asideSection.js";
 
@@ -38,6 +38,7 @@ const commentUrl = commentsUrl + id;
     const json = await response.json();
 
     renderComments(json);
+    console.log(json);
   } catch (error) {
     console.log(error);
     displayAlert(
@@ -48,5 +49,5 @@ const commentUrl = commentsUrl + id;
   }
 })();
 
-validateCommentForm();
+submitCommentForm();
 asideSection();

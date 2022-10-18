@@ -114,6 +114,11 @@ h3 {
   padding: 0;
 }
 
+#comment-form {
+  margin: 0 -5%;
+  border-radius: 0;
+}
+
 #comment-author {
   color: var(--black);
   font-weight: 600;
@@ -263,11 +268,18 @@ h3 {
 
 /* styles that change
 --------------------*/
+@media only screen and (min-width: 576px) {
+  #comment-form {
+    margin: 0;
+  }
+}
 @media only screen and (min-width: 768px) {
  
   /* section {
     width: 90%;
   } */
+
+  
 
   .post-title {
     font-size: 1.5rem;
