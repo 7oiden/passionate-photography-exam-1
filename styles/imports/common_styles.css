@@ -538,13 +538,24 @@ label {
   position: relative;
 }
 
-#search-icon {
+#search-button {
   position: absolute;
-  font-size: 1.125rem;
+  height: 2.5rem;
+  width: 2.5rem;
   color: var(--header);
-  bottom: 0.75rem;
-  right: 1rem;
+  background-color: var(--accent);
+  border: none;
+  right: 0;
+  bottom: 0;
   /* transform: translateY(-50%); */
+}
+
+#search-icon {
+  font-size: 1.25rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 input[type="search"] {
@@ -603,6 +614,14 @@ input[type="search"] {
 #loading {
   color: var(--header);
   font-family: var(--body-text);
+}
+
+.comments-default,
+.search-default {
+  display: block;
+  padding: 1rem;
+  background-color: var(--light-grey);
+  text-align: center;
 }
 
 /* info container */

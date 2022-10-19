@@ -1,9 +1,10 @@
 import { postsUrl } from "./settings/api.js";
 import displayAlert from "./components/displayAlert.js";
 import { renderPosts } from "./ui/renderPosts.js";
-import loadMorePosts from "./components/loadMoreButton.js";
+// import loadMorePosts from "./components/loadMoreButton.js";
 import navbarFunc from "./components/navbarFunc.js";
 import asideSection from "./asideSection.js";
+import { searchPosts } from "./ui/searchPosts.js";
 
 navbarFunc();
 
@@ -19,6 +20,7 @@ const url = postsUrl + embed + perPage + order;
     const json = await response.json();
 
     renderPosts(json);
+    searchPosts(json);
   } catch (error) {
     console.log(error);
     displayAlert(

@@ -1,6 +1,8 @@
 import { commentIcon } from "../settings/constants.js";
+import loadMoreButton from "../components/loadMoreButton.js";
 
 const postsWrapper = document.querySelector(".post-wrapper");
+const postLoader = document.querySelector("#load-button");
 
 //important! this variable is redeclared at common_scripts.js
 var htmlSelector = document.querySelectorAll("html");
@@ -16,6 +18,17 @@ export function renderPosts(posts) {
   }
 
   console.log(renderedPosts);
+  loadMoreButton(renderedPosts);
+
+  if (renderedPosts.length === 0) {
+    postsWrapper.innerHTML = `<p class="search-default">No result matches your search...</p>`;
+  }
+
+  // if (renderedPosts.length <= 10) {
+  //   postLoader.style.display = "none";
+  // } else {
+  //   postLoader.style.display = "block";
+  // }
 
   renderedPosts.forEach((post) => {
     const repliesArray = post._embedded.replies;
@@ -49,7 +62,7 @@ export function renderPosts(posts) {
           categoryName = "Street";
           break;
         case 1:
-          categoryName = "Unspecified"
+          categoryName = "Unspecified";
       }
     }
 
@@ -62,8 +75,11 @@ export function renderPosts(posts) {
         <figure class="post-image">
         <img class="post-image" src="${media.source_url}" alt="${media.alt_text}"/>
         </figure>
+        </a>
         <div class="card">
+        <a href="specific_post.html?id=${post.id}">
         <h2 class="dynamic-header post-heading">${post.title.rendered}</h2>
+        </a>
         <div class="info-container card-info">
         <p class="info">${categoryName}</p>
         <p class="info">${post.formatted_date}</p>
@@ -74,7 +90,6 @@ export function renderPosts(posts) {
         </div>
         </div>
         <div class="post-text">${post.excerpt.rendered}</div>
-        </a>
         </div>
      `;
     });
