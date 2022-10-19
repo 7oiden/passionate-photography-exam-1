@@ -14,8 +14,6 @@ export default function loadMoreComments(comments) {
     loadButton.style.display = "none";
   } else {
     loadButton.style.display = "block";
-    // loadButton.classList.remove("disabled");
-    // loadButton.innerHTML = "Load more comments";
   }
 
   loadButton.onclick = function () {
@@ -28,8 +26,6 @@ export default function loadMoreComments(comments) {
 
       if (num >= commentContainer.length) {
         loadButton.style.display = "none";
-        // loadButton.classList.add("disabled");
-        // loadButton.innerHTML = "No more comments";
       }
     }
   };

@@ -18,7 +18,6 @@ export function renderPosts(posts) {
   }
 
   console.log(renderedPosts);
-  loadMoreButton(renderedPosts);
 
   if (renderedPosts.length === 0) {
     postsWrapper.innerHTML = `<p class="search-default">No result matches your search...</p>`;
@@ -70,7 +69,7 @@ export function renderPosts(posts) {
 
     mediaArray.forEach((media) => {
       postsWrapper.innerHTML += `
-        <div class="post-container" id="gradient-border">
+        <div class="post-container post-container-hide" id="gradient-border">
         <a href="specific_post.html?id=${post.id}">
         <figure class="post-image">
         <img class="post-image" src="${media.source_url}" alt="${media.alt_text}"/>
@@ -94,4 +93,5 @@ export function renderPosts(posts) {
      `;
     });
   });
+  loadMoreButton(renderedPosts);
 }

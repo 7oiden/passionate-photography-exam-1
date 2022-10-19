@@ -1,30 +1,32 @@
-const postLoader = document.querySelector("#load-button");
-
-let currentPosts = 10;
-
 export default function loadMoreButton(posts) {
-  let currentPosts = posts;
+  const loadButton = document.querySelector("#load-button");
+  const postContainers = document.querySelectorAll(".post-container");
 
-  console.log(currentPosts);
+  let num = 10;
 
-  function loadMorePosts(event) {
-    const postList = [
-      ...document.querySelectorAll(".post-wrapper .post-container"),
-    ];
-
-    if (currentPosts >= 10) {
-      for (let i = currentPosts; i < currentPosts + 2; i++) {
-        if (postList[i]) {
-          postList[i].style.display = "block";
-        }
-      }
-
-      currentPosts += 2;
-
-      if (currentPosts >= postList.length) {
-        event.target.style.display = "none";
-      }
+  for (let i = 0; i < postContainers.length; i++) {
+    if (i < num) {
+      postContainers[i].classList.remove("post-container-hide");
     }
   }
-  postLoader.addEventListener("click", loadMorePosts);
+
+  if (posts.length <= 10) {
+    loadButton.style.display = "none";
+  } else {
+    loadButton.style.display = "block";
+  }
+
+  loadButton.onclick = function () {
+    num = num + 2;
+
+    for (let i = 0; i < postContainers.length; i++) {
+      if (i < num) {
+        postContainers[i].classList.remove("post-container-hide");
+      }
+
+      if (num >= postContainers.length) {
+        loadButton.style.display = "none";
+      }
+    }
+  };
 }

@@ -16,48 +16,11 @@ main {
 
 .post-container {
   margin: 0 auto;
-  display: none;
   padding-bottom: 1rem;
 }
 
-.post-container:nth-child(1) {
-  display: block;
-}
-
-.post-container:nth-child(2) {
-  display: block;
-}
-
-.post-container:nth-child(3) {
-  display: block;
-}
-
-.post-container:nth-child(4) {
-  display: block;
-}
-
-.post-container:nth-child(5) {
-  display: block;
-}
-
-.post-container:nth-child(6) {
-  display: block;
-}
-
-.post-container:nth-child(7) {
-  display: block;
-}
-
-.post-container:nth-child(8) {
-  display: block;
-}
-
-.post-container:nth-child(9) {
-  display: block;
-}
-
-.post-container:nth-child(10) {
-  display: block;
+.post-container-hide {
+  display: none;
 }
 
 .post-image {
