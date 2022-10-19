@@ -2,7 +2,6 @@ import { commentIcon } from "../settings/constants.js";
 import loadMoreButton from "../components/loadMoreButton.js";
 
 const postsWrapper = document.querySelector(".post-wrapper");
-const postLoader = document.querySelector("#load-button");
 
 //important! this variable is redeclared at common_scripts.js
 var htmlSelector = document.querySelectorAll("html");
@@ -20,7 +19,7 @@ export function renderPosts(posts) {
   console.log(renderedPosts);
 
   if (renderedPosts.length === 0) {
-    postsWrapper.innerHTML = `<p class="search-default">No result matches your search...</p>`;
+    postsWrapper.innerHTML = `<p class="search-default">No article matches your search...</p>`;
   }
 
   // if (renderedPosts.length <= 10) {
