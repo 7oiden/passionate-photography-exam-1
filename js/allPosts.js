@@ -5,7 +5,8 @@ import { renderPosts } from "./ui/renderPosts.js";
 import navbarFunc from "./components/navbarFunc.js";
 import asideSection from "./asideSection.js";
 import { searchPosts } from "./ui/searchPosts.js";
-import { sortPosts } from "./ui/sortPosts.js";
+import { sortPostsByMonth } from "./ui/sortPostsByMonth.js";
+import { sortPostsByCategory } from "./ui/sortPostsByCategory.js";
 
 navbarFunc();
 
@@ -21,9 +22,9 @@ const url = postsUrl + embed + perPage + order;
     const json = await response.json();
 
     renderPosts(json);
-    sortPosts(json);
+    sortPostsByMonth(json);
+    sortPostsByCategory(json);
     searchPosts(json);
-    
   } catch (error) {
     console.log(error);
     displayAlert(

@@ -3,16 +3,25 @@ import { renderPosts } from "./renderPosts.js";
 const navbar = document.querySelector(".trigger-menu");
 const articlesHeading = document.querySelector("#articles-heading");
 const selectDropdown = document.querySelector("#archive");
+const categoryForm = document.querySelector("#category-form");
+const searchForm = document.querySelector("#search-form");
 
-export function sortPosts(posts) {
+// const htmlSelector = document.querySelectorAll("html");
+
+export function sortPostsByMonth(posts) {
+  // if (htmlSelector !== "list-of-posts") {
+  //   window.location.href = "list_of_posts.html";
+  // }
   function sortByMonth(event) {
     window.scrollTo(0, 0);
     navbar.classList.remove("scroll-down");
     navbar.classList.add("scroll-up");
+    searchForm.reset();
+    categoryForm.reset();
 
     const sortValue = event.target.value.trim().toLowerCase();
 
-    articlesHeading.innerHTML = "Articles archive";
+    articlesHeading.innerHTML = "Articles by month";
 
     // console.log(sortValue);
 

@@ -176,9 +176,23 @@
                 </button>
               </form>
             </div>
+            <h5 class="aside-heading">Categories</h5>
+            <div class="aside-block">
+              <form id="category-form" class="dropdown">
+                <label for="categories">Select category:</label>
+                <select name="categories" id="categories" value="All">
+                  <option value="All">All categories</option>
+                  <option value="Street">Street</option>
+                  <option value="Landscape">Landscape</option>
+                  <option value="Black">Black & white</option>
+                  <option value="Portrait">Portrait</option>
+                  <option value="Cityscape">Cityscape</option>
+                </select>
+              </form>
+            </div>
             <h5 class="aside-heading">Article Archives</h5>
             <div class="aside-block">
-              <form class="dropdown">
+              <form id="archive-form" class="dropdown">
                 <label for="archive">Select month:</label>
                 <select name="archive" id="archive" value="All">
                   <option value="All">All articles</option>
@@ -203,19 +217,6 @@
                 <span id="loading">Loading...</span>
                 <!-- dynamic created content -->
               </ul>
-            </div>
-            <h5 class="aside-heading">Categories</h5>
-            <div class="aside-block">
-              <form class="dropdown">
-                <label for="categories">Select category:</label>
-                <select name="categories" id="categories">
-                  <option value="December">Street</option>
-                  <option value="January">Landscape</option>
-                  <option value="February">Black & white</option>
-                  <option value="March">Portrait</option>
-                  <option value="April">Cityscape</option>
-                </select>
-              </form>
             </div>
           </div>
         </div>

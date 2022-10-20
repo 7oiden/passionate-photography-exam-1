@@ -15,9 +15,7 @@ export function renderPosts(posts) {
     renderedPosts = posts.slice(0, 8);
   }
 
-  const test = "wp:term";
-
-  // console.log(renderedPosts);
+  console.log(renderedPosts);
 
   if (renderedPosts.length === 0) {
     postsWrapper.innerHTML = `<p class="search-default">No article matches your search...</p>`;
@@ -35,7 +33,7 @@ export function renderPosts(posts) {
 
     const category = post._embedded["wp:term"][0][0].name;
 
-    console.log(category);
+    // console.log(category);
 
     const mediaArray = post._embedded["wp:featuredmedia"];
 

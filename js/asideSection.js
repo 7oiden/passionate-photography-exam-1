@@ -3,6 +3,7 @@ import { postsUrl } from "./settings/api.js";
 import { renderAsideLists } from "./ui/renderAsideLists.js";
 import validateNewsletterForm from "./components/validateNewsletterForm.js";
 import convertHeadings from "./components/convertHeadings.js";
+// import { sortPostsByMonth } from "./ui/sortPostsByMonth.js";
 
 export default function asideSection() {
   convertHeadings();

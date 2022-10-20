@@ -213,14 +213,44 @@
             </div>
           </div>
           <div>
-            <!-- <h5 class="aside-heading">Specific search</h5>
+            <h5 class="aside-heading">Specific search</h5>
             <div class="aside-block">
               <form class="aside-input" id="search-form">
                 <label for="search">Search:</label>
-                <input class="input" type="search" name="search" id="search" placeholder="Search..." />
-                <i id="search-icon" class="fas fa-search" aria-label="search-icon"></i>
+                <input class="input" type="search" name="search" id="search-input" placeholder="Search..." />
+                <button id="search-button">
+                  <i id="search-icon" class="fas fa-search" aria-label="search-icon"></i>
+                </button>
               </form>
-            </div> -->
+            </div>
+            <h5 class="aside-heading">Categories</h5>
+            <div class="aside-block">
+              <form class="dropdown">
+                <label for="categories">Select category:</label>
+                <select name="categories" id="categories" value="All">
+                  <option value="All">All categories</option>
+                  <option value="Street">Street</option>
+                  <option value="Landscape">Landscape</option>
+                  <option value="Black">Black & white</option>
+                  <option value="Portrait">Portrait</option>
+                  <option value="Cityscape">Cityscape</option>
+                </select>
+              </form>
+            </div>
+            <h5 class="aside-heading">Article Archives</h5>
+            <div class="aside-block">
+              <form class="dropdown">
+                <label for="archive">Select month:</label>
+                <select name="archive" id="archive" value="All">
+                  <option value="All">All articles</option>
+                  <option value="January">January, 2021</option>
+                  <option value="February">February, 2021</option>
+                  <option value="March">March, 2021</option>
+                  <option value="April">April, 2021</option>
+                  <option value="May">May, 2021</option>
+                </select>
+              </form>
+            </div>
             <h5 class="aside-heading">Featured articles</h5>
             <div class="aside-block">
               <ul class="aside-list featured-posts-list">
@@ -235,32 +265,6 @@
                 <!-- dynamic created content -->
               </ul>
             </div>
-            <h5 class="aside-heading">Categories</h5>
-            <div class="aside-block">
-              <form class="dropdown">
-                <label for="categories">Select category:</label>
-                <select name="categories" id="categories">
-                  <option value="Street">Street</option>
-                  <option value="Street">Landscape</option>
-                  <option value="Street">Black & white</option>
-                  <option value="Street">Portrait</option>
-                  <option value="Street">Cityscape</option>
-                </select>
-              </form>
-            </div>
-            <!-- <h5 class="aside-heading">Article Archives</h5>
-            <div class="aside-block">
-              <form class="dropdown">
-                <label for="archive">Select month:</label>
-                <select name="archive" id="archive">
-                  <option value="Street">December - 2020</option>
-                  <option value="Street">January - 2021</option>
-                  <option value="Street">February - 2021</option>
-                  <option value="Street">March - 2021</option>
-                  <option value="Street">April - 2021</option>
-                </select>
-              </form>
-            </div> -->
           </div>
         </div>
       </aside>
