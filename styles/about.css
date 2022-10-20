@@ -6,11 +6,6 @@ main {
   background-color: var(--light-grey);
 }
 
-/* section {
-  width: 100%;
-  margin: 0 auto;
-} */
-
 .post-title {
   font-family: var(--main-heading);
   color: var(--header);
@@ -40,7 +35,6 @@ blockquote {
   font-weight: 600;
   font-size: 1.125rem;
   font-style: italic;
-  /* color: var(--header); */
   border-left: 3px solid var(--light-blue);
   padding-left: 1rem;
   margin: 2rem 1rem 2rem 1rem;
@@ -94,10 +88,6 @@ hr {
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 768px) {
-  
-  /* section {
-    width: 90%;
-  } */
 
   .post-title {
     font-size: 1.5rem;
@@ -112,12 +102,6 @@ hr {
   .bottom-wrapper figure {
     margin-right: 2rem;
   }
-}
-
-@media only screen and (min-width: 992px) {
-  /* section {
-      width: 85%;
-  } */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -140,18 +124,8 @@ hr {
 }
 
 @media only screen and (min-width: 1600px) {
-  
-  /* section {
-    width: 70%;
-  } */
 
   .post-title {
     font-size: 2rem;
   }
 }
-
-/* @media only screen and (min-width: 1800px) {
-  section {
-    width: 65%;
-  }
-} */

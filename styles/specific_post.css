@@ -123,11 +123,6 @@ h3 {
   border-radius: 5px;
 }
 
-/* /////////////////// */
-.remove-comment {
-  display: none;
-}
-
 .disabled {
   background-color: grey;
   pointer-events: none;
@@ -239,16 +234,6 @@ h3 {
   display: none;
 }
 
-/* .comment-error {
-  text-align: left;
-  color: #be3e35;
-  visibility: hidden;
-} */
-
-/* .comment-error:before {
-  content: "\002A";
-} */
-
 #success-message {
   color: green;
   animation: 1s fadeIn;
@@ -285,12 +270,6 @@ h3 {
   }
 }
 @media only screen and (min-width: 768px) {
- 
-  /* section {
-    width: 90%;
-  } */
-
-  
 
   .post-title {
     font-size: 1.5rem;
@@ -338,15 +317,6 @@ h3 {
     font-size: 1.75rem;
   }
 
-  /* h2,
-  h3 {
-    font-size: 1.5rem;
-  } */
-
-  /* .comments-default {
-    font-size: 1.25rem;
-  } */
-
   .comment-image {
     width: 65px;
     margin: 0 2rem 0 0;
@@ -362,10 +332,6 @@ h3 {
 }
 
 @media only screen and (min-width: 1600px) {
-  
-  /* section {
-    width: 70%;
-  } */
 
   .post-title {
     font-size: 2rem;
@@ -375,9 +341,3 @@ h3 {
     margin-right: 10%;
   }
 }
-
-/* @media only screen and (min-width: 1800px) {
-  section {
-    width: 65%;
-  }
-} */

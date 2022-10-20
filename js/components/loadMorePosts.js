@@ -1,4 +1,4 @@
-export default function loadMoreButton(posts) {
+export default function loadMorePosts(posts) {
   const loadButton = document.querySelector("#load-button");
   const postContainers = document.querySelectorAll(".post-container");
 

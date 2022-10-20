@@ -10,26 +10,6 @@ main {
   width: 100%;
 }
 
-/* section {
-  width: 100%;
-  margin: 0 auto;
-} */
-
-#contact-form {
-  /* padding: 3rem 7.5%; */
-  /* width: 100%; */
-  /* background-color: pink; */
-}
-
-/* .contact-input {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .contact-input label {
-  font-size: 0.875rem;
-} */
-
 .input {
   color: var(--header);
   padding: 0.5rem;
@@ -49,7 +29,6 @@ textarea {
 #contact-email-error,
 #message-error {
   display: none;
-  /* padding-bottom: 1rem; */
 }
 
 #success-message {
@@ -79,63 +58,8 @@ textarea {
 /* styles that change
 --------------------*/
 @media only screen and (min-width: 576px) {
-  /* section {
-    width: 70%;
-  } */
+
   .main-section {
     width: 85%;
   }
-
-  /* #contact-form {
-    padding: 3rem 10%;
-  } */
 }
-
-@media only screen and (min-width: 768px) {
-  
-  /* section {
-    width: 90%;
-  } */
-  
-  /* #contact-form {
-    padding: 3rem 15%;   
-  } */
-}
-
-@media only screen and (min-width: 992px) {
-  /* section {
-    width: 85%;
-  } */
-
-  
-}
-
-@media only screen and (min-width: 1200px) {
-
-  /* section {
-    flex: 2;
-  } */
-
-  
-
-  /* .contact-input label {
-    font-size: 1rem;
-  } */
-}
-
-@media only screen and (min-width: 1600px) {
-  
-  /* section {
-    width: 70%;
-  } */
-
-  /* #contact-form {
-    padding: 3rem 30%;
-  } */
-}
-
-/* @media only screen and (min-width: 1800px) {
-  section {
-    width: 65%;
-  }
-} */

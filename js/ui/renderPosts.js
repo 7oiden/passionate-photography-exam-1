@@ -1,10 +1,9 @@
 import { commentIcon } from "../settings/constants.js";
-import loadMoreButton from "../components/loadMoreButton.js";
+import loadMorePosts from "../components/loadMorePosts.js";
 
 const postsWrapper = document.querySelector(".post-wrapper");
 
-//important! this variable is redeclared at common_scripts.js
-var htmlSelector = document.querySelectorAll("html");
+const htmlSelector = document.querySelectorAll("html");
 
 export function renderPosts(posts) {
   postsWrapper.innerHTML = "";
@@ -21,12 +20,6 @@ export function renderPosts(posts) {
   if (renderedPosts.length === 0) {
     postsWrapper.innerHTML = `<p class="search-default">No article matches your search...</p>`;
   }
-
-  // if (renderedPosts.length <= 10) {
-  //   postLoader.style.display = "none";
-  // } else {
-  //   postLoader.style.display = "block";
-  // }
 
   renderedPosts.forEach((post) => {
     const repliesArray = post._embedded.replies;
@@ -92,5 +85,8 @@ export function renderPosts(posts) {
      `;
     });
   });
-  loadMoreButton(renderedPosts);
+
+  if (htmlSelector[0].className === "list-of-posts") {
+    loadMorePosts(renderedPosts);
+  }
 }

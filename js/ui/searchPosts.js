@@ -17,8 +17,12 @@ export function searchPosts(posts) {
 
     const searchValue = searchInput.value.trim().toLowerCase();
 
-    if(searchValue.trim() === "") {
+    if (searchValue.trim() === "") {
       articlesHeading.innerHTML = "All articles";
+    }
+
+    if (searchValue === "all") {
+      renderPosts(posts);
     }
 
     const filteredPosts = posts.filter(function (post) {

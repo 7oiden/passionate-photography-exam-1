@@ -42,7 +42,6 @@ h1 {
   margin: 0;
   padding: 0;
   border-radius: 3px;
-  /* box-shadow: 0 6px 12px #00000029; */
 }
 
 .quote-wrapper {
@@ -54,7 +53,6 @@ h1 {
 }
 
 .quote {
-  /* margin: 0 auto; */
   color: var(--white);
   font-family: var(--hero-heading);
   padding: 1rem;
@@ -91,7 +89,6 @@ h1 {
   flex-direction: column;
   padding-top: 2rem;
   padding-bottom: 6rem;
-  /* color: black; */
 }
 
 h4 {
@@ -153,7 +150,6 @@ h4 {
 }
 
 .post-wrapper {
-  /* height: 100%; */
   width: 800%;
   transition: all 0.3s;
   display: flex;
@@ -380,10 +376,6 @@ h4 {
   .quote p:nth-child(1):before {
     font-size: 3rem;
   }
-
-  /* .quote p:nth-child(2) {
-    font-size: 1.25rem;
-  } */
 
   .content-container {
     width: 66.66666667%;
