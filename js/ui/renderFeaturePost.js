@@ -15,32 +15,7 @@ export function renderFeaturePost(posts) {
       }
     }
 
-    const categoriesArray = post.categories;
-
-    let categoryName;
-    let category = post.categories[0];
-
-    if (categoriesArray.length === 0) {
-      categoryName = "Unspecified";
-    } else {
-      switch (category) {
-        case 5:
-          categoryName = "Black & white";
-          break;
-        case 4:
-          categoryName = "Portrait";
-          break;
-        case 3:
-          categoryName = "Landscape";
-          break;
-        case 2:
-          categoryName = "Street";
-          break;
-        case 1:
-          categoryName = "Unspecified";
-          break;
-      }
-    }
+    const category = post._embedded["wp:term"][0][0].name;
 
     const mediaArray = post._embedded["wp:featuredmedia"];
 
@@ -53,7 +28,7 @@ export function renderFeaturePost(posts) {
      </figure>
      <h4 class="feature-heading">${post.title.rendered}</h4>
      <div class="info-container">
-     <p class="info">${categoryName}</p>
+     <p class="info">${category}</p>
      <p class="info">${post.formatted_date}</p>
      <div class="icon-wrapper">
      ${commentIcon}

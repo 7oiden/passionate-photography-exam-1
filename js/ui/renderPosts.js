@@ -15,7 +15,9 @@ export function renderPosts(posts) {
     renderedPosts = posts.slice(0, 8);
   }
 
-  console.log(renderedPosts);
+  const test = "wp:term";
+
+  // console.log(renderedPosts);
 
   if (renderedPosts.length === 0) {
     postsWrapper.innerHTML = `<p class="search-default">No article matches your search...</p>`;
@@ -31,31 +33,9 @@ export function renderPosts(posts) {
       }
     }
 
-    const categoriesArray = post.categories;
+    const category = post._embedded["wp:term"][0][0].name;
 
-    let categoryName;
-    let category = post.categories[0];
-
-    if (categoriesArray.length === 0) {
-      categoryName = "Unspecified";
-    } else {
-      switch (category) {
-        case 5:
-          categoryName = "Black & white";
-          break;
-        case 4:
-          categoryName = "Portrait";
-          break;
-        case 3:
-          categoryName = "Landscape";
-          break;
-        case 2:
-          categoryName = "Street";
-          break;
-        case 1:
-          categoryName = "Unspecified";
-      }
-    }
+    console.log(category);
 
     const mediaArray = post._embedded["wp:featuredmedia"];
 
@@ -72,7 +52,7 @@ export function renderPosts(posts) {
         <h2 class="dynamic-header post-heading">${post.title.rendered}</h2>
         </a>
         <div class="info-container card-info">
-        <p class="info">${categoryName}</p>
+        <p class="info">${category}</p>
         <p class="info">${post.formatted_date}</p>
         <div class="icon-wrapper">
         ${commentIcon}

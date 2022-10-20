@@ -16,33 +16,7 @@ export function renderSpecificPost(details) {
 
   currentBreadcrumb.innerHTML = `${details.title.rendered}`;
 
-  const categoriesArray = details.categories;
-
-  let categoryName;
-  let category = details.categories[0];
-
-  if (categoriesArray.length === 0) {
-    categoryName = "Unspecified";
-    console.log(categoryName);
-  } else {
-    switch (category) {
-      case 5:
-        categoryName = "Black & white";
-        break;
-      case 4:
-        categoryName = "Portrait";
-        break;
-      case 3:
-        categoryName = "Landscape";
-        break;
-      case 2:
-        categoryName = "Street";
-        break;
-      case 1:
-        categoryName = "Unspecified";
-        break;
-    }
-  }
+  const category = details._embedded["wp:term"][0][0].name;
 
   postContainer.innerHTML = `
      <figure class="post-image">
@@ -51,7 +25,7 @@ export function renderSpecificPost(details) {
      </figure>
      <h2 class="post-title">${details.title.rendered}</h2>
      <div class="info-container" id="gradient-border">
-     <p class="info">${categoryName}</p>
+     <p class="info">${category}</p>
      <p class="info">${details.formatted_date}</p>
      <div class="icon-wrapper">
      ${commentIcon} 
