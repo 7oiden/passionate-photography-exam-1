@@ -6,7 +6,7 @@ export default function loadMoreComments(comments) {
 
   for (let i = 0; i < commentContainer.length; i++) {
     if (i < num) {
-      commentContainer[i].classList.remove("remove-comment");
+      commentContainer[i].classList.remove("comment-container-hide");
     }
   }
 
@@ -21,7 +21,7 @@ export default function loadMoreComments(comments) {
 
     for (let i = 0; i < commentContainer.length; i++) {
       if (i < num) {
-        commentContainer[i].classList.remove("remove-comment");
+        commentContainer[i].classList.remove("comment-container-hide");
       }
 
       if (num >= commentContainer.length) {

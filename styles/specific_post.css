@@ -102,6 +102,10 @@ h3 {
   /* background-color: pink; */
 }
 
+.comment-container-hide {
+  display: none;
+}
+
 .comment-container p {
   margin: 0;
   padding: 0;

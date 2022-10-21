@@ -229,10 +229,6 @@ section {
   margin-right: 0.5rem;
 }
 
- .active {
-   font-weight: bold;
- }
-
 /* headline wrapper */
 .line-wrapper {
   width: 100%;
@@ -322,7 +318,7 @@ aside {
   color: var(--header);
   text-align: center;
   padding: 0.75rem;
-  margin: 1rem 0 0 0;
+  margin: 1.5rem 0 0 0;
 }
 
 .aside-block {
@@ -439,6 +435,15 @@ label {
 }
 
 .secondary-button {
+  background-color: transparent;
+  color: var(--accent);
+  text-decoration: none;
+  box-shadow: none;
+  font-weight: bold;
+  border: 3px solid var(--accent);
+}
+
+.link-button {
   display: inline-block;
   background-color: transparent;
   color: var(--highlight);
@@ -787,6 +792,19 @@ footer {
 
   .menu-item:hover {
     opacity: 0.75;
+    border-bottom: 2px solid var(--white);
+  }
+
+  #nav-search-icon {
+    border-bottom: none;
+  }
+
+  #nav-search-icon:hover {
+    border-bottom: none;
+  }
+
+  .active {
+    font-weight: bold;
     border-bottom: 2px solid var(--white);
   }
 

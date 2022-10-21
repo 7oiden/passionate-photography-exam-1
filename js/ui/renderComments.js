@@ -29,7 +29,7 @@ export function renderComments(comments) {
       });
 
       commentWrapper.innerHTML += `
-       <div class="remove-comment comment-container">
+       <div class="comment-container comment-container-hide">
        <figure class="comment-image"><img id="myimg" class="comment-image" src="${comment.author_avatar_urls[96]}" alt="image of a generic avatar"/> </figure>
        <div>
        <p id="comment-author">${comment.author_name}</p>
