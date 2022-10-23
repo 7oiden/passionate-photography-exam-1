@@ -4,6 +4,7 @@ import { renderAsideLists } from "./ui/renderAsideLists.js";
 import validateNewsletterForm from "./components/validateNewsletterForm.js";
 import convertHeadings from "./components/convertHeadings.js";
 // import { sortPostsByMonth } from "./ui/sortPostsByMonth.js";
+import scrollToTop from "./components/scrollToTop.js";
 
 export default function asideSection() {
   convertHeadings();
@@ -31,4 +32,5 @@ export default function asideSection() {
   })();
 
   validateNewsletterForm();
+  scrollToTop();
 }

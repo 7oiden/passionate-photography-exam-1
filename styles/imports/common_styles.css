@@ -289,9 +289,12 @@ aside {
   background-color: var(--light-grey);
   min-height: 100%;
   margin-top: 5rem;
+  /* transform: perspective(0); */
+  /* position: relative; */
 }
 
 .aside-container {
+  /* transform: perspective(0); */
   width: 85%;
   display: grid;
   grid-template-rows: auto auto;
@@ -438,6 +441,7 @@ label {
   background-color: transparent;
   color: var(--accent);
   text-decoration: none;
+  padding: 0.4rem 2rem;
   box-shadow: none;
   font-weight: bold;
   border: 3px solid var(--accent);
@@ -520,6 +524,55 @@ label {
 #categories:focus,
 #archive:focus {
   border-color: var(--accent);
+}
+
+.scroll-top-container {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background-color: var(--white);
+  opacity: 0.75;
+  /* transform: translateX(50%); */
+}
+
+#scroll-top-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--accent);
+  font-size: 2.5rem;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}
+
+#scroll-top-icon:hover {
+  opacity: 1;
+}
+
+
+
+/* #scroll-top:hover {
+  animation: buttonGrow 1.25s linear infinite;
+}
+
+@keyframes buttonGrow {
+  from {font-size: 3rem;}
+  50% {font-size: 3.25rem;}
+  to {font-size: 3rem;}
+} */
+
+/* .scroll-icon-hide {
+  display: none;
+} */
+
+.scroll-top-trigger {
+  background-color: pink;
+  height: 100px;
 }
 
 /* loading styles */
@@ -734,6 +787,11 @@ footer {
   .button {
     font-size: 1.25rem;
   }
+
+  .scroll-top-container {
+    right: 2rem;
+    bottom: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -879,6 +937,11 @@ footer {
 
   #read-more {
     font-size: 1.25rem;
+  }
+
+  .scroll-top-container {
+    right: 3rem;
+    bottom: 3rem;
   }
 
   footer p {

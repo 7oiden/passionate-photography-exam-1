@@ -51,6 +51,10 @@ main {
   margin: 0 auto 6rem auto;
 }
 
+/* #search_section {
+  margin-top: 5rem;
+} */
+
 #search-form {
   position: relative;
 }
