@@ -190,7 +190,6 @@ h4 {
 }
 
 /* overrides styles in common-styles */
-
 .card {
   background-color: #00000066;
   padding: 1rem;
@@ -198,7 +197,6 @@ h4 {
   position: absolute;
   width: 100%;
   bottom: 0;
-  /* border-radius: 0 0 3px 3px;  */
 }
 
 .post-heading {
