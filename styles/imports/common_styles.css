@@ -206,7 +206,7 @@ section {
 .breadcrumb {
   width: 100%;
   height: 3rem;
-  padding: 1rem 0 0 5%;
+  padding: 1rem 5% 0 5%;
   font-size: 0.875rem;
   background-color: var(--white);
 }
@@ -220,6 +220,11 @@ section {
 
 .breadcrumb div a:hover {
   border-bottom: 1px solid var(--header);
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--white);
 }
 
 .arrow {
@@ -529,20 +534,12 @@ label {
 .scroll-top-container {
   display: block;
   position: fixed;
-  right: 1rem;
-  bottom: 1rem;
+  right: 2rem;
+  bottom: 2rem;
   font-size: 2rem;
   color: #ffffffbf;
   display: none;
-  /* width: 2.5rem;
-  height: 2.5rem; */
-  /* opacity: 0.75; */
-  /* transform: translateX(50%); */
 }
-
-/* .scroll-top-container:hover {
-  animation: buttonGrow 1.25s linear infinite;
-} */
 
 #scroll-top-icon {
   position: absolute;
@@ -554,15 +551,36 @@ label {
   cursor: pointer;
 }
 
-/* #scroll-top-icon:hover {
-  opacity: 0.75;
-} */
+.scroll-icon-up {
+  animation: scrollIconUp 0.5s forwards;
+}
 
+.scroll-icon-down {
+  animation: scrollIconDown 0.5s forwards;
+}
 
-/* @keyframes buttonGrow {
-  from {font-size: 2.5rem;}
-  50% {font-size: 2.75rem;}
-  to {font-size: 2.5rem;}
+@keyframes scrollIconUp {
+  0% {
+    bottom: 2rem;
+  }
+
+  100% {
+    bottom: 5rem;
+  }
+}
+
+@keyframes scrollIconDown {
+  0% {
+    bottom: 5rem;
+  }
+
+  100% {
+    bottom: 2rem;
+  }
+}
+
+/* .scroll-hide {
+  visibility: hidden;
 } */
 
 /* loading styles */
@@ -727,10 +745,10 @@ footer {
     width: 70%;
   }
 
-  .scroll-top-container {
+  /* .scroll-top-container {
     right: 1.5rem;
     bottom: 1.5rem;
-  }
+  } */
   
   .footer-container {
     flex-direction: row;
@@ -783,10 +801,10 @@ footer {
     font-size: 1.25rem;
   }
 
-  .scroll-top-container {
+  /* .scroll-top-container {
     right: 2rem;
     bottom: 2rem;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -854,11 +872,6 @@ footer {
 
   #nav-search-icon:hover {
     border-bottom: none;
-  }
-
-  .active {
-    font-weight: bold;
-    border-bottom: 2px solid var(--white);
   }
 
   .social-media {
@@ -934,10 +947,10 @@ footer {
     font-size: 1.25rem;
   }
 
-  .scroll-top-container {
+  /* .scroll-top-container {
     right: 3rem;
     bottom: 3rem;
-  }
+  } */
 
   footer p {
     font-size: 1.125rem;

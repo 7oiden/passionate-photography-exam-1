@@ -8,10 +8,10 @@ export default function scrollToTop() {
   };
 
   function showToTop(entryArray) {
-    let div = document.querySelector(".scroll-top-container");
+    let iconContainer = document.querySelector(".scroll-top-container");
     entryArray[0].isIntersecting
-      ? (div.style.display = "none")
-      : (div.style.display = "block");
+      ? (iconContainer.style.display = "none")
+      : (iconContainer.style.display = "block");
   }
 
   let observer = new IntersectionObserver(showToTop, options);
@@ -23,4 +23,19 @@ export default function scrollToTop() {
     window.scrollTo(0, 0);
   }
   scrollIcon.addEventListener("click", scrollTrigger);
+
+  const footerObserver = new IntersectionObserver((entries) => {
+    let iconContainer = document.querySelector(".scroll-top-container");
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        iconContainer.classList.add("scroll-icon-up");
+        iconContainer.classList.remove("scroll-icon-down");
+        return;
+      }
+      iconContainer.classList.remove("scroll-icon-up");
+      iconContainer.classList.add("scroll-icon-down");
+    });
+  });
+
+  footerObserver.observe(document.querySelector("footer"));
 }
