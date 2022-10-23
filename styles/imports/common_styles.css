@@ -527,16 +527,22 @@ label {
 }
 
 .scroll-top-container {
+  display: block;
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  width: 2.3rem;
-  height: 2.3rem;
-  border-radius: 50%;
-  background-color: var(--white);
-  opacity: 0.75;
+  font-size: 2rem;
+  color: #ffffffbf;
+  display: none;
+  /* width: 2.5rem;
+  height: 2.5rem; */
+  /* opacity: 0.75; */
   /* transform: translateX(50%); */
 }
+
+/* .scroll-top-container:hover {
+  animation: buttonGrow 1.25s linear infinite;
+} */
 
 #scroll-top-icon {
   position: absolute;
@@ -546,34 +552,18 @@ label {
   color: var(--accent);
   font-size: 2.5rem;
   cursor: pointer;
+}
+
+/* #scroll-top-icon:hover {
   opacity: 0.75;
-  transition: opacity 0.3s ease;
-}
-
-#scroll-top-icon:hover {
-  opacity: 1;
-}
-
-
-
-/* #scroll-top:hover {
-  animation: buttonGrow 1.25s linear infinite;
-}
-
-@keyframes buttonGrow {
-  from {font-size: 3rem;}
-  50% {font-size: 3.25rem;}
-  to {font-size: 3rem;}
 } */
 
-/* .scroll-icon-hide {
-  display: none;
-} */
 
-.scroll-top-trigger {
-  background-color: pink;
-  height: 100px;
-}
+/* @keyframes buttonGrow {
+  from {font-size: 2.5rem;}
+  50% {font-size: 2.75rem;}
+  to {font-size: 2.5rem;}
+} */
 
 /* loading styles */
 .alert {
@@ -735,6 +725,11 @@ footer {
   /* aside */
   .aside-container {
     width: 70%;
+  }
+
+  .scroll-top-container {
+    right: 1.5rem;
+    bottom: 1.5rem;
   }
   
   .footer-container {
