@@ -1,6 +1,6 @@
 # Project Exam 1 - Passionate Photography
 
-![image](https://res.cloudinary.com/dhd2paq70/image/upload/v1659100413/Passianate_photography_-_Home_bpshwn.png)
+![image](https://res.cloudinary.com/dhd2paq70/image/upload/v1666601693/Passionate_Photography_bhxp8s.jpg)
 
 *Screenshot of the projects hero at the homepage*
 
