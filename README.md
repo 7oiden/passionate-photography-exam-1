@@ -37,6 +37,12 @@ Create a contact us page, there should be 4 text boxes on this page:
 
 Please use JavaScript for validation, show error messages if the values in the text boxes do not meet the requirements.
 
+##Level 2 process (optional)
+- You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for.
+- Post the data from the contact form to WordPress so you have the details saved.
+- Allow users to submit comments on a blog post, and post this data to WordPress
+
+
 <hr/>
 
 ## Built With
