@@ -1,6 +1,6 @@
 # Project Exam 1 - Passionate Photography
 
-![image](https://res.cloudinary.com/dhd2paq70/image/upload/v1659100413/Passianate_photography_-_Home_bpshwn.png)
+![image](https://res.cloudinary.com/dhd2paq70/image/upload/v1666601693/Passionate_Photography_bhxp8s.jpg)
 
 *Screenshot of the projects hero at the homepage*
 
@@ -36,6 +36,12 @@ Create a contact us page, there should be 4 text boxes on this page:
 -	Message content (Should be more than 25 characters long)
 
 Please use JavaScript for validation, show error messages if the values in the text boxes do not meet the requirements.
+
+## Level 2 process (optional)
+- You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for.
+- Post the data from the contact form to WordPress so you have the details saved.
+- Allow users to submit comments on a blog post, and post this data to WordPress
+
 
 <hr/>
 
