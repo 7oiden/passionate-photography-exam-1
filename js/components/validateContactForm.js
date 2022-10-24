@@ -1,7 +1,6 @@
 import { checkLength, validateEmail } from "./formValidators.js";
 
 export default function validateContactForm() {
-  const contactForm = document.querySelector("#contact-form");
   const fullName = document.querySelector("#full-name");
   const subject = document.querySelector("#subject");
   const contactEmail = document.querySelector("#contact-email");
@@ -10,8 +9,6 @@ export default function validateContactForm() {
   const subjectError = document.querySelector("#subject-error");
   const contactEmailError = document.querySelector("#contact-email-error");
   const messageError = document.querySelector("#message-error");
-  // const contactButton = document.querySelector("#contact-button");
-  const successMessage = document.querySelector(".success-message");
 
   let value = "";
   let len = 0;
@@ -45,45 +42,26 @@ export default function validateContactForm() {
   subject.addEventListener("keyup", checkContactInput);
   message.addEventListener("keyup", checkContactInput);
 
-  function validateContactForm(event) {
-    event.preventDefault();
-
-    if (checkLength(fullName.value, 4)) {
-      nameError.style.display = "none";
-    } else {
-      nameError.style.display = "block";
-    }
-    if (validateEmail(contactEmail.value)) {
-      contactEmailError.style.display = "none";
-    } else {
-      contactEmailError.style.display = "block";
-    }
-    if (checkLength(subject.value, 14)) {
-      subjectError.style.display = "none";
-    } else {
-      subjectError.style.display = "block";
-    }
-    if (checkLength(message.value, 24)) {
-      messageError.style.display = "none";
-    } else {
-      messageError.style.display = "block";
-    }
-    if (
-      checkLength(fullName.value, 4) &&
-      validateEmail(contactEmail.value) &&
-      checkLength(subject.value, 14) &&
-      checkLength(message.value, 24)
-    ) {
-      successMessage.innerHTML = `<p id="success-message">Your enquiry was submitted successfully</p>`;
-      contactForm.reset();
-
-      setTimeout(function () {
-        successMessage.innerHTML = "";
-      }, 3000);
-    }
+  if (checkLength(fullName.value, 4)) {
+    nameError.style.display = "none";
+  } else {
+    nameError.style.display = "block";
   }
-
-  contactForm.addEventListener("submit", validateContactForm);
+  if (validateEmail(contactEmail.value)) {
+    contactEmailError.style.display = "none";
+  } else {
+    contactEmailError.style.display = "block";
+  }
+  if (checkLength(subject.value, 14)) {
+    subjectError.style.display = "none";
+  } else {
+    subjectError.style.display = "block";
+  }
+  if (checkLength(message.value, 24)) {
+    messageError.style.display = "none";
+  } else {
+    messageError.style.display = "block";
+  }
 
   checkLength(value, len);
   validateEmail(contactEmail);

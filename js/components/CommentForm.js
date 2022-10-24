@@ -72,7 +72,7 @@ export default function CommentForm() {
 
           setTimeout(function () {
             alertContainer.innerHTML = "";
-          }, 2000);
+          }, 3000);
 
           commentForm.reset();
         }
