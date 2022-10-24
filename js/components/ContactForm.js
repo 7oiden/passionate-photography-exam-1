@@ -59,7 +59,7 @@ export default function commentForm() {
         // },
       };
 
-    //   console.log(options);
+      //   console.log(options);
 
       try {
         const response = await fetch(contactUrl, options);
@@ -68,11 +68,7 @@ export default function commentForm() {
         console.log(json);
 
         if (json.status === "mail_sent") {
-          displayAlert(
-            "success",
-            "Your message was sent successfully. Thank you!",
-            ".alert-container"
-          );
+          displayAlert("success", json.message, ".alert-container");
 
           setTimeout(function () {
             alertContainer.innerHTML = "";
