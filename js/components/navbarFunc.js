@@ -5,6 +5,8 @@ export default function navbarFunc() {
   const hamburgerMenu = document.querySelector("#hamburger-menu");
   const mobileMenu = document.querySelector(".mobile-menu");
 
+  const searchIcon = document.querySelector("#nav-search-icon");
+
   // const logo = document.querySelector(".logo")
 
   let lastScroll = 0;

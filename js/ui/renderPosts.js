@@ -15,7 +15,7 @@ export function renderPosts(posts) {
     renderedPosts = posts.slice(0, 8);
   }
 
-  console.log(renderedPosts);
+  // console.log(renderedPosts);
 
   if (renderedPosts.length === 0) {
     postsWrapper.innerHTML = `<p class="search-default">No article matches your search...</p>`;

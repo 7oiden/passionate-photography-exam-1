@@ -6,6 +6,9 @@ import convertHeadings from "./components/convertHeadings.js";
 // import { sortPostsByMonth } from "./ui/sortPostsByMonth.js";
 import scrollToTop from "./components/scrollToTop.js";
 
+const recentPosts = document.querySelector(".recent-posts-list");
+const featuredPosts = document.querySelector(".featured-posts-list");
+
 export default function asideSection() {
   convertHeadings();
 
@@ -23,11 +26,12 @@ export default function asideSection() {
       renderAsideLists(json);
     } catch (error) {
       console.log(error);
-      // displayAlert(
-      //   "error",
-      //   "An error has occurred when trying to retrieve the API",
-      //   ".post-wrapper"
-      // );
+      recentPosts.innerHTML = "List could not be loaded...";
+      recentPosts.style.color = "#be3e35";
+      recentPosts.style.fontFamily = "lato";
+      featuredPosts.innerHTML = "List could not be loaded...";
+      featuredPosts.style.color = "#be3e35";
+      featuredPosts.style.fontFamily = "lato";
     }
   })();
 

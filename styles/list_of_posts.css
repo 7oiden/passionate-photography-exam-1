@@ -46,7 +46,7 @@ main {
 }
 
 #load-button {
-  display: flex;
+  display: none;
   align-self: center;
   margin: 0 auto 6rem auto;
 }

@@ -8,8 +8,8 @@ import asideSection from "./asideSection.js";
 navbarFunc();
 
 const embed = "?_embed";
-const perPage = "&per_page=15";
-const order = "&orderby=date";
+// const perPage = "&per_page=15";
+// const order = "&orderby=date";
 
 const url = postsUrl + embed;
 
@@ -23,7 +23,6 @@ const url = postsUrl + embed;
         return true;
       }
     });
-
     renderFeaturePost(featurePost);
     renderPosts(json);
   } catch (error) {
@@ -31,7 +30,7 @@ const url = postsUrl + embed;
     displayAlert(
       "error",
       "An error has occurred when trying to retrieve the API",
-      ".post-wrapper"
+      ".feature-wrapper"
     );
   }
 })();

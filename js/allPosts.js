@@ -16,6 +16,8 @@ const order = "&orderby=date";
 
 const url = postsUrl + embed + perPage + order;
 
+const loadButton = document.querySelector("#load-button");
+
 (async function fetchApi() {
   try {
     const response = await fetch(url);
@@ -25,6 +27,7 @@ const url = postsUrl + embed + perPage + order;
     sortPostsByMonth(json);
     sortPostsByCategory(json);
     searchPosts(json);
+    loadButton.style.display = "flex";
   } catch (error) {
     console.log(error);
     displayAlert(
@@ -32,6 +35,7 @@ const url = postsUrl + embed + perPage + order;
       "An error has occurred when trying to retrieve the API",
       ".post-wrapper"
     );
+    loadButton.style.display = "none";
   }
 })();
 

@@ -1,7 +1,7 @@
 import { postsUrl, commentsUrl } from "./settings/api.js";
 import { renderSpecificPost } from "./ui/renderSpecificPost.js";
 import { renderComments } from "./ui/renderComments.js";
-import submitCommentForm from "./components/submitCommentForm.js";
+import CommentForm from "./components/CommentForm.js";
 import navbarFunc from "./components/navbarFunc.js";
 import asideSection from "./asideSection.js";
 
@@ -54,5 +54,5 @@ const commentUrl = commentsUrl + id + perPage + order;
   }
 })();
 
-submitCommentForm();
+CommentForm();
 
