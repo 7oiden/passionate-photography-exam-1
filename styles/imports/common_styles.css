@@ -1,7 +1,5 @@
 :root {
   --header: #3a4352;
-  /* --header: #515E73; */
-  /* --gold: #cbc278; */
   --accent: #36878F;
   --info: #4b5f6d;
   --footer: #2c3336;
@@ -11,7 +9,7 @@
   --form-bg: #f3f3f3;
   --white: #fff;
   --black: #000;
-  --dark-text: #6d6d6d;
+  --dark-text: #616161;
   --error: #dc3545;
   --warning: #ffc107;
   --success: #198754;
@@ -21,7 +19,6 @@
   --links: "adobe-caslon",
     "orpheus",
     "times new roman", "serif";
-  /* --futura: "futura PT"; */
 }
 
 /* global styles
@@ -130,30 +127,13 @@ nav.menu {
   background-color: var(--header);
   font-family: var(--links);
   margin: 0 auto;
-  /* display: none; */
   justify-content: space-between;
   width: 85%;
-  /* animation: growDown 300ms ease-in-out forwards;
-  transform-origin: top center; */
 }
 
 .mobile-menu li {
   list-style: none;
 }
-
-/* @keyframes growDown {
-  0% {
-    transform: scaleY(0)
-  }
-
-  80% {
-    transform: scaleY(1.1)
-  }
-
-  100% {
-    transform: scaleY(1)
-  }
-} */
 
 .mobile-menu ul {
   margin: 0;
@@ -299,12 +279,9 @@ aside {
   background-color: var(--light-grey);
   min-height: 100%;
   margin-top: 5rem;
-  /* transform: perspective(0); */
-  /* position: relative; */
 }
 
 .aside-container {
-  /* transform: perspective(0); */
   width: 85%;
   display: grid;
   grid-template-rows: auto auto;
@@ -411,8 +388,8 @@ select {
 
 label {
   font-size: 1rem;
-  /* font-weight: bold; */
   text-align: left;
+  font-weight: 500;
   color: var(--header);
   margin-bottom: 3px;
 }
@@ -591,7 +568,7 @@ label {
   }
 }
 
-/* loading styles */
+/* loading styles & alerts */
 .alert {
   color: white;
   font-size: 1rem;
@@ -763,11 +740,6 @@ footer {
     width: 70%;
   }
 
-  /* .scroll-top-container {
-    right: 1.5rem;
-    bottom: 1.5rem;
-  } */
-  
   .footer-container {
     flex-direction: row;
     gap: 0.75rem;
@@ -819,11 +791,6 @@ footer {
   .button {
     font-size: 1.25rem;
   }
-
-  /* .scroll-top-container {
-    right: 2rem;
-    bottom: 2rem;
-  } */
 }
 
 @media only screen and (min-width: 1200px) {
@@ -966,11 +933,6 @@ footer {
   #read-more {
     font-size: 1.25rem;
   }
-
-  /* .scroll-top-container {
-    right: 3rem;
-    bottom: 3rem;
-  } */
 
   footer p {
     font-size: 1.125rem;

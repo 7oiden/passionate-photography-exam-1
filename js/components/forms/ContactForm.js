@@ -36,6 +36,10 @@ export default function commentForm() {
         "Please attend to input errors",
         ".alert-container"
       );
+
+      setTimeout(function () {
+        alertContainer.innerHTML = "";
+      }, 3000);
     }
 
     async function addContactInfo(name, email, subject, message) {

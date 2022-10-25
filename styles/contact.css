@@ -10,14 +10,6 @@ main {
   width: 100%;
 }
 
-.input {
-  color: var(--header);
-  padding: 0.5rem;
-  border: 3px solid var(--light-blue);
-  outline: none;
-  border-radius: 0;
-}
-
 textarea {
   height: 200px;
   font-family: var(--body-text);
@@ -29,30 +21,6 @@ textarea {
 #contact-email-error,
 #message-error {
   display: none;
-}
-
-#success-message {
-  color: green;
-  animation: 1s fadeIn;
-  animation-fill-mode: forwards;
-  margin: 0;
-  padding: 0;
-}
-
-#success-message:before {
-  content: "\2713";
-  font-size: 1.5rem;
-  margin-right: 3px;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    visibility: visible;
-    opacity: 1;
-  }
 }
 
 /* styles that change

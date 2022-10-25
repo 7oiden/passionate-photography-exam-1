@@ -37,6 +37,10 @@ export default function CommentForm() {
         "Please attend to input errors",
         ".alert-container"
       );
+
+      setTimeout(function () {
+        alertContainer.innerHTML = "";
+      }, 3000);
     }
 
     async function addComment(name, email, comment) {

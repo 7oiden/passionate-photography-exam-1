@@ -5,11 +5,6 @@ main {
   background-color: var(--light-grey);
 }
 
-/* section {
-  width: 100%;
-  margin: 0 auto;
-} */
-
 section a {
   margin-top: 1rem;
 }
@@ -25,13 +20,16 @@ section a {
 
 .post-container {
   width: 100%;
-  /* color: var(--black); */
   margin: 0 auto;
 }
 
 .post-image {
   width: 100%;
   margin: 0;
+}
+
+.post-text {
+  margin-top: 2rem;
 }
 
 figcaption {
@@ -50,19 +48,10 @@ blockquote {
   font-weight: 600;
   font-size: 1.125rem;
   font-style: italic;
-  /* color: var(--header); */
   border-left: 3px solid var(--light-blue);
   padding-left: 1rem;
   margin: 2rem 1rem 2rem 1rem;
 }
-
-/* h2,
-h3 {
-  font-family: var(--main-heading);
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin: 0;
-} */
 
 /* common styles override */
 #gradient-border {
@@ -93,13 +82,9 @@ h3 {
 
 .comment-container {
   display: flex;
-  /* margin-bottom: 2rem; */
-  /* background-color: var(--light-grey); */
   color: var(--dark-text);
   padding: 1rem 0 2rem 0;
   border-bottom: 2px solid var(--light-grey);
-  /* border-radius: 5px; */
-  /* background-color: pink; */
 }
 
 .comment-container-hide {
@@ -203,13 +188,12 @@ h3 {
 }
 
 #comment-line {
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 1rem;
   padding: 0;
 }
 
 /* comment-form */
-
 .leave-comment {
   background-color: var(--light-grey);
   padding-top: 1rem;
@@ -238,7 +222,7 @@ h3 {
   display: none;
 }
 
-#success-message {
+/* #success-message {
   color: green;
   animation: 1s fadeIn;
   animation-fill-mode: forwards;
@@ -260,7 +244,7 @@ h3 {
     visibility: visible;
     opacity: 1;
   }
-}
+} */
 
 #comment-button {
   margin-left: 0;
@@ -326,9 +310,9 @@ h3 {
     margin: 0 2rem 0 0;
   }
 
-  .input-container label {
+  /* .input-container label {
     font-size: 1rem;
-  }
+  } */
 
   #comment-divider {
     margin-top: 5rem;
