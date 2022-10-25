@@ -1,9 +1,9 @@
+import { validateEmail } from "./formValidators.js";
+
 const form = document.querySelector("#newsletter-form");
 const subscribeMessage = document.querySelector(".subscribe-message");
-// const subscribeButton = document.querySelector("#subscribe-button");
 const newsletterEmail = document.querySelector("#newsletter-email");
 const emailError = document.querySelector("#email-error");
-import { validateEmail } from "./formValidators.js";
 
 export default function validateNewsletterForm() {
   function checkInput() {

@@ -1,5 +1,5 @@
 import { commentIcon } from "../settings/constants.js";
-import loadMorePosts from "../components/loadMorePosts.js";
+import loadMorePosts from "../components/utils/loadMorePosts.js";
 
 const postsWrapper = document.querySelector(".post-wrapper");
 

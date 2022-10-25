@@ -12,6 +12,9 @@
   --white: #fff;
   --black: #000;
   --dark-text: #6d6d6d;
+  --error: #dc3545;
+  --warning: #ffc107;
+  --success: #198754;
   --main-heading: "franklin-gothic-urw", "arial", sans-serif;
   --body-text: "lato", "open-sans", "arial", sans-serif;
   --hero-heading: "adobe-caslon", "orpheus", "times new roman", "serif";
@@ -47,6 +50,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  outline: none;
 }
 
 figure, img {
@@ -368,6 +372,7 @@ aside {
   display: flex;
   flex-direction: column;
   max-width: 350px;
+  
 }
 
 .form {
@@ -400,6 +405,10 @@ input[placeholder] {
   font-size: 1rem;
 }
 
+select {
+  outline: none;
+}
+
 label {
   font-size: 1rem;
   /* font-weight: bold; */
@@ -410,7 +419,7 @@ label {
 
 .error-message {
   text-align: left;
-  color: #be3e35;
+  color: var(--error);
 }
 
 .error-message:before {
@@ -436,6 +445,7 @@ label {
   transition-duration: 0.5s;
   opacity: 1;
   cursor: pointer;
+  outline: none;
 }
 
 .button:hover {
@@ -449,8 +459,8 @@ label {
   text-decoration: none;
   padding: 0.4rem 2rem;
   box-shadow: none;
-  font-weight: bold;
-  border: 3px solid var(--accent);
+  font-weight: 500;
+  border: 2px solid var(--accent);
 }
 
 .link-button {
@@ -581,10 +591,6 @@ label {
   }
 }
 
-/* .scroll-hide {
-  visibility: hidden;
-} */
-
 /* loading styles */
 .alert {
   color: white;
@@ -597,22 +603,29 @@ label {
   border-radius: 5px;
 }
 
+.aside-alert {
+  color: var(--error);
+  font-family: var(--body-text);
+  padding: 0;
+  text-align: left;
+}
+
 .error {
   background-color: #dc354540;
-  border-color:#dc3545;
-  color: #dc3545;
+  border-color: var(--error);
+  color: var(--error);
 }
 
 .success {
   background-color: #19875440;
-  border-color: #198754;
-  color: #198754;
+  border-color: var(--success);
+  color: var(--success);
 }
 
 .warning {
   background-color: #ffc10740;
-  border-color: #ffc107;
-  color: black;
+  border-color: var(--warning);
+  color: rgb(152, 71, 0);
 }
 
 .spinner {
@@ -865,6 +878,7 @@ footer {
     transition-property: opacity border-bottom;
     transition-duration: 0.3s;
     opacity: 1;
+    outline: none;
   }
 
   .menu-item:hover {

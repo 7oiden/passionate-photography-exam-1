@@ -1,6 +1,6 @@
-import contactForm from "./components/contactForm.js";
-import navbarFunc from "./components/navbarFunc.js";
-import asideSection from "./asideSection.js";
+import contactForm from "./components/forms/contactForm.js";
+import navbarFunc from "./components/navbar/navbarFunc.js";
+import asideSection from "./ui/asideSection.js";
 
 navbarFunc();
 asideSection();

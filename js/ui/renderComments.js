@@ -1,4 +1,4 @@
-import loadMoreComments from "../components/loadMoreComments.js";
+import loadMoreComments from "../components/utils/loadMoreComments.js";
 
 const commentWrapper = document.querySelector(".comment-wrapper");
 

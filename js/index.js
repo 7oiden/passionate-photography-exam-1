@@ -1,9 +1,9 @@
 import { postsUrl } from "./settings/api.js";
-import displayAlert from "./components/displayAlert.js";
+import displayAlert from "./components/alerts/displayAlert.js";
 import { renderFeaturePost } from "./ui/renderFeaturePost.js";
 import { renderPosts } from "./ui/renderPosts.js";
-import navbarFunc from "./components/navbarFunc.js";
-import asideSection from "./asideSection.js";
+import navbarFunc from "./components/navbar/navbarFunc.js";
+import asideSection from "./ui/asideSection.js";
 
 navbarFunc();
 

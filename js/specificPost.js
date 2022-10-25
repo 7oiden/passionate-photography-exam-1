@@ -1,9 +1,9 @@
 import { postsUrl, commentsUrl } from "./settings/api.js";
 import { renderSpecificPost } from "./ui/renderSpecificPost.js";
 import { renderComments } from "./ui/renderComments.js";
-import CommentForm from "./components/CommentForm.js";
-import navbarFunc from "./components/navbarFunc.js";
-import asideSection from "./asideSection.js";
+import CommentForm from "./components/forms/CommentForm.js";
+import navbarFunc from "./components/navbar/navbarFunc.js";
+import asideSection from "./ui/asideSection.js";
 
 navbarFunc();
 
@@ -55,4 +55,3 @@ const commentUrl = commentsUrl + id + perPage + order;
 })();
 
 CommentForm();
-

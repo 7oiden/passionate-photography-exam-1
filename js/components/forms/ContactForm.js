@@ -1,7 +1,7 @@
-import displayAlert from "./displayAlert.js";
+import displayAlert from "../alerts/displayAlert.js";
 import validateContactForm from "./validateContactForm.js";
 import { checkLength, validateEmail } from "./formValidators.js";
-import { contactUrl } from "../settings/api.js";
+import { contactUrl } from "../../settings/api.js";
 
 const contactForm = document.querySelector("#contact-form");
 const fullName = document.querySelector("#full-name");
@@ -58,8 +58,6 @@ export default function commentForm() {
         //   "Content-Type": "multipart/form-data",
         // },
       };
-
-      //   console.log(options);
 
       try {
         const response = await fetch(contactUrl, options);

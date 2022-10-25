@@ -1,4 +1,4 @@
-import { renderPosts } from "./renderPosts.js";
+import { renderPosts } from "../../ui/renderPosts.js";
 
 const navbar = document.querySelector(".trigger-menu");
 const articlesHeading = document.querySelector("#articles-heading");

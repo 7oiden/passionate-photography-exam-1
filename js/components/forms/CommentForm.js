@@ -1,7 +1,7 @@
-import displayAlert from "./displayAlert.js";
+import displayAlert from "../alerts/displayAlert.js";
 import validateCommentForm from "./validateCommentForm.js";
 import { checkLength, validateEmail } from "./formValidators.js";
-import { postCommentUrl } from "../settings/api.js";
+import { postCommentUrl } from "../../settings/api.js";
 
 const commentForm = document.querySelector("#comment-form");
 const name = document.querySelector("#name");

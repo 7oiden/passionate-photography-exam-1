@@ -1,13 +1,8 @@
 //hide navbar on scroll
 export default function navbarFunc() {
   const navbar = document.querySelector(".trigger-menu");
-
   const hamburgerMenu = document.querySelector("#hamburger-menu");
   const mobileMenu = document.querySelector(".mobile-menu");
-
-  const searchIcon = document.querySelector("#nav-search-icon");
-
-  // const logo = document.querySelector(".logo")
 
   let lastScroll = 0;
 
@@ -40,7 +35,6 @@ export default function navbarFunc() {
       navbar.classList.add("scroll-up");
     }
     lastScroll = currentScroll;
-    // console.log(window.pageYOffset);
   }
 
   window.addEventListener("scroll", toggleNavbar);

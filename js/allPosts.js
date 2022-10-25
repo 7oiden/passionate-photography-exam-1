@@ -1,12 +1,11 @@
 import { postsUrl } from "./settings/api.js";
-import displayAlert from "./components/displayAlert.js";
+import displayAlert from "./components/alerts/displayAlert.js";
 import { renderPosts } from "./ui/renderPosts.js";
-// import loadMorePosts from "./components/loadMoreButton.js";
-import navbarFunc from "./components/navbarFunc.js";
-import asideSection from "./asideSection.js";
-import { searchPosts } from "./ui/searchPosts.js";
-import { sortPostsByMonth } from "./ui/sortPostsByMonth.js";
-import { sortPostsByCategory } from "./ui/sortPostsByCategory.js";
+import navbarFunc from "./components/navbar/navbarFunc.js";
+import asideSection from "./ui/asideSection.js";
+import { searchPosts } from "./components/search_and_sort/searchPosts.js";
+import { sortPostsByMonth } from "./components/search_and_sort/sortPostsByMonth.js";
+import { sortPostsByCategory } from "./components/search_and_sort/sortPostsByCategory.js";
 
 navbarFunc();
 
